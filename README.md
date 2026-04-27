@@ -1,0 +1,126 @@
+# `cheroliv`
+
+🇬🇧 **English** · 🇫🇷 [Français](README_fr.md)
+
+**Software Artisan · Trainer · Gradle Tooling Author**
+
+I design an ecosystem of Gradle Kotlin DSL plugins for project tooling,
+executable documentation, and educational content production.
+My raw materials: Kotlin, Gradle, AsciiDoc, LangChain4j.
+
+---
+
+## Positioning
+
+I work at the intersection of three domains:
+
+- **Software Craftsmanship** — TDD, BDD Cucumber, Hexagonal Architecture, Idiomatic Kotlin.
+- **Developer Tooling** — reusable Gradle plugins, published under the `com.cheroliv` namespace on the [Gradle Plugin Portal](https://plugins.gradle.org/search?term=com.cheroliv).
+- **EdTech** — educational content, generated static sites, traceable training materials.
+
+The coherence of it all stems from a simple conviction: **a credible developer/trainer
+builds and uses their own tools**. I don't sell what I don't use
+on a daily basis.
+
+---
+
+## Methodology
+
+The lifecycle I follow for each plugin:
+
+1. **Business logic prototyping** within the root `build.gradle.kts`, with relevant logs
+   to validate behavior under real conditions.
+2. **Plugin migration** once the domain logic is stable — transplanting the
+   proven code to a dedicated module, using TDD with JUnit 5.
+3. **BDD with Cucumber** as soon as the domain allows, to document
+   intent at the user level.
+4. **Publication** to the Gradle Plugin Portal with a versioned API contract.
+
+It's not a fancy method, but it's one that stands the test of time.
+
+---
+
+## The `com.cheroliv.*` Ecosystem
+
+The plugins are structured around three roles:
+
+### Foundation — reusable building blocks
+
+| Plugin | Role |
+|---|---|
+| [`com.cheroliv.plantuml`](https://github.com/cheroliv/plantuml-gradle) | Syntax validation and PNG/SVG rendering of PlantUML diagrams. A building block used by downstream plugins and consumable on its own. |
+| [`com.cheroliv.readme`](https://github.com/cheroliv/readme-plugin) | Multilingual README generation with embedded PlantUML diagrams and GitHub Pages publication via JGit. |
+| [`com.cheroliv.slider`](https://github.com/cheroliv/slider-gradle) | Reveal.js presentation generation from AsciiDoc sources, with a push to a dedicated branch. |
+
+### Publication & aggregation
+
+| Plugin | Role |
+|---|---|
+| [`com.cheroliv.bakery`](https://github.com/cheroliv/bakery-gradle-plugin) | JBake static site aggregating artifacts produced by other plugins (diagrams, slides, posts). A [Scala/Mill version](https://github.com/cheroliv/millBakerPlugin) of the same idea is also available. |
+
+### Build assistant & training orchestration
+
+| Plugin | Role |
+|---|---|
+| [`com.cheroliv.codebase`](https://github.com/cheroliv/codebase-gradle) | In-build development assistant: project reading and analysis, LangChain4j context enrichment, AsciiDoc report generation, dataset creation. |
+| [`com.cheroliv.training`](https://github.com/cheroliv/training-gradle) | Training project orchestration — backlog synchronized with agent context files (`AGENTS.md`), course material pipeline. |
+
+Each plugin follows the same configuration discipline: declarative YAML
+(`readme.yml`, `plantuml-context.yml`, `slides-context.yml`…), mirrored Kotlin classes
+via Jackson, and an anonymization function for traceability without leaking
+secrets.
+
+---
+
+## Environment & Workstation
+
+### [`magic_stick`](https://github.com/cheroliv/magic_stick)
+
+A Gradle Kotlin DSL build script that orchestrates the creation of a bootable Xubuntu ISO — functioning as both a **live USB** and an **installer**, equipped with the necessary tooling tailored for three usage profiles:
+
+- **Nomadic workstation** — my complete portable environment on a USB drive.
+- **FTTH Telecom Technician** — ready-to-use field tooling.
+- **Student/Trainee** — immediate onboarding with no prior installation required.
+
+The project illustrates the ecosystem's philosophy: the work environment itself
+is a **reproducible, versioned, and documented artifact**. The
+project's documentation is generated and published by [`com.cheroliv.bakery`](https://github.com/cheroliv/bakery-gradle-plugin) at
+[cheroliv.com/magic_stick](https://cheroliv.com/magic_stick/) — proof that
+the publication pipeline runs in production.
+
+---
+
+## What I Teach
+
+- Intermediate to advanced Java (8 to 25) — from the Stream API to Virtual Threads, Records, Pattern Matching.
+- Intermediate to advanced Kotlin — null safety, extensions, coroutines, sealed classes.
+- Scala and JVM build alternatives (Mill, sbt).
+- Maven multi-module architectures.
+- Gradle Kotlin DSL — from writing tasks to publishable plugins.
+- Hexagonal Architecture and testing — ports & adapters, JUnit 5, Cucumber, TestContainers.
+- Spring Boot — REST APIs, JWT security, integration testing.
+- Project tooling — GitHub Actions CI/CD, executable documentation, content generation.
+
+Course materials are produced using the ecosystem's plugins:
+slides are Reveal.js generated by [`slider`](https://github.com/cheroliv/slider-gradle),
+course websites by [`bakery`](https://github.com/cheroliv/bakery-gradle-plugin),
+and the bootable drive by [`magic_stick`](https://github.com/cheroliv/magic_stick).
+Training and tooling mutually feed into each other.
+
+---
+
+## Core Stack
+
+Java · Kotlin · Scala · Gradle (Kotlin DSL) · Mill · JUnit 5 · Cucumber · Spring Boot · AsciiDoc · JBake · Reveal.js · PlantUML · JGit · Jackson · LangChain4j · Docker · PostgreSQL/pgvector · GitHub Actions · Xubuntu/Debian packaging.
+
+---
+
+## Links
+
+- Website: [cheroliv.com](https://cheroliv.com)
+- Published Plugins: [Gradle Plugin Portal — com.cheroliv](https://plugins.gradle.org/search?term=com.cheroliv)
+- `magic_stick`: [documentation](https://cheroliv.com/magic_stick/) · [repository](https://github.com/cheroliv/magic_stick)
+
+---
+
+*The code we write for ourselves is the laboratory for the code we teach others.*
