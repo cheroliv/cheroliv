@@ -1,12 +1,12 @@
 # `cheroliv`
 
-🇬🇧 [English](README.md) · 🇫🇷 **Français**
+🇬🇧 [English](README.md) · 🇫🇷 **Français** · 🇨🇳 [中文](README_zh.md) · 🇮🇳 [हिन्दी](README_hi.md) · 🇪🇸 [Español](README_es.md) · 🇸🇦 [العربية](README_ar.md) · 🇧🇩 [বাংলা](README_bn.md) · 🇵🇹 [Português](README_pt.md) · 🇷🇺 [Русский](README_ru.md) · 🇵🇰 [اردو](README_ur.md)
 
 **Software Artisan · Formateur · Auteur d'outils Gradle**
 
 Je conçois un écosystème de plugins Gradle Kotlin DSL pour l'outillage de projet,
 la documentation exécutable et la production de contenu pédagogique.
-Ma matière première : Kotlin, Gradle, AsciiDoc, LangChain4j.
+Ma matière première : Kotlin, Gradle, AsciiDoc, LangChain4j, Koog.
 
 ---
 
@@ -15,12 +15,44 @@ Ma matière première : Kotlin, Gradle, AsciiDoc, LangChain4j.
 Je travaille à l'intersection de trois domaines :
 
 - **Craft logiciel** — TDD, BDD Cucumber, architecture hexagonale, Kotlin idiomatique.
-- **Outillage développeur** — plugins Gradle réutilisables, publiés sous le namespace `com.cheroliv` sur le [Gradle Plugin Portal](https://plugins.gradle.org/search?term=com.cheroliv).
+- **Outillage développeur** — plugins Gradle réutilisables, publiés sous le namespace `education.cccp` sur le [Gradle Plugin Portal](https://plugins.gradle.org/search?term=education.cccp).
 - **Edtech** — contenus pédagogiques, sites statiques générés, supports de formation traçables.
 
 La cohérence de l'ensemble tient à une conviction simple : **un développeur/formateur crédible
 construit et utilise ses propres outils**. Je ne vends pas ce que je n'utilise pas
 au quotidien.
+
+---
+
+## Architecture Identité — 4 Marques, 3 Comptes
+
+### Séparation des marques
+
+| Marque | Rôle | Signal |
+|---|---|---|
+| `cheroliv.com` | Identité perso, blog, articles | L'humain derrière le code, la voix éditoriale, le capital social |
+| `talaria.school` | OF — Organisme Formateur Qualiopi | La vitrine institutionnelle, les formations payantes, le catalogue |
+| `edster.cloud` | SaaS — VPS 30€/mois, marge ~95% | Le provisioning workspace client, Stripe + Orange Money (MVP1) |
+| `cccp.education` | Domaine (SaaS/Web) | *Common Content Creator Proletarian* — identité numérique et vitrine OSS |
+
+### Séparation des comptes techniques
+
+| Compte | Plateforme | Rôle |
+|---|---|---|
+| `cheroliv` | GitHub | Commits, PRs, historique, capital social (inchangé) |
+| `cccp-education` | GitHub (org) | Hébergement des dépôts de plugins, brand produit |
+| `cccp-education` | Gradle Plugin Portal | Handle de publication — https://plugins.gradle.org/u/cccp-education |
+
+### Architecture 3 couches
+
+```
+cheroliv (dev) ──commits──▶ github.com/cccp-education (repos) ──publish──▶ cccp-education (Gradle Portal)
+                               GroupId: education.cccp
+                               Licence: Apache 2.0
+```
+
+*Règle* : le métier est libre (Apache 2.0), seule la transaction bancaire (waiter-gradle) ne l'est pas.
+Le code ne porte pas d'idéologie — le groupId, si.
 
 ---
 
@@ -40,41 +72,86 @@ Ce n'est pas une méthode chic, c'est une méthode qui tient debout sur la duré
 
 ---
 
-## Écosystème `com.cheroliv.*`
+## Écosystème `education.cccp.*` — 25 boroughs
 
-Les plugins s'articulent autour de trois rôles :
+Les plugins s'articulent autour de trois rôles répartis sur 4 couches (DAG N0→N4).
 
-### Fondation — briques réutilisables
-
-| Plugin | Rôle |
-|---|---|
-| [`com.cheroliv.plantuml`](https://github.com/cheroliv/plantuml-gradle) | Validation syntaxique et rendu PNG/SVG de diagrammes PlantUML. Brique utilisée par les plugins en aval et consommable seule. |
-| [`com.cheroliv.readme`](https://github.com/cheroliv/readme-plugin) | Génération de README multilingues avec diagrammes PlantUML embarqués et publication GitHub Pages via JGit. |
-| [`com.cheroliv.slider`](https://github.com/cheroliv/slider-gradle) | Génération de présentations Reveal.js depuis des sources AsciiDoc, avec push vers branche dédiée. |
-
-### Publication & agrégation
+### Fondation — briques réutilisables (N0)
 
 | Plugin | Rôle |
 |---|---|
-| [`com.cheroliv.bakery`](https://github.com/cheroliv/bakery-gradle-plugin) | Site statique JBake agrégeant les artefacts produits par les autres plugins (diagrammes, slides, posts). Une [version Scala/Mill](https://github.com/cheroliv/millBakerPlugin) de la même idée existe également. |
+| [`com.gradleup.nmcp.settings`](https://plugins.gradle.org/plugin/com.gradleup.nmcp.settings) | Publication Maven Central (nmcp) |
+| [`education.cccp.agent-contracts`](https://github.com/cccp-education/workspace-bom) | Contrats de protocole agent (shared kernel) |
+| [`education.cccp.codebase-contracts`](https://github.com/cccp-education/workspace-bom) | Contrats RAG codebase (shared kernel) |
+| [`education.cccp.vibecoding-contracts`](https://github.com/cccp-education/workspace-bom) | Contrats vibecoding (shared kernel) |
+| [`education.cccp.llm-pool-contracts`](https://github.com/cccp-education/workspace-bom) | Contrats pool API LLM (shared kernel) |
+| [`education.cccp.pipeline-contracts`](https://github.com/cccp-education/workspace-bom) | Contrats pipeline (shared kernel) |
+| [`education.cccp.i18n-contracts`](https://github.com/cccp-education/workspace-bom) | Contrats internationalisation (shared kernel) |
 
-### Assistant de build & orchestration pédagogique
+### Scanner — extraction de graphe du workspace (N0)
 
 | Plugin | Rôle |
 |---|---|
-| [`com.cheroliv.codebase`](https://github.com/cheroliv/codebase-gradle) | Assistant de développement embarqué dans le build : lecture et analyse du projet, enrichissement de contexte LangChain4j, génération de rapports AsciiDoc, constitution de datasets. |
-| [`com.cheroliv.training`](https://github.com/cheroliv/training-gradle) | Orchestration de projet de formation — backlog synchronisé avec les fichiers de contexte agent (`AGENTS.md`), pipeline de production des supports de cours. |
+| [`education.cccp.graphify`](https://github.com/cccp-education/graphify-gradle) | Extraction de graphe de connaissance du workspace (nœuds, arêtes, communautés) → `graph.json` |
 
-Chaque plugin suit la même discipline de configuration : YAML déclaratif
-(`readme.yml`, `plantuml-context.yml`, `slides-context.yml`…), classes Kotlin
-miroir via Jackson, et fonction d'anonymisation pour la traçabilité sans fuite
-de secret.
+### Processeur — RAG & datasets (N1)
+
+| Plugin | Rôle |
+|---|---|
+| [`education.cccp.codebase`](https://github.com/cccp-education/codebase-gradle) | Assistant de développement embarqué dans le build : lecture du projet, RAG pgvector, enrichissement de contexte LangChain4j, génération de rapports AsciiDoc, constitution de datasets. |
+
+### Consommateur — génération de contenu (N2)
+
+| Plugin | Rôle |
+|---|---|
+| [`education.cccp.planner`](https://github.com/cccp-education/planner-gradle) | Prompting LLM pour SPG/SPD (deepseek-v4-pro) — expert de planification décompose l'intention → EPICs → User Stories → tâches Gradle. |
+| [`education.cccp.codex`](https://github.com/cccp-education/codex-gradle) | Asciidoctor→PDF, slides, pipeline documentaire (READ + RAG). |
+| [`education.cccp.slider`](https://github.com/cccp-education/slider-gradle) | Génération de présentations Reveal.js depuis des sources AsciiDoc, avec push vers branche dédiée. |
+| [`education.cccp.plantuml`](https://github.com/cccp-education/plantuml-gradle) | Validation syntaxique et rendu PlantUML (PNG/SVG) via LLM (LangChain4j, 7 providers, RAG pgvector, KG, pool API keys). |
+| [`education.cccp.readme`](https://github.com/cccp-education/readme-gradle) | Génération de README multilingues avec diagrammes PlantUML embarqués et publication GitHub Pages via JGit. |
+| [`education.cccp.bakery`](https://github.com/cccp-education/bakery-gradle) | Site statique JBake agrégant les artefacts produits par les autres plugins (diagrammes, slides, posts). |
+| [`education.cccp.capsule`](https://github.com/cccp-education/capsule-gradle) | Capture de capsules vidéo (reveal.js + Playwright + TTS). |
+| [`education.cccp.training`](https://github.com/cccp-education/training-gradle) | Orchestration de projet de formation — backlog synchronisé avec les fichiers de contexte agent (`AGENTS.md`), pipeline de production des supports de cours (SPG→SPD→Slides→PDFs→Forms→Dashboard). |
+| [`education.cccp.hyperframes`](https://github.com/cccp-education/hyperframes-gradle) | AsciiDoc→MP4 via HyperFrames (HeyGen, Apache 2.0), bridge Node.js. |
+| [`education.cccp.api-key-pool`](https://github.com/cccp-education/api-key-pool-gradle) | Pool de clés API LLM avec rotation (round-robin, least-used, weighted), suivi de quotas, journalisation audit. |
+| [`education.cccp.document`](https://github.com/cccp-education/document-gradle) | Manipulation AsciiDoc multi-format (HTML/PDF/EPUB/DocBook/ManPage) via AsciidoctorJ + génération assistée par IA (WRITE + PUBLISH). |
+
+### Orchestrateur — déploiement (N3)
+
+| Plugin | Rôle |
+|---|---|
+| [`education.cccp.runner`](https://github.com/cccp-education/runner-gradle) | Orchestration DAG, CLI provisioning, déploiement gh-pages. Consommateur terminal, zéro logique métier. |
+
+### Contrôleur — agile & gouvernance (N4)
+
+| Plugin | Rôle |
+|---|---|
+| [`education.cccp.agile`](https://github.com/cccp-education/agile-gradle) | Pilotage agile assisté par IA : 7 ateliers (Vision→Architecture), backlog, sprints, vélocité, jalons. |
+| [`education.cccp.ticket`](https://github.com/cccp-education/ticket-gradle) | Création & suivi de tickets GitHub — backlog → Issues, Kanban board, lien commit↔ticket. |
+| [`education.cccp.review`](https://github.com/cccp-education/review-gradle) | Code review assistée par IA : analyse PR, score qualité, quality gates, détection secrets. |
+| [`education.cccp.flow`](https://github.com/cccp-education/flow-gradle) | Orchestration merge/close/CI : merge quand gates OK, auto-close tickets, trigger CI. |
+
+### Outils spécialisés (N2)
+
+| Plugin | Rôle |
+|---|---|
+| [`com.cheroliv.jhipster.persistence`](https://github.com/cccp-education/jhipster-gradle-plugins) | Orchestration JHipster persistence (clean/generate/sync) sans perdre le code Kotlin dans `__codebase__/`. |
+| [`com.cheroliv.jhipster.assistant`](https://github.com/cccp-education/jhipster-gradle-plugins) | Assistant JHipster RAG LLM. |
+
+### Vestiges (projets inactifs)
+
+| Plugin | Statut |
+|---|---|
+| `com.cheroliv.magic-stick` | N2 — Constructeur ISO Xubuntu (site doc, pas plugin) |
+| `com.cheroliv.newpipe` | N2 — Extracteur YouTube→MP3 (abandonné) |
+| `com.cheroliv.notebook` | N2 — Observabilité Colab (concept uniquement) |
+| `com.cheroliv.office-template` | N? — template vide (à supprimer) |
 
 ---
 
 ## Environnement & poste de travail
 
-### [`magic_stick`](https://github.com/cheroliv/magic_stick)
+### [`magic-stick`](https://github.com/cheroliv/magic-stick)
 
 Build script Gradle Kotlin DSL qui orchestre la construction d'une ISO Xubuntu
 bootable — à la fois **live USB** et **installateur**, équipée de l'outillage
@@ -86,8 +163,8 @@ nécessaire selon trois profils d'usage :
 
 Le projet illustre la philosophie de l'écosystème : l'environnement de travail
 est lui-même un **artefact reproductible, versionné, documenté**. La
-documentation du projet est générée et publiée par [`com.cheroliv.bakery`](https://github.com/cheroliv/bakery-gradle-plugin) sur
-[cheroliv.com/magic_stick](https://cheroliv.com/magic_stick/) — preuve que
+documentation du projet est générée et publiée par [`education.cccp.bakery`](https://github.com/cccp-education/bakery-gradle) sur
+[cheroliv.com/magic-stick](https://cheroliv.com/magic-stick/) — preuve que
 le pipeline de publication tourne en production.
 
 ---
@@ -104,24 +181,24 @@ le pipeline de publication tourne en production.
 - Outillage de projet — CI/CD GitHub Actions, documentation exécutable, génération de contenu.
 
 Les supports de cours sont produits avec les plugins de l'écosystème : les
-slides sont du Reveal.js généré par [`slider`](https://github.com/cheroliv/slider-gradle),
-les sites de cours par [`bakery`](https://github.com/cheroliv/bakery-gradle-plugin),
-la clé de démarrage par [`magic_stick`](https://github.com/cheroliv/magic_stick).
+slides sont du Reveal.js généré par [`education.cccp.slider`](https://github.com/cccp-education/slider-gradle),
+les sites de cours par [`education.cccp.bakery`](https://github.com/cccp-education/bakery-gradle),
+la clé de démarrage par [`magic-stick`](https://github.com/cheroliv/magic-stick).
 La formation et l'outil se nourrissent mutuellement.
 
 ---
 
 ## Stack principale
 
-Java · Kotlin · Scala · Gradle (Kotlin DSL) · Mill · JUnit 5 · Cucumber · Spring Boot · AsciiDoc · JBake · Reveal.js · PlantUML · JGit · Jackson · LangChain4j · Docker · PostgreSQL/pgvector · GitHub Actions · Xubuntu/Debian packaging.
+Java · Kotlin · Scala · Gradle (Kotlin DSL) · Mill · JUnit 5 · Cucumber · Spring Boot · AsciiDoc · JBake · Reveal.js · PlantUML · JGit · Jackson · LangChain4j · Koog · Docker · PostgreSQL/pgvector · GitHub Actions · Xubuntu/Debian packaging.
 
 ---
 
 ## Liens
 
 - Site : [cheroliv.com](https://cheroliv.com)
-- Plugins publiés : [Gradle Plugin Portal — com.cheroliv](https://plugins.gradle.org/search?term=com.cheroliv)
-- `magic_stick` : [documentation](https://cheroliv.com/magic_stick/) · [dépôt](https://github.com/cheroliv/magic_stick)
+- Plugins publiés : [Gradle Plugin Portal — cccp-education](https://plugins.gradle.org/u/cccp-education)
+- `magic-stick` : [documentation](https://cheroliv.com/magic-stick/) · [dépôt](https://github.com/cheroliv/magic-stick)
 
 ---
 
