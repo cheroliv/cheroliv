@@ -31,8 +31,8 @@ en mi día a día.
 | Dominio | Rol | Señal |
 |---|---|---|
 | `cheroliv.com` | Identidad personal, blog, artículos | L'humain derrière le code, la voix éditoriale, le capital social |
-| `talaria.school` | OF — Organisme Formateur Qualiopi | La vitrine institutionnelle, les formations payantes, le catalogue |
-| `edster.cloud` | SaaS — VPS 30€/mes, margen ~95% | Le provisioning workspace client, Stripe + Orange Money (MVP1) |
+| `talaria.school` | OF — Organisme Formateur Qualiopi | La vitrine institucional y el catálogo de formaciones |
+| `edster.cloud` | SaaS — Infraestructura cloud dedicada | El provisioning de espacios de trabajo del cliente (MVP1) |
 | `cccp.education` | Dominio (SaaS/Web) | *Common Content Creator Proletarian* — identidad digital y vitrine OSS |
 
 ### Separación de cuentas técnicas

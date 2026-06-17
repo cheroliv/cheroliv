@@ -29,8 +29,8 @@
 | Domain | Role | Signal |
 |---|---|---|
 | `cheroliv.com` | الهوية الشخصية، المدونة، المقالات | L'humain derrière le code، la voix éditoriale، le capital social |
-| `talaria.school` | OF — Organisme Formateur Qualiopi | La vitrine institutionnelle، les formations payantes، le catalogue |
-| `edster.cloud` | SaaS — VPS 30€/شهر، marge ~95% | Le provisioning workspace client، Stripe + Orange Money (MVP1) |
+| `talaria.school` | OF — Organisme Formateur Qualiopi | La vitrine institutionnelle et le catalogue des formations |
+| `edster.cloud` | SaaS — Infrastructure cloud dédiée | Le provisioning des espaces de travail clients (MVP1) |
 | `cccp.education` | Domain (SaaS/Web) | *Common Content Creator Proletarian* — identité numérique و vitrine OSS |
 
 ### Technical accounts separation

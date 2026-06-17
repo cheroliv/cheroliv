@@ -28,8 +28,8 @@
 | 品牌 | 用途 | 信号 |
 |---|---|---|
 | `cheroliv.com` | 个人身份、博客、文章 | 程序背后的人、编辑声音、社会资本 |
-| `talaria.school` | OF — 经资质认证的培训机构 | 制度性形象、付费培训、目录 |
-| `edster.cloud` | SaaS — VPS 30€/月，利润率 ~95% | 客户工作空间配置、Stripe + Orange Money (MVP1) |
+| `talaria.school` | OF — 经资质认证的培训机构 | 制度性形象、课程目录 |
+| `edster.cloud` | SaaS — 专用云基础设施 | 客户工作空间配置 (MVP1) |
 | `cccp.education` | 域名 (SaaS/Web) | *Common Content Creator Proletarian* — 数字身份和 OSS 门户 |
 
 ### 技术账户分离
@@ -185,4 +185,4 @@ Java · Kotlin · Scala · Gradle (Kotlin DSL) · Mill · JUnit 5 · Cucumber ·
 
 ---
 
-*我们为自己编写的代码是我们在他人面前教授的代码的实验室。*
+*个人代码滋养共享代码。*

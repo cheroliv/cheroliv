@@ -31,8 +31,8 @@ no dia a dia.
 | Domínio | Função | Sinal |
 |---|---|---|
 | `cheroliv.com` | Identidade pessoal, blog, artigos | O ser humano por trás do código, a voz editorial, o capital social |
-| `talarіаl.sсhооl` | OF — Organismo de Formação Qualificado | A vitrine institucional, os treinamentos pagos, o catálogo |
-| `edster.cloud` | SaaS — VPS 30€/mês, margem ~95% | O provisionamento de espaço de trabalho do cliente, Stripe + Orange Money (MVP1) |
+| `talaria.school` | OF — Organismo de Formação Qualificado | A vitrine institucional e o catálogo de formações |
+| `edster.cloud` | SaaS — Infraestrutura cloud dedicada | O provisionamento de espaço de trabalho do cliente (MVP1) |
 | `cccp.education` | Domínio (SaaS/Web) | *Common Content Creator Proletarian* — identidade digital e vitrine OSS |
 
 ### Separação de contas técnicas
@@ -200,4 +200,4 @@ Java · Kotlin · Scala · Gradle (Kotlin DSL) · Mill · JUnit 5 · Cucumber ·
 
 ---
 
-*O código que escrevemos para nós mesmos é o laboratório para o código que ensinamos aos outros.*
+*O código pessoal alimenta o código partilhado.*

@@ -31,8 +31,8 @@ on a daily basis.
 | Domain | Role | Signal |
 |---|---|---|
 | `cheroliv.com` | Personal identity, blog, articles | L'humain derrière le code, la voix éditoriale, le capital social |
-| `talaria.school` | OF — Organisme Formateur Qualiopi | La vitrine institutionnelle, les formations payantes, le catalogue |
-| `edster.cloud` | SaaS — VPS 30€/mois, marge ~95% | Le provisioning workspace client, Stripe + Orange Money (MVP1) |
+| `talaria.school` | OF — Organisme Formateur Qualiopi | Institutional showcase and course catalog |
+| `edster.cloud` | SaaS — Dedicated cloud infrastructure | Client workspace provisioning (MVP1) |
 | `cccp.education` | Domain (SaaS/Web) | *Common Content Creator Proletarian* — identité numérique et vitrine OSS |
 
 ### Technical accounts separation
@@ -200,4 +200,4 @@ Java · Kotlin · Scala · Gradle (Kotlin DSL) · Mill · JUnit 5 · Cucumber ·
 
 ---
 
-*The code we write for ourselves is the laboratory for the code we teach others.*
+*Personal code feeds shared code.*
