@@ -149,7 +149,7 @@ cheroliv (dev) ──commits──▶ github.com/cccp-education (repos) ──pu
 
 ## ماحول اور ورک سٹیشن
 
-### [`magic-stick`](https://github.com/cheroliv/magic-stick)
+### [`magic-stick`](https://github.com/cccp-education/magic-stick)
 
 ایک گریڈل کوٹلن ڈی ایس ایل بُلڈ اسکرپٹ جو ایک بُوبل ایکس باکس ٹو ایس ایل آئی ایس او کی تخلیق کی آرکیسٹریشن کرتا ہے — بطور **لائیو یو ایس بی** اینڈ **انستالر**، تین استعمال کے پروفائلز کے لیے ضروری ٹولنگ سے لیس:
 
@@ -157,7 +157,7 @@ cheroliv (dev) ──commits──▶ github.com/cccp-education (repos) ──pu
 - **ایف ٹی ہ ایل ٹیلیcomm ٹیکنیشن** — فیلڈ ٹولنگ تیار کار استعمال کے لیے۔
 - **طالب علم/ترنی** — کسی بھی پیشگی انسٹالیشن کی ضرورت کے بغیر فوری آن بورڈنگ۔
 
-اس پروجیکٹ سے生态系统 کے فلسفے کی نمائش کی جاتی ہے: ورک ماحول خود بھی ایک **قابل دوبارہ تخلیق، ورژن، اور دستاویزات** آرٹی فیکٹس ہے۔ پروجیکٹ کی دستاویزات [`education.cccp.bakery`](https://github.com/cccp-education/bakery-gradle) پر جنریٹ اور شائع ہوتی ہے [cheroliv.com/magic-stick](https://cheroliv.com/magic-stick/) پر — ثابت کرنے والی کہ
+اس پروجیکٹ سے生态系统 کے فلسفے کی نمائش کی جاتی ہے: ورک ماحول خود بھی ایک **قابل دوبارہ تخلیق، ورژن، اور دستاویزات** آرٹی فیکٹس ہے۔ پروجیکٹ کی دستاویزات [`education.cccp.bakery`](https://github.com/cccp-education/bakery-gradle) پر جنریٹ اور شائع ہوتی ہے [cccp.education/magic-stick](https://cccp.education/magic-stick/) پر — ثابت کرنے والی کہ
 شائع کرنے کی پائپ لائن پیداوار میں چلتی ہے۔
 
 ---
@@ -176,7 +176,7 @@ cheroliv (dev) ──commits──▶ github.com/cccp-education (repos) ──pu
 کورس مٹریلز生态系统 کے پلگ انز کا استعمال کرتے ہوئے تیار کیے جاتے ہیں: سلائیڈز
 [`education.cccp.slider`](https://github.com/cccp-education/slider-gradle) دوبارہ جنریٹڈ ریویل.جی ایس،
 کورس ویب سائٹس [`education.cccp.bakery`](https://github.com/cccp-education/bakery-gradle)،
-اور بُویبل ڈرائیو [`magic-stick`](https://github.com/cheroliv/magic-stick) دوبارہ۔ تربیت اور ٹولز ایک دوسرے کو غذائیت دیتے ہیں۔
+اور بُویبل ڈرائیو [`magic-stick`](https://github.com/cccp-education/magic-stick) دوبارہ۔ تربیت اور ٹولز ایک دوسرے کو غذائیت دیتے ہیں۔
 
 ---
 
@@ -190,7 +190,7 @@ cheroliv (dev) ──commits──▶ github.com/cccp-education (repos) ──pu
 
 - ویب سائٹ: [cheroliv.com](https://cheroliv.com)
 - شائع کردہ پلگ انز: [Maven Central — education.cccp](https://central.sonatype.com/namespace/education.cccp)
-- `magic-stick`: [دستاویزات](https://cheroliv.com/magic-stick/) · [ریپوزٹری](https://github.com/cheroliv/magic-stick)
+- `magic-stick`: [دستاویزات](https://cccp.education/magic-stick/) · [ریپوزٹری](https://github.com/cccp-education/magic-stick)
 
 ---
 

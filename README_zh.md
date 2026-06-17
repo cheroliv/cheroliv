@@ -144,7 +144,7 @@ cheroliv (dev) ──commits──▶ github.com/cccp-education (repos) ──pu
 
 ## 环境与工作站
 
-### [`magic-stick`](https://github.com/cheroliv/magic-stick)
+### [`magic-stick`](https://github.com/cccp-education/magic-stick)
 
 一个 Gradle Kotlin DSL 构建脚本，协调可启动的 Xubuntu ISO 的创建 — 同时作为 **live USB** 和 **安装程序**，配备三类用户所需的必要工具：
 
@@ -152,7 +152,7 @@ cheroliv (dev) ──commits──▶ github.com/cccp-education (repos) ──pu
 - **FTTH 电信技术员** — 准备好的现场工具。
 - **学生/实习生** — 无需先前安装即可立即上手。
 
-该项目体现了生态系统的理念：工作环境本身就是一个**可重现、版本化、文档化**的 artifacts。项目文档由 [`education.cccp.bakery`](https://github.com/cccp-education/bakery-gradle) 生成并发布在 [cheroliv.com/magic-stick](https://cheroliv.com/magic-stick/)上 —— 证明发布管道正在生产运行。
+该项目体现了生态系统的理念：工作环境本身就是一个**可重现、版本化、文档化**的 artifacts。项目文档由 [`education.cccp.bakery`](https://github.com/cccp-education/bakery-gradle) 生成并发布在 [cccp.education/magic-stick](https://cccp.education/magic-stick/)上 —— 证明发布管道正在生产运行。
 
 ---
 
@@ -167,7 +167,7 @@ cheroliv (dev) ──commits──▶ github.com/cccp-education (repos) ──pu
 - Spring Boot — REST API、JWT 安全、集成测试。
 - 项目工具 — GitHub Actions CI/CD、可执行文档、内容生成。
 
-课程材料使用生态系统的插件生成：幻灯片由 [`education.cccp.slider`](https://github.com/cccp-education/slider-gradle)生成的 Reveal.js，课程网站由 [`education.cccp.bakery`](https://github.com/cccp-education/bakery-gradle)，U 盘由 [`magic-stick`](https://github.com/cheroliv/magic-stick)构建。培训和工具相互滋养。
+课程材料使用生态系统的插件生成：幻灯片由 [`education.cccp.slider`](https://github.com/cccp-education/slider-gradle)生成的 Reveal.js，课程网站由 [`education.cccp.bakery`](https://github.com/cccp-education/bakery-gradle)，U 盘由 [`magic-stick`](https://github.com/cccp-education/magic-stick)构建。培训和工具相互滋养。
 
 ---
 
@@ -181,7 +181,7 @@ Java · Kotlin · Scala · Gradle (Kotlin DSL) · Mill · JUnit 5 · Cucumber ·
 
 - 网站：[cheroliv.com](https://cheroliv.com)
 - 已发布插件：[Maven Central — education.cccp](https://central.sonatype.com/namespace/education.cccp)
-- `magic-stick`：[文档](https://cheroliv.com/magic-stick/) · [仓库](https://github.com/cheroliv/magic-stick)
+- `magic-stick`：[文档](https://cccp.education/magic-stick/) · [仓库](https://github.com/cccp-education/magic-stick)
 
 ---
 

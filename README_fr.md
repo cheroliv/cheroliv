@@ -151,7 +151,7 @@ Les plugins s'articulent autour de trois rôles répartis sur 4 couches (DAG N0�
 
 ## Environnement & poste de travail
 
-### [`magic-stick`](https://github.com/cheroliv/magic-stick)
+### [`magic-stick`](https://github.com/cccp-education/magic-stick)
 
 Build script Gradle Kotlin DSL qui orchestre la construction d'une ISO Xubuntu
 bootable — à la fois **live USB** et **installateur**, équipée de l'outillage
@@ -164,7 +164,7 @@ nécessaire selon trois profils d'usage :
 Le projet illustre la philosophie de l'écosystème : l'environnement de travail
 est lui-même un **artefact reproductible, versionné, documenté**. La
 documentation du projet est générée et publiée par [`education.cccp.bakery`](https://github.com/cccp-education/bakery-gradle) sur
-[cheroliv.com/magic-stick](https://cheroliv.com/magic-stick/) — preuve que
+[cccp.education/magic-stick](https://cccp.education/magic-stick/) — preuve que
 le pipeline de publication tourne en production.
 
 ---
@@ -183,7 +183,7 @@ le pipeline de publication tourne en production.
 Les supports de cours sont produits avec les plugins de l'écosystème : les
 slides sont du Reveal.js généré par [`education.cccp.slider`](https://github.com/cccp-education/slider-gradle),
 les sites de cours par [`education.cccp.bakery`](https://github.com/cccp-education/bakery-gradle),
-la clé de démarrage par [`magic-stick`](https://github.com/cheroliv/magic-stick).
+la clé de démarrage par [`magic-stick`](https://github.com/cccp-education/magic-stick).
 La formation et l'outil se nourrissent mutuellement.
 
 ---
@@ -198,7 +198,7 @@ Java · Kotlin · Scala · Gradle (Kotlin DSL) · Mill · JUnit 5 · Cucumber ·
 
 - Site : [cheroliv.com](https://cheroliv.com)
 - Plugins publiés : [Maven Central — education.cccp](https://central.sonatype.com/namespace/education.cccp)
-- `magic-stick` : [documentation](https://cheroliv.com/magic-stick/) · [dépôt](https://github.com/cheroliv/magic-stick)
+- `magic-stick` : [documentation](https://cccp.education/magic-stick/) · [dépôt](https://github.com/cccp-education/magic-stick)
 
 ---
 

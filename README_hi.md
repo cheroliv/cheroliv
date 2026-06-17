@@ -148,7 +148,7 @@ cheroliv (dev) ──commits──▶ github.com/cccp-education (repos) ──pu
 
 ## वातावरण और कार्यस्थल
 
-### [`magic-stick`](https://github.com/cheroliv/magic-stick)
+### [`magic-stick`](https://github.com/cccp-education/magic-stick)
 
 एक ग्रेडल कोटलिन डीएसएल बिल्ड स्क्रिप्ट जो एक बूटेबल एक्सबंटू आईएसओ के निर्माण का संगठन करता है — एक **लाइव यूएसबी** और **इंस्टॉलर** के रूप में कार्य करता है जो तीन उपयोग प्रोफ़ाइल के लिए आवश्यक टूलिंग से लैस है:
 
@@ -156,7 +156,7 @@ cheroliv (dev) ──commits──▶ github.com/cccp-education (repos) ──pu
 - **एफटीएच टेलीकॉम तकनीशियन** — फील्ड टूलिंग उपयोग के लिए तैयार।
 - **छात्र/प्रशिक्षणार्थी** — कोई पूर्व-इंस्टॉलेशन की आवश्यकता के बिना तत्काल ऑनबोर्डिंग।
 
-इस प्रोजेक्ट का उपयोग इकोसिस्टम के दर्शन को प्रदर्शित करता है: कार्य वातावरण स्वयं भी एक **पुनरुत्पादनयोग्य, संस्करणयोग्य, दस्तावेजीकृत** कलाकृति है। प्रोजेक्ट का दस्तावेजीकरण [`education.cccp.bakery`](https://github.com/cccp-education/bakery-gradle) द्वारा उत्पन्न और प्रकाशित होता है [cheroliv.com/magic-stick](https://cheroliv.com/magic-stick/) पर — साबित करता है कि प्रकाशन पाइपलाइन उत्पादन में चल रही है।
+इस प्रोजेक्ट का उपयोग इकोसिस्टम के दर्शन को प्रदर्शित करता है: कार्य वातावरण स्वयं भी एक **पुनरुत्पादनयोग्य, संस्करणयोग्य, दस्तावेजीकृत** कलाकृति है। प्रोजेक्ट का दस्तावेजीकरण [`education.cccp.bakery`](https://github.com/cccp-education/bakery-gradle) द्वारा उत्पन्न और प्रकाशित होता है [cccp.education/magic-stick](https://cccp.education/magic-stick/) पर — साबित करता है कि प्रकाशन पाइपलाइन उत्पादन में चल रही है।
 
 ---
 
@@ -174,7 +174,7 @@ cheroliv (dev) ──commits──▶ github.com/cccp-education (repos) ──pu
 कोर्स मटेरियल का उत्पादन इकोसिस्टम के प्लगइन के साथ किया जाता है: स्लाइड
 [`education.cccp.slider`](https://github.com/cccp-education/slider-gradle) द्वारा उत्पन्न रिवील.जेएस, कोर्स साइट
 [`education.cccp.bakery`](https://github.com/cccp-education/bakery-gradle), और
-बूटेबल ड्राइव [`magic-stick`](https://github.com/cheroliv/magic-stick) द्वारा। प्रशिक्षण और टूल एक-दूसरे को पोषित
+बूटेबल ड्राइव [`magic-stick`](https://github.com/cccp-education/magic-stick) द्वारा। प्रशिक्षण और टूल एक-दूसरे को पोषित
 करते हैं।
 
 ---
@@ -189,7 +189,7 @@ Java · Kotlin · Scala · Gradle (Kotlin DSL) · Mill · JUnit 5 · Cucumber ·
 
 - वेबसाइट: [cheroliv.com](https://cheroliv.com)
 - प्रकाशित प्लगइन: [Maven Central — education.cccp](https://central.sonatype.com/namespace/education.cccp)
-- `magic-stick`: [दस्तावेज़ीकरण](https://cheroliv.com/magic-stick/) · [रिपॉजिटरी](https://github.com/cheroliv/magic-stick)
+- `magic-stick`: [दस्तावेज़ीकरण](https://cccp.education/magic-stick/) · [रिपॉजिटरी](https://github.com/cccp-education/magic-stick)
 
 ---
 

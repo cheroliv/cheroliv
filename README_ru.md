@@ -151,7 +151,7 @@ cheroliv (dev) ──commits──▶ github.com/cccp-education (repos) ──pu
 
 ## Окружение и рабочее место
 
-### [`magic-stick`](https://github.com/cheroliv/magic-stick)
+### [`magic-stick`](https://github.com/cccp-education/magic-stick)
 
 Скрипт сборки Gradle Kotlin DSL, который оркестирует создание загружаемого ISO Xubuntu — функционирующего как **live USB** и **установщик**, оснащенного необходимыми инструментами, адаптированными для трех профилей использования:
 
@@ -161,7 +161,7 @@ cheroliv (dev) ──commits──▶ github.com/cccp-education (repos) ──pu
 
 Проект иллюстрирует философию экосистемы: само рабочее окружение
 является **воспроизводимым, версионированным и документированным артефактом**. Документация проекта генерируется и публикуется [`education.cccp.bakery`](https://github.com/cccp-education/bakery-gradle) на
-[cheroliv.com/magic-stick](https://cheroliv.com/magic-stick/) — доказательство того, что
+[cccp.education/magic-stick](https://cccp.education/magic-stick/) — доказательство того, что
 пайплайн публикации запущен в производство.
 
 ---
@@ -180,7 +180,7 @@ cheroliv (dev) ──commits──▶ github.com/cccp-education (repos) ──pu
 Материалы курса создаются с использованием плагинов экосистемы:
 Слайды являются Reveal.js, генерированными [`education.cccp.slider`](https://github.com/cccp-education/slider-gradle),
 сайты курсов [`education.cccp.bakery`](https://github.com/cccp-education/bakery-gradle),
-и загружаемый привод [`magic-stick`](https://github.com/cheroliv/magic-stick).
+и загружаемый привод [`magic-stick`](https://github.com/cccp-education/magic-stick).
 Обучение и инструменты взаимно питают друг друга.
 
 ---
@@ -195,7 +195,7 @@ Java · Kotlin · Scala · Gradle (Kotlin DSL) · Mill · JUnit 5 · Cucumber ·
 
 - Веб-сайт: [cheroliv.com](https://cheroliv.com)
 - Опубликованные плагины: [Maven Central — education.cccp](https://central.sonatype.com/namespace/education.cccp)
-- `magic-stick`: [документация](https://cheroliv.com/magic-stick/) · [репозиторий](https://github.com/cheroliv/magic-stick)
+- `magic-stick`: [документация](https://cccp.education/magic-stick/) · [репозиторий](https://github.com/cccp-education/magic-stick)
 
 ---
 

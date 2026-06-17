@@ -149,7 +149,7 @@ Le code ne porte pas d'idéologie — le groupId، si.
 
 ## Environment & Workstation
 
-### [`magic-stick`](https://github.com/cheroliv/magic-stick)
+### [`magic-stick`](https://github.com/cccp-education/magic-stick)
 
 نص Gradle Kotlin DSL ينسق إنشاء ISO قابل للتحميل Xubuntu — يعمل ككل من **live USB** و **installer**، ومزود بالأدوات الضرورية المصممة خصيصًا لثلاثة أنماط استخدام:
 
@@ -161,7 +161,7 @@ Le code ne porte pas d'idéologie — le groupId، si.
 هي **reproducible، versioned، و documented artifact**.
 The
 Project's documentation is generated and published by [`education.cccp.bakery`](https://github.com/cccp-education/bakery-gradle) at
-[cheroliv.com/magic-stick](https://cheroliv.com/magic-stick/) — proof that
+[cccp.education/magic-stick](https://cccp.education/magic-stick/) — proof that
 the publication pipeline runs in production.
 
 ---
@@ -180,7 +180,7 @@ the publication pipeline runs in production.
 يتم إنتاج مواد الدورة باستخدام إضافات النظام البيئي:
 الشرائح هي Reveal.js تم توليدها بواسطة [`education.cccp.slider`](https://github.com/cccp-education/slider-gradle)،
  websites الدورة بواسطة [`education.cccp.bakery`](https://github.com/cccp-education/bakery-gradle)،
-و محرك الأقراص القابل للتحميل بواسطة [`magic-stick`](https://github.com/cheroliv/magic-stick).
+و محرك الأقراص القابل للتحميل بواسطة [`magic-stick`](https://github.com/cccp-education/magic-stick).
 يغذّي التدريب والأدوات بعضها البعض بشكل متبادل.
 
 ---
@@ -195,7 +195,7 @@ Java · Kotlin · Scala · Gradle (Kotlin DSL) · Mill · JUnit 5 · Cucumber ·
 
 - Website: [cheroliv.com](https://cheroliv.com)
 - Published Plugins: [Maven Central — education.cccp](https://central.sonatype.com/namespace/education.cccp)
-- `magic-stick`: [documentation](https://cheroliv.com/magic-stick/) · [repository](https://github.com/cheroliv/magic-stick)
+- `magic-stick`: [documentation](https://cccp.education/magic-stick/) · [repository](https://github.com/cccp-education/magic-stick)
 
 ---
 

@@ -149,7 +149,7 @@ cheroliv (dev) ──commits──▶ github.com/cccp-education (repos) ──pu
 
 ## পরিবেশ এবং কর্মস্থল
 
-### [`magic-stick`](https://github.com/cheroliv/magic-stick)
+### [`magic-stick`](https://github.com/cccp-education/magic-stick)
 
 একটি গ্রেডল কোটলিন ডিএসএল বিল্ড স্ক্রিপ্ট যা একটি বুটেবল এক্সবাক্টু আইএসও তৈরির সংগঠন করে — এক **লাইভ ইউএসবি** এবং **ইন্সটলার** হিসেবে কাজ করে, তিনটি ব্যবহার প্রোফাইলের জন্য প্রয়োজনীয় টুলিং সম্পন্ন:
 
@@ -157,7 +157,7 @@ cheroliv (dev) ──commits──▶ github.com/cccp-education (repos) ──pu
 - **এফটিএইচ টেলিকম টেকনিশিয়ান** — ক্ষেত্রে ব্যবহারের জন্য প্রস্তুত টুলিং।
 - **ছাত্র/প্রশিক্ষণার্থী** — কোনো পূর্ব-ইন্সটলেশনের প্রয়োজন ছাড়াই তাৎক্ষণিক অনবোর্ডিং।
 
-এই প্রজেক্টটি ইকোসিস্টেমের দর্শন প্রদর্শন করে: কর্মস্থল নিজেও একটি **পুনরুৎপাদনযোগ্য, সংস্করণযোগ্য, ও দস্তাবেজযুক্ত** আর্টিফ্যাক্ট। প্রজেক্টের ডকুমেন্টেশন তৈরি এবং প্রকাশিত হয় [`education.cccp.bakery`](https://github.com/cccp-education/bakery-gradle) দ্বারা [cheroliv.com/magic-stick](https://cheroliv.com/magic-stick/) এ — যা প্রমাণ করে যে প্রকাশনা পাইপলাইন উৎপাদনে চলছে।
+এই প্রজেক্টটি ইকোসিস্টেমের দর্শন প্রদর্শন করে: কর্মস্থল নিজেও একটি **পুনরুৎপাদনযোগ্য, সংস্করণযোগ্য, ও দস্তাবেজযুক্ত** আর্টিফ্যাক্ট। প্রজেক্টের ডকুমেন্টেশন তৈরি এবং প্রকাশিত হয় [`education.cccp.bakery`](https://github.com/cccp-education/bakery-gradle) দ্বারা [cccp.education/magic-stick](https://cccp.education/magic-stick/) এ — যা প্রমাণ করে যে প্রকাশনা পাইপলাইন উৎপাদনে চলছে।
 
 ---
 
@@ -175,7 +175,7 @@ cheroliv (dev) ──commits──▶ github.com/cccp-education (repos) ──pu
 কোর্স ম্যাটেরিয়াল ইকোসিস্টেমের প্লাগইন ব্যবহার করে তৈরি করা হয়: স্লাইড
 [`education.cccp.slider`](https://github.com/cccp-education/slider-gradle) দ্বারা উৎপন্ন রিভিল.জেএস,
 কোর্স সাইট [`education.cccp.bakery`](https://github.com/cccp-education/bakery-gradle),
-এবং বুটেবল ড্রাইভ [`magic-stick`](https://github.com/cheroliv/magic-stick) দ্বারা। প্রশিক্ষণ এবং টুল একে অপরকে পুষ্টি করে।
+এবং বুটেবল ড্রাইভ [`magic-stick`](https://github.com/cccp-education/magic-stick) দ্বারা। প্রশিক্ষণ এবং টুল একে অপরকে পুষ্টি করে।
 
 ---
 
@@ -189,7 +189,7 @@ cheroliv (dev) ──commits──▶ github.com/cccp-education (repos) ──pu
 
 - ওয়েবসাইট: [cheroliv.com](https://cheroliv.com)
 - প্রকাশিত প্লাগইন: [Maven Central — education.cccp](https://central.sonatype.com/namespace/education.cccp)
-- `magic-stick`: [ডকুমেন্টেশন](https://cheroliv.com/magic-stick/) · [রিপোজিটরি](https://github.com/cheroliv/magic-stick)
+- `magic-stick`: [ডকুমেন্টেশন](https://cccp.education/magic-stick/) · [রিপোজিটরি](https://github.com/cccp-education/magic-stick)
 
 ---
 

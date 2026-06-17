@@ -151,7 +151,7 @@ Los plugins están estructurados alrededor de tres roles en 4 capas (DAG N0→N4
 
 ## Environment & Workstation
 
-### [`magic-stick`](https://github.com/cheroliv/magic-stick)
+### [`magic-stick`](https://github.com/cccp-education/magic-stick)
 
 Un script de construcción Kotlin DSL de Gradle que orquesta la creación de una ISO Xubuntu arrancable — funcionando como un **USB activo** y un **instalador**, equipado con las herramientas necesarias adaptadas para tres perfiles de uso:
 
@@ -162,7 +162,7 @@ Un script de construcción Kotlin DSL de Gradle que orquesta la creación de una
 El proyecto ilustra la filosofía del ecosistema: el entorno de trabajo en
 sí es un **artefacto imprimible, versionado y documentado**. La
 documentación del proyecto es generada y publicada por [`education.cccp.bakery`](https://github.com/cccp-education/bakery-gradle) en
-[cheroliv.com/magic-stick](https://cheroliv.com/magic-stick/) — prueba de que
+[cccp.education/magic-stick](https://cccp.education/magic-stick/) — prueba de que
 la pipeline de publicación funciona en producción.
 
 ---
@@ -181,7 +181,7 @@ la pipeline de publicación funciona en producción.
 El material de curso es producido usando los plugins del ecosistema:
 las slides son Reveal.js generados por [`education.cccp.slider`](https://github.com/cccp-education/slider-gradle),
 los sitios de curso por [`education.cccp.bakery`](https://github.com/cccp-education/bakery-gradle),
-y la unidad arrancable por [`magic-stick`](https://github.com/cheroliv/magic-stick).
+y la unidad arrancable por [`magic-stick`](https://github.com/cccp-education/magic-stick).
 La formación y las herramientas se nutren mutuamente.
 
 ---
@@ -196,7 +196,7 @@ Java · Kotlin · Scala · Gradle (Kotlin DSL) · Mill · JUnit 5 · Cucumber ·
 
 - Sitio web: [cheroliv.com](https://cheroliv.com)
 - Plugins publicados: [Maven Central — education.cccp](https://central.sonatype.com/namespace/education.cccp)
-- `magic-stick`: [documentación](https://cheroliv.com/magic-stick/) · [repositorio](https://github.com/cheroliv/magic-stick)
+- `magic-stick`: [documentación](https://cccp.education/magic-stick/) · [repositorio](https://github.com/cccp-education/magic-stick)
 
 ---
 
