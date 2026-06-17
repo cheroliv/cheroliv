@@ -14,7 +14,7 @@
 मैं तीन क्षेत्रों के संगम पर काम करता हूँ:
 
 - **सॉफ्टवेयर क्राफ्टसमैनशिप** — टीडीडी, बीडीडी कर्कबर, हेक्सागोनल आर्किटेक्चर, इडियोमैटिक कोटलिन।
-- **डेवलपर टूलिंग** — पुनः उपयोग करने योग्य ग्रेडल प्लगइन, पर [ग्रेडल प्लगइन पोर्टल](https://plugins.gradle.org/search?term=education.cccp) पर `education.cccp` नेमस्पेस के अंतर्गत प्रकाशित।
+- **डेवलपर टूलिंग** — पुनः उपयोग करने योग्य ग्रेडल प्लगइन, पर [Maven Central](https://plugins.gradle.org/search?term=education.cccp) पर `education.cccp` नेमस्पेस के अंतर्गत प्रकाशित।
 - **एडटेक** — शैक्षिक सामग्री, उत्पन्न स्टैटिक साइट्स, ट्रेसेबल ट्रेनिंग सामग्री।
 
 सबकी संगति एक सरल विश्वास से जुड़ी है: **एक विश्वसनीय डेवलपर/ट्रेनर अपने खुद के टूल बनाता है और उनका उपयोग करता है**। मैं वह नहीं बेचता जो मैं दैनिक उपयोग नहीं करता।
@@ -38,7 +38,7 @@
 |---|---|---|
 | `cheroliv` | GitHub | कमिट्स, पीआर, इतिहास, सामाजिक पूंजी (अपरिवर्तित) |
 | `cccp-education` | GitHub (संगठन) | प्लगइन रिपॉजिटरी होस्टिंग, उत्पाद ब्रांड |
-| `cccp-education` | ग्रेडल प्लगइन पोर्टल | प्रकाशन हैंडल — https://plugins.gradle.org/u/cccp-education |
+| `cccp-education` | Maven Central | प्रकाशन हैंडल — https://central.sonatype.com/namespace/education.cccp |
 
 ### 3-परत आर्किटेक्चर
 
@@ -63,7 +63,7 @@ cheroliv (dev) ──commits──▶ github.com/cccp-education (repos) ──pu
    परीक्षण के साथ साबित कोड, JUnit 5 के साथ TDD का उपयोग करें।
 3. **BDD के साथ कर्कबर** जब भी डोमेन की अनुमति हो, यूजर स्तर पर
    इरादे को दस्तावेज़ीकृत करने के लिए।
-4. **प्रकाशन** ग्रेडल प्लगइन पोर्टल पर एक वर्शनयुक्त एपीआई कॉन्ट्रैक्ट के साथ।
+4. **प्रकाशन** Maven Central पर एक वर्शनयुक्त एपीआई कॉन्ट्रैक्ट के साथ।
 
 यह एक दमदार तरीका नहीं है, लेकिन यह एक ऐसा तरीका है जो समय का परीक्षण पारित करता है।
 
@@ -188,7 +188,7 @@ Java · Kotlin · Scala · Gradle (Kotlin DSL) · Mill · JUnit 5 · Cucumber ·
 ## लिंक
 
 - वेबसाइट: [cheroliv.com](https://cheroliv.com)
-- प्रकाशित प्लगइन: [ग्रेडल प्लगइन पोर्टल — cccp-education](https://plugins.gradle.org/u/cccp-education)
+- प्रकाशित प्लगइन: [Maven Central — education.cccp](https://central.sonatype.com/namespace/education.cccp)
 - `magic-stick`: [दस्तावेज़ीकरण](https://cheroliv.com/magic-stick/) · [रिपॉजिटरी](https://github.com/cheroliv/magic-stick)
 
 ---

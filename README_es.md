@@ -15,7 +15,7 @@ Mis materiales en bruto: Kotlin, Gradle, AsciiDoc, LangChain4j, Koog.
 Trabajo en la intersección de tres dominios:
 
 - **Software Craftsmanship** — TDD, BDD Cucumber, Arquitectura Hexagonal, Kotlin Idiomático.
-- **Developer Tooling** — plugins Gradle reutilizables, publicados bajo el espacio de nombres `education.cccp` en el [Gradle Plugin Portal](https://plugins.gradle.org/search?term=education.cccp).
+- **Developer Tooling** — plugins Gradle reutilizables, publicados bajo el espacio de nombres `education.cccp` en el [Maven Central](https://plugins.gradle.org/search?term=education.cccp).
 - **EdTech** — contenido educativo, sitios estáticos generados, materiales de formación rastreables.
 
 La coherencia de todo esto surge de una simple convicción: **un desarrollador/trainer
@@ -41,7 +41,7 @@ en mi día a día.
 |---|---|---|
 | `cheroliv` | GitHub | Commits, PRs, historial, capital social (inchangé) |
 | `cccp-education` | GitHub (org) | Hébergement des dépôts de plugins, brand produit |
-| `cccp-education` | Gradle Plugin Portal | Gestionario de publicación — https://plugins.gradle.org/u/cccp-education |
+| `cccp-education` | Maven Central | Gestionario de publicación — https://central.sonatype.com/namespace/education.cccp |
 
 ### Arquitectura de 3 capas
 
@@ -66,7 +66,7 @@ El ciclo de vida que sigo para cada plugin:
    código probado a un módulo dedicado, usando TDD con JUnit 5.
 3. **BDD con Cucumber** tan pronto como el dominio lo permita, para documentar
    la intención a nivel de usuario.
-4. **Publicación** en el Gradle Plugin Portal con un contrato de API versionado.
+4. **Publicación** en el Maven Central con un contrato de API versionado.
 
 No es un método fancy, pero es uno que resiste la prueba del tiempo.
 
@@ -195,7 +195,7 @@ Java · Kotlin · Scala · Gradle (Kotlin DSL) · Mill · JUnit 5 · Cucumber ·
 ## Links
 
 - Sitio web: [cheroliv.com](https://cheroliv.com)
-- Plugins publicados: [Gradle Plugin Portal — cccp-education](https://plugins.gradle.org/u/cccp-education)
+- Plugins publicados: [Maven Central — education.cccp](https://central.sonatype.com/namespace/education.cccp)
 - `magic-stick`: [documentación](https://cheroliv.com/magic-stick/) · [repositorio](https://github.com/cheroliv/magic-stick)
 
 ---

@@ -15,7 +15,7 @@ My raw materials: Kotlin, Gradle, AsciiDoc, LangChain4j, Koog.
 I work at the intersection of three domains:
 
 - **Software Craftsmanship** — TDD, BDD Cucumber, Hexagonal Architecture, Idiomatic Kotlin.
-- **Developer Tooling** — reusable Gradle plugins, published under the `education.cccp` namespace on the [Gradle Plugin Portal](https://plugins.gradle.org/search?term=education.cccp).
+- **Developer Tooling** — reusable Gradle plugins, published under the `education.cccp` namespace on the [Maven Central](https://plugins.gradle.org/search?term=education.cccp).
 - **EdTech** — educational content, generated static sites, traceable training materials.
 
 The coherence of it all stems from a simple conviction: **a credible developer/trainer
@@ -41,7 +41,7 @@ on a daily basis.
 |---|---|---|
 | `cheroliv` | GitHub | Commits, PRs, historique, capital social (inchangé) |
 | `cccp-education` | GitHub (org) | Hébergement des dépôts de plugins, brand produit |
-| `cccp-education` | Gradle Plugin Portal | Handle de publication — https://plugins.gradle.org/u/cccp-education |
+| `cccp-education` | Maven Central | Handle de publication — https://central.sonatype.com/namespace/education.cccp |
 
 ### 3-layers architecture
 
@@ -66,7 +66,7 @@ The lifecycle I follow for each plugin:
    proven code to a dedicated module, using TDD with JUnit 5.
 3. **BDD with Cucumber** as soon as the domain allows, to document
    intent at the user level.
-4. **Publication** to the Gradle Plugin Portal with a versioned API contract.
+4. **Publication** to the Maven Central with a versioned API contract.
 
 It's not a fancy method, but it's one that stands the test of time.
 
@@ -195,7 +195,7 @@ Java · Kotlin · Scala · Gradle (Kotlin DSL) · Mill · JUnit 5 · Cucumber ·
 ## Links
 
 - Website: [cheroliv.com](https://cheroliv.com)
-- Published Plugins: [Gradle Plugin Portal — cccp-education](https://plugins.gradle.org/u/cccp-education)
+- Published Plugins: [Maven Central — education.cccp](https://central.sonatype.com/namespace/education.cccp)
 - `magic-stick`: [documentation](https://cheroliv.com/magic-stick/) · [repository](https://github.com/cheroliv/magic-stick)
 
 ---

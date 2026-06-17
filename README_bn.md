@@ -14,7 +14,7 @@
 আমি তিনটি ডোমেনের সংযোগস্থলে কাজ করি:
 
 - **সফ্টওয়্যার ক্রাফ্টসম্যানশিপ** — টিডিডি, বিডিডি কার্কবার, হেক্সাগোনাল আর্কিটেকচার, আইডিওম্যাটিক কোটলিন।
-- **ডেভেলপার টুলিং** — পুনরায় ব্যবহারযোগ্য গ্রেডল প্লাগইন, পরিষ্কার [গ্রেডল প্লাগইন পোর্টাল](https://plugins.gradle.org/search?term=education.cccp) এ `education.cccp` নেমস্পেসে প্রকাশিত।
+- **ডেভেলপার টুলিং** — পুনরায় ব্যবহারযোগ্য গ্রেডল প্লাগইন, পরিষ্কার [Maven Central](https://plugins.gradle.org/search?term=education.cccp) এ `education.cccp` নেমস্পেসে প্রকাশিত।
 - **এডটেক** — শিক্ষাবিদ্যা সামগ্রী, উত্পন্ন স্ট্যাটিক সাইটস, ট্রেসেবল ট্রেনিং ম্যাটেরিয়াল।
 
 এর সমস্ত স্থায়িত্ব একটি সাধারণ বিশ্বাসের উপর ভিত্তি করে: **একজন বিশ্বস্ত ডেভেলপার/ট্রেনার
@@ -39,7 +39,7 @@
 |---|---|---|
 | `cheгo liv` | GitHub | কমিটস, পিআর, ইতিহাস, সামাজিক মূলধন (অপরিবর্তিত) |
 | `cccp-education` | GitHub (সংগঠন) | প্লাগইন রিপোজিটরি হোস্টিং, পণ্য ব্র্যান্ড |
-| `cccр-eduсаtіоn` | গ্রেডল প্লাগইন পোর্টাল | প্রকাশনা হ্যান্ডেল — https://plugins.gradle.org/u/cccp-education |
+| `cccр-eduсаtіоn` | Maven Central | প্রকাশনা হ্যান্ডেল — https://central.sonatype.com/namespace/education.cccp |
 
 ### 3-প্রস্তর আর্কিটেকচার
 
@@ -64,7 +64,7 @@ cheroliv (dev) ──commits──▶ github.com/cccp-education (repos) ──pu
    প্রমাণিত কোড একটি সমর্পিত মডিউলে, জেয়ুনিট 5 এর সাথে টিডিডি ব্যবহার করে।
 3. **BDD কার্কবারের সাথে** যখন ডোমেন অনুমতি দেয়, ব্যবহারকারীর স্তরে
    ইচ্ছা বিবরণীয় করার জন্য।
-4. **প্রকাশনা** গ্রেডল প্লাগইন পোর্টালে একটি সংস্করণযুক্ত এপিআই চুক্তির সাথে।
+4. **প্রকাশনা** Maven Centralে একটি সংস্করণযুক্ত এপিআই চুক্তির সাথে।
 
 এটি একটি দমদার পদ্ধতি নয়, তবে এটি একটি যে সময়ের পরীক্ষা পার হয়।
 
@@ -188,7 +188,7 @@ cheroliv (dev) ──commits──▶ github.com/cccp-education (repos) ──pu
 ## লিঙ্ক
 
 - ওয়েবসাইট: [cheroliv.com](https://cheroliv.com)
-- প্রকাশিত প্লাগইন: [গ্রেডল প্লাগইন পোর্টাল — cccp-education](https://plugins.gradle.org/u/cccp-education)
+- প্রকাশিত প্লাগইন: [Maven Central — education.cccp](https://central.sonatype.com/namespace/education.cccp)
 - `magic-stick`: [ডকুমেন্টেশন](https://cheroliv.com/magic-stick/) · [রিপোজিটরি](https://github.com/cheroliv/magic-stick)
 
 ---

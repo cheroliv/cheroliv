@@ -14,7 +14,7 @@
 میں تین_domains کے تقاطع پر کام کرتا ہوں:
 
 - **software craftsmanship** — ٹی ڈی ڈی، بی ڈی ڈی کرکبر، ہیکسیگونل آرکی ٹیکچر، ایدوماتک کوٹلن۔
-- **developer tooling** — دوبارہ استعمال کے قابل گریڈل پلگ انز، پر [گریڈل پلگ ان پورٹل](https://plugins.gradle.org/search?term=education.cccp) پر `education.cccp` نیمسپیس کے تحت شائع ہوں۔
+- **developer tooling** — دوبارہ استعمال کے قابل گریڈل پلگ انز، پر [Maven Central](https://plugins.gradle.org/search?term=education.cccp) پر `education.cccp` نیمسپیس کے تحت شائع ہوں۔
 - **edtech** — تعلیمی مواد، جنریٹڈ اسٹیٹک سائٹس، ٹریسیبل ٹریننگ میٹریالز۔
 
 اس کی سب کچھ کی ہم آہنگی ایک سادہ عقیدے سے نکلتی ہے: **ایک قابل اعتماد ڈویلپر/ٹرینر
@@ -39,7 +39,7 @@
 |---|---|---|
 | `cheroliv` | گیتہاب | کمیٹس، پی آر، تاریخ، سماجی پولیس (غیر مٹیا) |
 | `cccp-education` | گیتہاب (ארגن) | پلگ ان ریپوزیٹری ہوسٹنگ، پروڈکٹ برانڈ |
-| `cccp-education` | گریڈل پلگ ان پورٹل | شائع کرنے کا ہینڈل — https://plugins.gradle.org/u/cccp-education |
+| `cccp-education` | Maven Central | شائع کرنے کا ہینڈل — https://central.sonatype.com/namespace/education.cccp |
 
 ### 3-لیئر آرکی ٹیکچر
 
@@ -64,7 +64,7 @@ cheroliv (dev) ──commits──▶ github.com/cccp-education (repos) ──pu
    ایک پروفیسڈ کوڈ، یو ٹی 5 کے ساتھ ٹی ڈی ڈی کے ساتھ۔
 3. **bdd with cucumber** جب بھی domain اجازت دے، صارف کے لیے دستاویز
    نیتی کو مستقل سطح پر۔
-4. **publication** گریڈل پلگ ان پورٹل پر ایک ورژن ایپی آئی کے ساتھ۔
+4. **publication** Maven Central پر ایک ورژن ایپی آئی کے ساتھ۔
 
 یہ ایک شاندار طریقہ نہیں ہے، لیکن یہ ایک ہے جو وقت کے ٹیسٹ کو برقرار رکھتا ہے۔
 
@@ -189,7 +189,7 @@ cheroliv (dev) ──commits──▶ github.com/cccp-education (repos) ──pu
 ## لنکس
 
 - ویب سائٹ: [cheroliv.com](https://cheroliv.com)
-- شائع کردہ پلگ انز: [گریڈل پلگ ان پورٹل — cccp-education](https://plugins.gradle.org/u/cccp-education)
+- شائع کردہ پلگ انز: [Maven Central — education.cccp](https://central.sonatype.com/namespace/education.cccp)
 - `magic-stick`: [دستاویزات](https://cheroliv.com/magic-stick/) · [ریپوزٹری](https://github.com/cheroliv/magic-stick)
 
 ---

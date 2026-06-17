@@ -14,7 +14,7 @@
 我工作于三个领域的交叉点：
 
 - **软件工艺** — TDD、BDD Cucumber、六边形架构、地道 Kotlin。
-- **开发者工具** — 可重用的 Gradle 插件，在 [Gradle Plugin Portal](https://plugins.gradle.org/search?term=education.cccp) 下以 `education.cccp` 命名空间发布。
+- **开发者工具** — 可重用的 Gradle 插件，在 [Maven Central](https://plugins.gradle.org/search?term=education.cccp) 下以 `education.cccp` 命名空间发布。
 - **教育科技** — 教育内容、生成的静态站点、可追踪的培训材料。
 
 这一切的连贯性源于一个简单的信念：**一个可信的开发人员/培训师必须自己构建并使用自己的工具**。我从不销售我不能每天使用的东西。
@@ -38,7 +38,7 @@
 |---|---|---|
 | `cheroliv` | GitHub | 提交、PR、历史、社会资本 (不变) |
 | `cccp-education` | GitHub (组织) | 插件仓库托管、产品品牌 |
-| `cccp-education` | Gradle Plugin Portal | 发布句柄 — https://plugins.gradle.org/u/cccp-education |
+| `cccp-education` | Maven Central | 发布句柄 — https://central.sonatype.com/namespace/education.cccp |
 
 ### 3 层架构
 
@@ -59,7 +59,7 @@ cheroliv (dev) ──commits──▶ github.com/cccp-education (repos) ──pu
 1. **业务逻辑原型** 在根目录 `build.gradle.kts` 中，使用相关日志验证实际条件下的行为。
 2. **插件迁移** 在业务逻辑稳定后 —— 将经过验证的代码传输到专用模块，使用 TDD 与 JUnit 5。
 3. **BDD Cucumber** 一旦领域允许，从用户级别记录意图。
-4. **发布** 到 Gradle Plugin Portal，带有版本化的 API 合同。
+4. **发布** 到 Maven Central，带有版本化的 API 合同。
 
 这不是一种花哨的方法，但它经得起时间的考验。
 
@@ -180,7 +180,7 @@ Java · Kotlin · Scala · Gradle (Kotlin DSL) · Mill · JUnit 5 · Cucumber ·
 ## 链接
 
 - 网站：[cheroliv.com](https://cheroliv.com)
-- 已发布插件：[Gradle Plugin Portal — cccp-education](https://plugins.gradle.org/u/cccp-education)
+- 已发布插件：[Maven Central — education.cccp](https://central.sonatype.com/namespace/education.cccp)
 - `magic-stick`：[文档](https://cheroliv.com/magic-stick/) · [仓库](https://github.com/cheroliv/magic-stick)
 
 ---

@@ -14,7 +14,7 @@
 أعمل عند تقاطع ثلاثة مجالات:
 
 - **Software Craftsmanship** — TDD، BDD Cucumber، الهيكلية الهرمية (Hexagonal Architecture)، Kotlin المألوف.
-- **Developer Tooling** — إضافات Gradle قابلة لإعادة الاستخدام، منشورة في namespace `education.cccp` على [Gradle Plugin Portal](https://plugins.gradle.org/search?term=education.cccp).
+- **Developer Tooling** — إضافات Gradle قابلة لإعادة الاستخدام، منشورة في namespace `education.cccp` على [Maven Central](https://plugins.gradle.org/search?term=education.cccp).
 - **EdTech** — المحتوى التعليمي، المواقع الثابتة التي يتم توليدها، مواد التدريب القابلة للتتبع.
 
 تكامل كل هذا ينبع من إيمان بسيط: **مدوف/مدرب موثوق** يبني ويستخدم أدواته الخاصة.
@@ -39,7 +39,7 @@
 |---|---|---|
 | `cheroliv` | GitHub | Commits، PRs، historique، capital social (inchangé) |
 | `cccp-education` | GitHub (org) | Hébergement des dépôts de plugins، brand produit |
-| `cccp-education` | Gradle Plugin Portal | Handle de publication — https://plugins.gradle.org/u/cccp-education |
+| `cccp-education` | Maven Central | Handle de publication — https://central.sonatype.com/namespace/education.cccp |
 
 ### 3-layers architecture
 
@@ -64,7 +64,7 @@ Le code ne porte pas d'idéologie — le groupId، si.
    الكود الذي تم التحقق منه إلى وحدة مخصصة، باستخدام TDD مع JUnit 5.
 3. **BDD مع Cucumber** بمجردما يكون المجال يسمح بذلك، للتوثيق
    intention at the user level.
-4. **Publication** إلى Gradle Plugin Portal مع عقد API مُحدد بإصدار.
+4. **Publication** إلى Maven Central مع عقد API مُحدد بإصدار.
 
 إنه ليس منهجًا مبهرًا، ولكن منهج يخضع لاختبار الزمن.
 
@@ -194,7 +194,7 @@ Java · Kotlin · Scala · Gradle (Kotlin DSL) · Mill · JUnit 5 · Cucumber ·
 ## Links
 
 - Website: [cheroliv.com](https://cheroliv.com)
-- Published Plugins: [Gradle Plugin Portal — cccp-education](https://plugins.gradle.org/u/cccp-education)
+- Published Plugins: [Maven Central — education.cccp](https://central.sonatype.com/namespace/education.cccp)
 - `magic-stick`: [documentation](https://cheroliv.com/magic-stick/) · [repository](https://github.com/cheroliv/magic-stick)
 
 ---

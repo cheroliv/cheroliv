@@ -15,7 +15,7 @@ Ma matière première : Kotlin, Gradle, AsciiDoc, LangChain4j, Koog.
 Je travaille à l'intersection de trois domaines :
 
 - **Craft logiciel** — TDD, BDD Cucumber, architecture hexagonale, Kotlin idiomatique.
-- **Outillage développeur** — plugins Gradle réutilisables, publiés sous le namespace `education.cccp` sur le [Gradle Plugin Portal](https://plugins.gradle.org/search?term=education.cccp).
+- **Outillage développeur** — plugins Gradle réutilisables, publiés sous le namespace `education.cccp` sur le [Maven Central](https://plugins.gradle.org/search?term=education.cccp).
 - **Edtech** — contenus pédagogiques, sites statiques générés, supports de formation traçables.
 
 La cohérence de l'ensemble tient à une conviction simple : **un développeur/formateur crédible
@@ -41,7 +41,7 @@ au quotidien.
 |---|---|---|
 | `cheroliv` | GitHub | Commits, PRs, historique, capital social (inchangé) |
 | `cccp-education` | GitHub (org) | Hébergement des dépôts de plugins, brand produit |
-| `cccp-education` | Gradle Plugin Portal | Handle de publication — https://plugins.gradle.org/u/cccp-education |
+| `cccp-education` | Maven Central | Handle de publication — https://central.sonatype.com/namespace/education.cccp |
 
 ### Architecture 3 couches
 
@@ -66,7 +66,7 @@ Le cycle que je suis sur chaque plugin :
    code éprouvé vers un module dédié, sous TDD avec JUnit 5.
 3. **BDD Cucumber** dès que le domaine métier le permet, pour documenter
    l'intention à hauteur d'usager.
-4. **Publication** sur le Gradle Plugin Portal avec un contrat d'API versionné.
+4. **Publication** sur le Maven Central avec un contrat d'API versionné.
 
 Ce n'est pas une méthode chic, c'est une méthode qui tient debout sur la durée.
 
@@ -197,7 +197,7 @@ Java · Kotlin · Scala · Gradle (Kotlin DSL) · Mill · JUnit 5 · Cucumber ·
 ## Liens
 
 - Site : [cheroliv.com](https://cheroliv.com)
-- Plugins publiés : [Gradle Plugin Portal — cccp-education](https://plugins.gradle.org/u/cccp-education)
+- Plugins publiés : [Maven Central — education.cccp](https://central.sonatype.com/namespace/education.cccp)
 - `magic-stick` : [documentation](https://cheroliv.com/magic-stick/) · [dépôt](https://github.com/cheroliv/magic-stick)
 
 ---

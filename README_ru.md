@@ -15,7 +15,7 @@
 Я работаю на стыке трех доменов:
 
 - **Программное ремесло** — TDD, BDD Cucumber, Гексагональная архитектура, Идиоматичный Kotlin.
-- **Инструменты разработчика** — повторно используемые плагины Gradle, опубликованные под пространством имен `education.cccp` на [Gradle Plugin Portal](https://plugins.gradle.org/search?term=education.cccp).
+- **Инструменты разработчика** — повторно используемые плагины Gradle, опубликованные под пространством имен `education.cccp` на [Maven Central](https://plugins.gradle.org/search?term=education.cccp).
 - **EdTech** — образовательный контент, генерируемые статические сайты, прослеживаемые учебные материалы.
 
 Согласованность всего этого исходит из простого убеждения: **достоверный разработчик/тренер
@@ -41,7 +41,7 @@
 |---|---|---|
 | `cheroliv` | GitHub | Коммиты, PRs, история, социальный капитал (без изменений) |
 | `cccp-education` | GitHub (организация) | Хостинг репозиториев плагинов, продукт бренда |
-| `cccp-education` | Gradle Plugin Portal | Контроль публикации — https://plugins.gradle.org/u/cccp-education |
+| `cccp-education` | Maven Central | Контроль публикации — https://central.sonatype.com/namespace/education.cccp |
 
 ### Архитектура 3 слоев
 
@@ -66,7 +66,7 @@ cheroliv (dev) ──commits──▶ github.com/cccp-education (repos) ──pu
    проверенного кода в выделенный модуль, используя TDD с JUnit 5.
 3. **BDD с Cucumber** как только домен позволяет, для документирования
    намерения на уровне пользователя.
-4. **Публикация** на Gradle Plugin Portal с версионированным API контрактом.
+4. **Публикация** на Maven Central с версионированным API контрактом.
 
 Это не fancy метод, но тот, который выдерживает испытание временем.
 
@@ -194,7 +194,7 @@ Java · Kotlin · Scala · Gradle (Kotlin DSL) · Mill · JUnit 5 · Cucumber ·
 ## Ссылки
 
 - Веб-сайт: [cheroliv.com](https://cheroliv.com)
-- Опубликованные плагины: [Gradle Plugin Portal — cccp-education](https://plugins.gradle.org/u/cccp-education)
+- Опубликованные плагины: [Maven Central — education.cccp](https://central.sonatype.com/namespace/education.cccp)
 - `magic-stick`: [документация](https://cheroliv.com/magic-stick/) · [репозиторий](https://github.com/cheroliv/magic-stick)
 
 ---
