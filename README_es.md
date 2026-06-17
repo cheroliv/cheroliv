@@ -200,4 +200,4 @@ Java · Kotlin · Scala · Gradle (Kotlin DSL) · Mill · JUnit 5 · Cucumber ·
 
 ---
 
-*El código que escribimos para nosotros mismos es el laboratorio para el código que enseñamos a los demás.*
+*El código personal alimenta el código compartido.*
