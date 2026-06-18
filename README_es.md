@@ -43,16 +43,7 @@ en mi día a día.
 | `cccp-education` | GitHub (org) | Hébergement des dépôts de plugins, brand produit |
 | `cccp-education` | Maven Central | Gestionario de publicación — https://central.sonatype.com/namespace/education.cccp |
 
-### Arquitectura de 3 capas
 
-```
-cheroliv (dev) ──commits──▶ github.com/cccp-education (repos) ──publish──▶ cccp-education (Gradle Portal)
-                               GroupId: education.cccp
-                               Licence: Apache 2.0
-```
-
-*Regla*: el negocio es libre (Apache 2.0), solo la transacción bancaria (waiter-gradle) no lo es.
-El código no porta una ideología — el groupId, sí.
 
 ---
 

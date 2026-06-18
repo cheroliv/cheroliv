@@ -41,22 +41,20 @@
 | `cccp-education` | GitHub (org) | Hébergement des dépôts de plugins، brand produit |
 | `cccp-education` | Maven Central | Handle de publication — https://central.sonatype.com/namespace/education.cccp |
 
-### 3-layers architecture
+### 3 طبقات
 
 ```
 cheroliv (dev) ──commits──▶ github.com/cccp-education (repos) ──publish──▶ cccp-education (Gradle Portal)
-                               GroupId: education.cccp
-                               Licence: Apache 2.0
+                                معرف المجموعة: education.cccp
+                                الرخصة: Apache 2.0
 ```
 
-*Rule*: le métier est libre (Apache 2.0)، فقط المعاملة المصرفية (waiter-gradle) لا هي.
-Le code ne porte pas d'idéologie — le groupId، si.
+*قاعدة*: المنطق التجاري حر (Apache 2.0)، فقط المعاملة المصرفية (waiter-gradle) ليست كذلك.
+الكود لا يحمل أيديولوجيا — groupId يفعل.
 
 ---
 
 ## Methodology
-
-الدورة الحياتية التي أتبعها لكل إضافة:
 
 1. **Business logic prototyping** داخل `build.gradle.kts` الجذر، مع تسجيلات ذات صلة
    للتحقق من السلوك في ظروف حقيقية.

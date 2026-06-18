@@ -41,16 +41,16 @@
 | `cccp-education` | گیتہاب (ארגن) | پلگ ان ریپوزیٹری ہوسٹنگ، پروڈکٹ برانڈ |
 | `cccp-education` | Maven Central | شائع کرنے کا ہینڈل — https://central.sonatype.com/namespace/education.cccp |
 
-### 3-لیئر آرکی ٹیکچر
+### 3 لیئر آرکیٹیکچر
 
 ```
 cheroliv (dev) ──commits──▶ github.com/cccp-education (repos) ──publish──▶ cccp-education (gradle portal)
-                               groupid: education.cccp
-                               لائسنس: ایپچی 2.0
+                                GroupId: education.cccp
+                                لائسنس: ایپچی 2.0
 ```
 
-*-rule*: کاروبار آزاد ہے (ایپچی 2.0)، صرف بینکنگ ٹرانزیکشن ( ویٹر-گریڈل) نہیں ۔
-کوڈ کوئی مکتب فکر نہیں لاتا — گروپ آئی ڈی، ہے، ۔
+*-rule*: کاروبار آزاد ہے (ایپچی 2.0)، صرف بینکنگ ٹرانزیکشن (ویٹر-گریڈل) نہیں ہے۔
+کوڈ کوئی مکتب فکر نہیں لاتا — گروپ آئی ڈی ہے، ہے۔
 
 ---
 
