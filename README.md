@@ -47,12 +47,11 @@ on a daily basis.
 
 ```
 cheroliv (dev) ──commits──▶ github.com/cccp-education (repos) ──publish──▶ cccp-education (Gradle Portal)
-                               GroupId: education.cccp
-                               Licence: Apache 2.0
+                              GroupId: education.cccp
+                              Licence: Apache 2.0
 ```
 
-*Rule* : le métier est libre (Apache 2.0), seule la transaction bancaire (waiter-gradle) ne l'est pas.
-Le code ne porte pas d'idéologie — le groupId, si.
+*Rule*: The business logic is free (Apache 2.0), only the banking transaction (waiter-gradle) is not. Code doesn't carry ideology — the groupId does.
 
 ---
 

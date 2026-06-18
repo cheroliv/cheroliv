@@ -44,8 +44,8 @@
 
 ```
 cheroliv (dev) ──commits──▶ github.com/cccp-education (repos) ──publish──▶ cccp-education (Gradle Portal)
-                               群组 ID: education.cccp
-                               许可证: Apache 2.0
+                              群组 ID: education.cccp
+                              许可证: Apache 2.0
 ```
 
 *规则*：业务逻辑是自由的 (Apache 2.0)，只有银行业务交易 (waiter-gradle) 不是。代码本身不携带意识形态 —— 群组 ID 才是。

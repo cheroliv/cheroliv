@@ -45,11 +45,11 @@
 
 ```
 cheroliv (dev) ──commits──▶ github.com/cccp-education (repos) ──publish──▶ cccp-education (Gradle Portal)
-                                GroupId: education.cccp
-                                Licence: Apache 2.0
+                               GroupId: education.cccp
+                               Licence: Apache 2.0
 ```
 
-*Rule* : le métier est libre (Apache 2.0)، فقط المعاملة المصرفية (waiter-gradle) لا هي.
+*Rule*: le métier est libre (Apache 2.0)، فقط المعاملة المصرفية (waiter-gradle) لا هي.
 Le code ne porte pas d'idéologie — le groupId، si.
 
 ---

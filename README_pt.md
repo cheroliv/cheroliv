@@ -47,8 +47,8 @@ no dia a dia.
 
 ```
 cheroliv (dev) ──commits──▶ github.com/cccp-education (repos) ──publish──▶ cccp-education (Gradle Portal)
-                               GroupId: education.cccp
-                               Licença: Apache 2.0
+                              GroupId: education.cccp
+                              Licença: Apache 2.0
 ```
 
 *Regra*: o negócio é livre (Apache 2.0), somente a transação bancária (waiter-gradle) não é.

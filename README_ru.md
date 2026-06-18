@@ -47,8 +47,8 @@
 
 ```
 cheroliv (dev) ──commits──▶ github.com/cccp-education (repos) ──publish──▶ cccp-education (Gradle Portal)
-                               GroupId: education.cccp
-                               Лицензия: Apache 2.0
+                              GroupId: education.cccp
+                              Лицензия: Apache 2.0
 ```
 
 *Правило*: бизнес свободный (Apache 2.0), только банковская транзакция (waiter-gradle) не является.
