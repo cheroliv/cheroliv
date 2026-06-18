@@ -158,8 +158,6 @@ le pipeline de publication tourne en production.
 
 ---
 
----
-
 ## Stack principale
 
 Java · Kotlin · Gradle (Kotlin DSL) · JUnit 5 · Cucumber · Spring Boot · AsciiDoc · JBake · Reveal.js · PlantUML · JGit · Jackson · LangChain4j · Koog · Docker · PostgreSQL/pgvector · GitHub Actions · Xubuntu/Debian packaging.

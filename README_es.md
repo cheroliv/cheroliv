@@ -156,8 +156,6 @@ la pipeline de publicación funciona en producción.
 
 ---
 
----
-
 ## Core Stack
 
 Java · Kotlin · Gradle (Kotlin DSL) · JUnit 5 · Cucumber · Spring Boot · AsciiDoc · JBake · Reveal.js · PlantUML · JGit · Jackson · LangChain4j · Koog · Docker · PostgreSQL/pgvector · GitHub Actions · Empaquetado Xubuntu/Debian.
