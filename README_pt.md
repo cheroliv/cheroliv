@@ -167,8 +167,6 @@ o pipeline de publicação é executado em produção.
 
 ---
 
-
-
 ---
 
 ## Pilha Principal

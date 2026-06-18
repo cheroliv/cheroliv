@@ -6,7 +6,6 @@
 
 मैं प्रोजेक्ट टूलिंग, एक्जीक्यूटेबल डॉक्यूमेंटेशन और शैक्षिक सामग्री उत्पादन के लिए ग्रेडल कोटलिन डएसएल प्लगइन का एक पारिस्थितिकी व्यवस्था डिज़ाइन करता हूँ।
 मेरी कच्ची सामग्री: कोटलिन, ग्रेडल, एस्कीडोक, लैंगकैन4ज, कूग।
-
 ---
 
 ## पوزिशनिंग
@@ -18,7 +17,6 @@
 - **एडटेक** — शैक्षिक सामग्री, उत्पन्न स्टैटिक साइट्स, ट्रेसेबल ट्रेनिंग सामग्री।
 
 सबकी संगति एक सरल विश्वास से जुड़ी है: **एक विश्वसनीय डेवलपर/ट्रेनर अपने खुद के टूल बनाता है और उनका उपयोग करता है**। मैं वह नहीं बेचता जो मैं दैनिक उपयोग नहीं करता।
-
 ---
 
 ## आर्किटेक्चर आईडेंटिटी — 4 डोमेन, 3 एकाउंट्स
@@ -26,7 +24,10 @@
 ### ब्रांड्स का पृथक्करण
 
 | डोमेन | भूमिका | सिग्नल |
-|---|---|---|
+|
+---|
+---|
+---|
 | `cheroliv.com` | व्यक्तिगत पहचान, ब्लॉग, लेख | कोड के पीछे इंसान, संपादकीय आवाज़, सामाजिक पूंजी |
 | `talaria.school` | OF — योग्यता भित्ति वाला प्रशिक्षण संस्थान | संस्थागत विज्ञापन और प्रशिक्षण कैटलॉग |
 | `edster.cloud` | SaaS — समर्पित क्लाउड इंफ्रास्ट्रक्चर | ग्राहक वर्कस्पेस प्रोविजनिंग (MVP1) |
@@ -35,7 +36,10 @@
 ### तकनीकी खातों का पृथक्करण
 
 | खाता | प्लेटफार्म | भूमिका |
-|---|---|---|
+|
+---|
+---|
+---|
 | `cheroliv` | GitHub | कमिट्स, पीआर, इतिहास, सामाजिक पूंजी (अपरिवर्तित) |
 | `cccp-education` | GitHub (संगठन) | प्लगइन रिपॉजिटरी होस्टिंग, उत्पाद ब्रांड |
 | `cccp-education` | Maven Central | प्रकाशन हैंडल — https://central.sonatype.com/namespace/education.cccp |
@@ -50,7 +54,6 @@ cheroliv (dev) ──commits──▶ github.com/cccp-education (repos) ──pu
 
 *नियम* : व्यव‌ाय स्वतंत्र है (एपाचे 2.0), केवल बैंकिंग लेनदेन (waiter-gradle) ही नहीं है।
 कोड में कोई विचारधारा नहीं होती — ग्रुप आईडी, ऐसा होता है।
-
 ---
 
 ## मेथडोलॉजी
@@ -66,7 +69,6 @@ cheroliv (dev) ──commits──▶ github.com/cccp-education (repos) ──pu
 4. **प्रकाशन** Maven Central पर एक वर्शनयुक्त एपीआई कॉन्ट्रैक्ट के साथ।
 
 यह एक दमदार तरीका नहीं है, लेकिन यह एक ऐसा तरीका है जो समय का परीक्षण पारित करता है।
-
 ---
 
 ## `education.cccp.*` इकोसिस्टम — 25 बॉरोह्स
@@ -76,7 +78,9 @@ cheroliv (dev) ──commits──▶ github.com/cccp-education (repos) ──pu
 ### फाउंडेशन — रियूज़ेबल बिल्डिंग ब्लॉक (N0)
 
 | प्लगइन | भूमिका |
-|---|---|
+|
+---|
+---|
 | [`com.gradleup.nmcp.settings`](https://plugins.gradle.org/plugin/com.gradleup.nmcp.settings) | Maven Central प्रकाशन (nmcp) |
 | [`education.cccp.agent-contracts`](https://github.com/cccp-education/workspace-bom) | एजेंट प्रोटोकॉल कॉन्ट्रैक्ट (शेयर्ड कर्नल) |
 | [`education.cccp.codebase-contracts`](https://github.com/cccp-education/workspace-bom) | कोडबेस रैग कॉन्ट्रैक्ट (शेयर्ड कर्नल) |
@@ -88,19 +92,25 @@ cheroliv (dev) ──commits──▶ github.com/cccp-education (repos) ──pu
 ### स्कैनर — वर्कस्पेस ग्राफ एक्सट्रैक्शन (N0)
 
 | प्लगइन | भूमिका |
-|---|---|
+|
+---|
+---|
 | [`education.cccp.graphify`](https://github.com/cccp-education/graphify-gradle) | कार्यक्षेत्र से ज्ञान ग्राफ़ (नोड्स, एज़, समुदाय) → `graph.json` का एक्सट्रैक्शन |
 
 ### प्रोसेसर — रैग & डेटासेट (N1)
 
 | प्लगइन | भूमिका |
-|---|---|
+|
+---|
+---|
 | [`education.cccp.codebase`](https://github.com/cccp-education/codebase-gradle) | बिल्ड-इन डेवलपमेंट असिस्टेंट: प्रोजेक्ट पढ़ाई, pgvector रैग, लैंगकैन4ज कॉन्टेक्स्ट एनरिचमेंट, एस्कीडोक रिपोर्ट जेनरेशन, डेटासेट क्रिएशन। |
 
 ### कंज़ूमर — कंटेंट जेनरेशन (N2)
 
 | प्लगइन | भूमिका |
-|---|---|
+|
+---|
+---|
 | [`education.cccp.planner`](https://github.com/cccp-education/planner-gradle) | एलएलएम प्रॉम्प्टिंग एसपीजी/एसपीडी के लिए (deepseek-v4-pro) — प्लानिंग एक्सपर्ट इरादे को एपीआईसी → यूजर स्टोरीज → ग्रेडल टास्क में विघटित करता है। |
 | [`education.cccp.codex`](https://github.com/cccp-education/codex-gradle) | एस्कीडोक्टर→पीडीएफ, स्लाइड, डॉक्यूमेंट पाइपलाइन (रीड + रैग)। |
 | [`education.cccp.slider`](https://github.com/cccp-education/slider-gradle) | एस्कीडोक सोर्स से रिवील.जेएस प्रेजेंटेशन जनरेशन, एक अलग शाखा में पुश के साथ। |
@@ -116,13 +126,17 @@ cheroliv (dev) ──commits──▶ github.com/cccp-education (repos) ──pu
 ### ऑर्केस्ट्रेटर — डिप्लॉयमेंट (N3)
 
 | प्लगइन | भूमिका |
-|---|---|
+|
+---|
+---|
 | [`education.cccp.runner`](https://github.com/cccp-education/runner-gradle) | डैग ऑर्केस्ट्रेशन, प्रोविजनिंग सीएलआई, डिप्लॉय घी-पेज। अंतिम उपभोक्ता, शून्य व्यावसायिक तर्क। |
 
 ### कंट्रोलर — एजाइल & गवर्नेंस (N4)
 
 | प्लगइन | भूमिका |
-|---|---|
+|
+---|
+---|
 | [`education.cccp.agile`](https://github.com/cccp-education/agile-gradle) | एआई असिस्टेड एजाइल ऑर्केस्ट्रेशन: 7 वर्कशॉप (विजन→आर्किटेक्चर), बैकलॉग, स्प्रिंट, वेलोसिटी, माइलस्टोन। |
 | [`education.cccp.ticket`](https://github.com/cccp-education/ticket-gradle) | गिटहब टिकट बनाना और ट्रैकिंग — बैकलॉग → इशू, कानबन बोर्ड, कमिट↔टिकट लिंकिंग। |
 | [`education.cccp.review`](https://github.com/cccp-education/review-gradle) | एआई असिस्टेड कोड समीक्षा: पीआर विश्लेषण, गुणवत्ता स्कोर, गुणवत्ता गेट, रहस्य का पता लगाना। |
@@ -131,19 +145,22 @@ cheroliv (dev) ──commits──▶ github.com/cccp-education (repos) ──pu
 ### विशिष्ट टूलिंग (N2)
 
 | प्लगइन | भूमिका |
-|---|---|
+|
+---|
+---|
 | [`com.cheroliv.jhipster.persistence`](https://github.com/cccp-education/jhipster-gradle-plugins) | जेएचपीस्टर परसिस्टेंस ऑर्केस्ट्रेशन (clean/generate/sync) `__codebase__/` में कोटलिन कोड खोए बिना। |
 | [`com.cheroliv.jhipster.assistant`](https://github.com/cccp-education/jhipster-gradle-plugins) | आरजीएलएलएम के साथ जेएचपीस्टर एआई असिस्टेंट। |
 
 ### वेस्टीज (अक्षम प्रोजेक्ट) |
 
 | प्लगइन | स्थिति |
-|---|---|
+|
+---|
+---|
 | `com.cheroliv.magic-stick` | N2 — जेक्सबक्टू आईएसओ बिल्डर (doc साइट, प्लगइन नहीं) |
 | `com.cheroliv.newpipe` | N2 — YouTube→MP3 एक्सट्रैक्टर (त्यागा गया) |
 | `com.cheroliv.notebook` | N2 — कोलब ऑब्जर्वेबिलिटी (केवल अवधारणा) |
 | `com.cheroliv.office-template` | N? — खाली टेम्पलेट (हटाने के लिए) |
-
 ---
 
 ## वातावरण और कार्यस्थल
@@ -157,13 +174,11 @@ cheroliv (dev) ──commits──▶ github.com/cccp-education (repos) ──pu
 - **छात्र/प्रशिक्षणार्थी** — कोई पूर्व-इंस्टॉलेशन की आवश्यकता के बिना तत्काल ऑनबोर्डिंग।
 
 इस प्रोजेक्ट का उपयोग इकोसिस्टम के दर्शन को प्रदर्शित करता है: कार्य वातावरण स्वयं भी एक **पुनरुत्पादनयोग्य, संस्करणयोग्य, दस्तावेजीकृत** कलाकृति है। प्रोजेक्ट का दस्तावेजीकरण [`education.cccp.bakery`](https://github.com/cccp-education/bakery-gradle) द्वारा उत्पन्न और प्रकाशित होता है [cccp.education/magic-stick](https://cccp.education/magic-stick/) पर — साबित करता है कि प्रकाशन पाइपलाइन उत्पादन में चल रही है।
-
 ---
 
 ## कोर स्टैक
 
 Java · Kotlin · Gradle (Kotlin DSL) · JUnit 5 · Cucumber · Spring Boot · AsciiDoc · JBake · Reveal.js · PlantUML · JGit · Jackson · LangChain4j · Koog · Docker · PostgreSQL/pgvector · GitHub Actions · Xubuntu/Debian packaging।
-
 ---
 
 ## लिंक
@@ -171,7 +186,6 @@ Java · Kotlin · Gradle (Kotlin DSL) · JUnit 5 · Cucumber · Spring Boot · A
 - वेबसाइट: [cheroliv.com](https://cheroliv.com)
 - प्रकाशित प्लगइन: [Maven Central — education.cccp](https://central.sonatype.com/namespace/education.cccp)
 - `magic-stick`: [दस्तावेज़ीकरण](https://cccp.education/magic-stick/) · [रिपॉजिटरी](https://github.com/cccp-education/magic-stick)
-
 ---
 
 

@@ -7,7 +7,6 @@
 Я проектирую экосистему плагинов Gradle Kotlin DSL для инструментов проекта,
 исполняемой документации и производства образовательного контента.
 Мои исходные материалы: Kotlin, Gradle, AsciiDoc, LangChain4j, Koog.
-
 ---
 
 ## Позиционирование
@@ -21,7 +20,6 @@
 Согласованность всего этого исходит из простого убеждения: **достоверный разработчик/тренер
 создает и использует собственные инструменты**. Я не продаю то, что не использую
 в повседневной жизни.
-
 ---
 
 ## Архитектурная идентичность — 4 домена, 3 аккаунта
@@ -29,7 +27,10 @@
 ### Разделение брендов
 
 | Домен | Роль | Сигнал |
-|---|---|---|
+|
+---|
+---|
+---|
 | `cheroliv.com` | Личная идентичность, блог, статьи | Человек за кодом, редакционный голос, социальный капитал |
 | `talaria.school` | OF — Организация Обучения Квалипио | Институциональный фронт и каталог обучения |
 | `edster.cloud` | SaaS — Выделенная облачная инфраструктура | Провижнинг клиентских рабочих пространств (MVP1) |
@@ -38,7 +39,10 @@
 ### Разделение технических аккаунтов
 
 | Аккаунт | Платформа | Роль |
-|---|---|---|
+|
+---|
+---|
+---|
 | `cheroliv` | GitHub | Коммиты, PRs, история, социальный капитал (без изменений) |
 | `cccp-education` | GitHub (организация) | Хостинг репозиториев плагинов, продукт бренда |
 | `cccp-education` | Maven Central | Контроль публикации — https://central.sonatype.com/namespace/education.cccp |
@@ -53,7 +57,6 @@ cheroliv (dev) ──commits──▶ github.com/cccp-education (repos) ──pu
 
 *Правило*: бизнес свободный (Apache 2.0), только банковская транзакция (waiter-gradle) не является.
 Код не несет идеологии — groupId, да.
-
 ---
 
 ## Методология
@@ -69,7 +72,6 @@ cheroliv (dev) ──commits──▶ github.com/cccp-education (repos) ──pu
 4. **Публикация** на Maven Central с версионированным API контрактом.
 
 Это не fancy метод, но тот, который выдерживает испытание временем.
-
 ---
 
 ## Экосистема `education.cccp.*` — 25 boroughs
@@ -79,7 +81,9 @@ cheroliv (dev) ──commits──▶ github.com/cccp-education (repos) ──pu
 ### Фундамент — повторно используемые строительные блоки (N0)
 
 | Плагин | Роль |
-|---|---|
+|
+---|
+---|
 | [`com.gradleup.nmcp.settings`](https://plugins.gradle.org/plugin/com.gradleup.nmcp.settings) | Публикация Maven Central (nmcp) |
 | [`education.cccp.agent-contracts`](https://github.com/cccp-education/workspace-bom) | Договоры протокола агента (общее ядро) |
 | [`education.cccp.codebase-contracts`](https://github.com/cccp-education/workspace-bom) | Договоры RAG кодовой базы (общее ядро) |
@@ -91,19 +95,25 @@ cheroliv (dev) ──commits──▶ github.com/cccp-education (repos) ──pu
 ### Сканер — извлечение графа рабочего пространства (N0)
 
 | Плагин | Роль |
-|---|---|
+|
+---|
+---|
 | [`education.cccp.graphify`](https://github.com/cccp-education/graphify-gradle) | Извлечение графа знаний из рабочего пространства (узлы, ребра, сообщества) → `graph.json` |
 
 ### Процессор — RAG и наборы данных (N1)
 
 | Плагин | Роль |
-|---|---|
+|
+---|
+---|
 | [`education.cccp.codebase`](https://github.com/cccp-education/codebase-gradle) | Встроенный ассистент разработки: чтение проекта, pgvector RAG, обогащение контекста LangChain4j, генерация отчетов AsciiDoc, создание набора данных. |
 
 ### Потребитель — генерация контента (N2)
 
 | Плагин | Роль |
-|---|---|
+|
+---|
+---|
 | [`education.cccp.planner`](https://github.com/cccp-education/planner-gradle) | LLM prompting для SPG/SPD (deepseek-v4-pro) — эксперт планирования декомпозирует намерение → EPICs → User Stories → задачи Gradle. |
 | [`education.cccp.codex`](https://github.com/cccp-education/codex-gradle) | Asciidoctor→PDF, слайды, пайплайн документа (READ + RAG). |
 | [`education.cccp.slider`](https://github.com/cccp-education/slider-gradle) | Генерация презентаций Reveal.js из источников AsciiDoc, с push в выделенную ветку. |
@@ -119,13 +129,17 @@ cheroliv (dev) ──commits──▶ github.com/cccp-education (repos) ──pu
 ### Оркестратор — развертывание (N3)
 
 | Плагин | Роль |
-|---|---|
+|
+---|
+---|
 | [`education.cccp.runner`](https://github.com/cccp-education/runner-gradle) | Оркестрация DAG, provisioning CLI, деплой gh-pages. Терминальный потребитель, нулевая бизнес-логика. |
 
 ### Контроллер — гибкое управление и управление (N4)
 
 | Плагин | Роль |
-|---|---|
+|
+---|
+---|
 | [`education.cccp.agile`](https://github.com/cccp-education/agile-gradle) | Оркестрация Agile с помощью ИИ-ассистента: 7 воркшопов (Видение→Архитектура), бэклог, спринты, скорость, вехи. |
 | [`education.cccp.ticket`](https://github.com/cccp-education/ticket-gradle) | Создание и отслеживание GitHub тикетов — бэклог → Issues, доска Kanban, ссылка commit↔ticket. |
 | [`education.cccp.review`](https://github.com/cccp-education/review-gradle) | Code review с помощью ИИ: анализ PR, оценка качества, quality gates, обнаружение секретов. |
@@ -134,19 +148,22 @@ cheroliv (dev) ──commits──▶ github.com/cccp-education (repos) ──pu
 ### Специализированная инструментария (N2)
 
 | Плагин | Роль |
-|---|---|
+|
+---|
+---|
 | [`com.cheroliv.jhipster.persistence`](https://github.com/cccp-education/jhipster-gradle-plugins) | Оркестрация JHipster persistence (clean/generate/sync) без потери Kotlin кода в `__codebase__/`. |
 | [`com.cheroliv.jhipster.assistant`](https://github.com/cccp-education/jhipster-gradle-plugins) | JHipster ИИ-ассистент с RAG LLM. |
 
 ### Вестиги (неактивные проекты)
 
 | Плагин | Статус |
-|---|---|
+|
+---|
+---|
 | `com.cheroliv.magic-stick` | N2 — Строитель ISO Xubuntu (документация сайта, не плагин) |
 | `com.cheroliv.newpipe` | N2 — Извлекатель YouTube→MP3 (заброшен) |
 | `com.cheroliv.notebook` | N2 — Наблюдаемость Colab (только концепция) |
 | `com.cheroliv.office-template` | N? — пустой шаблон (для удаления) |
-
 ---
 
 ## Окружение и рабочее место
@@ -163,13 +180,11 @@ cheroliv (dev) ──commits──▶ github.com/cccp-education (repos) ──pu
 является **воспроизводимым, версионированным и документированным артефактом**. Документация проекта генерируется и публикуется [`education.cccp.bakery`](https://github.com/cccp-education/bakery-gradle) на
 [cccp.education/magic-stick](https://cccp.education/magic-stick/) — доказательство того, что
 пайплайн публикации запущен в производство.
-
 ---
 
 ## Основной стек
 
 Java · Kotlin · Gradle (Kotlin DSL) · JUnit 5 · Cucumber · Spring Boot · AsciiDoc · JBake · Reveal.js · PlantUML · JGit · Jackson · LangChain4j · Koog · Docker · PostgreSQL/pgvector · GitHub Actions · Xubuntu/Debian упаковка.
-
 ---
 
 ## Ссылки
@@ -177,7 +192,6 @@ Java · Kotlin · Gradle (Kotlin DSL) · JUnit 5 · Cucumber · Spring Boot · A
 - Веб-сайт: [cheroliv.com](https://cheroliv.com)
 - Опубликованные плагины: [Maven Central — education.cccp](https://central.sonatype.com/namespace/education.cccp)
 - `magic-stick`: [документация](https://cccp.education/magic-stick/) · [репозиторий](https://github.com/cccp-education/magic-stick)
-
 ---
 
 

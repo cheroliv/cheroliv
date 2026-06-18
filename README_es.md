@@ -43,8 +43,6 @@ en mi día a día.
 | `cccp-education` | GitHub (org) | Hébergement des dépôts de plugins, brand produit |
 | `cccp-education` | Maven Central | Gestionario de publicación — https://central.sonatype.com/namespace/education.cccp |
 
-
-
 ---
 
 ## Methodology
@@ -157,8 +155,6 @@ documentación del proyecto es generada y publicada por [`education.cccp.bakery`
 la pipeline de publicación funciona en producción.
 
 ---
-
-
 
 ---
 

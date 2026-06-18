@@ -6,7 +6,6 @@
 
 میں پروجیکٹ ٹولنگ، قابل اجرا دستاویزات اور تعلیمی مواد کی پیداوار کے لیے گریڈل کوٹلن ڈی ایس ایل پلگ انز کا ایک生态系统 ڈیزائن کرتا ہوں۔
 میریخام مادہ: کوچل، گریڈل، ای ایس کی ڈوک، lan چین4ج، koog۔
-
 ---
 
 ## پوزیشننگ
@@ -19,7 +18,6 @@
 
 اس کی سب کچھ کی ہم آہنگی ایک سادہ عقیدے سے نکلتی ہے: **ایک قابل اعتماد ڈویلپر/ٹرینر
 اپنے اپنے ٹولز بناتا ہے اور ان کا استعمال کرتا ہے**۔ میں جو فروخت نہیں کرتا جو میں نے روزمرہ استعمال نہیں کرتا۔
-
 ---
 
 ## آرکی ٹیکچر اdentity — 4_domains، 3_accounts
@@ -27,7 +25,10 @@
 ### برانڈز کی الگ التزامی
 
 | domain | رول | سائنل |
-|---|---|---|
+|
+---|
+---|
+---|
 | `cheroliv.com` | ذاتی شناخت، بلاگ،مضامین | کوڈ کے پیچھے آدمی، ایڈیٹوریل آواز، سماجی پولیس |
 | `talarіаl.sсhооl` | آف — معتبر تربیتی ادارہ | ادارتی فونٹ اور کیٹلاگ |
 | `edster.cloud` | ساس — وقف شدہ کلاؤڈ انفراسٹرکچر | کلائنٹ ورک اسپیس پرموشن (mvp1) |
@@ -36,7 +37,10 @@
 ### تکنیکی اکاؤنٹس کی الگ التزامی
 
 | account | پلیٹ فارم | رول |
-|---|---|---|
+|
+---|
+---|
+---|
 | `cheroliv` | گیتہاب | کمیٹس، پی آر، تاریخ، سماجی پولیس (غیر مٹیا) |
 | `cccp-education` | گیتہاب (ארגن) | پلگ ان ریپوزیٹری ہوسٹنگ، پروڈکٹ برانڈ |
 | `cccp-education` | Maven Central | شائع کرنے کا ہینڈل — https://central.sonatype.com/namespace/education.cccp |
@@ -51,7 +55,6 @@ cheroliv (dev) ──commits──▶ github.com/cccp-education (repos) ──pu
 
 *-rule*: کاروبار آزاد ہے (ایپچی 2.0)، صرف بینکنگ ٹرانزیکشن (ویٹر-گریڈل) نہیں ہے۔
 کوڈ کوئی مکتب فکر نہیں لاتا — گروپ آئی ڈی ہے، ہے۔
-
 ---
 
 ## میتھڈولوجی
@@ -67,7 +70,6 @@ cheroliv (dev) ──commits──▶ github.com/cccp-education (repos) ──pu
 4. **publication** Maven Central پر ایک ورژن ایپی آئی کے ساتھ۔
 
 یہ ایک شاندار طریقہ نہیں ہے، لیکن یہ ایک ہے جو وقت کے ٹیسٹ کو برقرار رکھتا ہے۔
-
 ---
 
 ## `education.cccp.*` اکوسسٹم — 25 بوروہس
@@ -77,7 +79,9 @@ cheroliv (dev) ──commits──▶ github.com/cccp-education (repos) ──pu
 ### فاؤنڈیشن — دوبارہ استعمال کے قابل بننے کے اجزاء (N0)
 
 | پلگ ان | رول |
-|---|---|
+|
+---|
+---|
 | [`com.gradleup.nmcp.settings`](https://plugins.gradle.org/plugin/com.gradleup.nmcp.settings) | میوان سینٹرل شاعرت (nmcp) |
 | [`education.cccp.agent-contracts`](https://github.com/cccp-education/workspace-bom) | اジェنٹ پروٹوکول کنٹریکٹس (شیئرڈ کرنل) |
 | [`education.cccp.codebase-contracts`](https://github.com/cccp-education/workspace-bom) | کوڈ بیس ریگ کنٹریکٹس (شیئرڈ کرنل) |
@@ -89,19 +93,25 @@ cheroliv (dev) ──commits──▶ github.com/cccp-education (repos) ──pu
 ### اسکینر — ورک اسپیس گراف ایکسٹریکشن (N0)
 
 | پلگ ان | رول |
-|---|---|
+|
+---|
+---|
 | [`education.cccp.graphify`](https://github.com/cccp-education/graphify-gradle) | ورک اسپیس سے جیان کا گراف (نود، اج، کمیونٹیز) → `graph.json` کا ایکسٹریکشن |
 
 ### پروسیسر — ریگ اینڈ ڈیٹا سیٹ (N1)
 
 | پلگ ان | رول |
-|---|---|
+|
+---|
+---|
 | [`education.cccp.codebase`](https://github.com/cccp-education/codebase-gradle) | بِلڈ-ان ڈویلپمنٹ اسسٹنٹ: پراجیکٹ ریڈنگ، پی جی ویکٹر ریگ، lan چین4ج کنٹیکسٹ اینرچمنٹ، ایس کی ڈوک رپورٹ جنریشن، ڈیٹا سیٹ کریشن۔ |
 
 ### کنجرمر — مواد جنریشن (N2)
 
 | پلگ ان | رول |
-|---|---|
+|
+---|
+---|
 | [`education.cccp.planner`](https://github.com/cccp-education/planner-gradle) | ایل ایل ایم پرومپٹنگ ایس پی جی/ایس پی ڈی کے لیے ( deepseek-v4-pro) — پلاننگ ماہر نیتی کو ایپکس → یوزر اسٹوریز → گریڈل ٹاسک میں تقسیم کرتا ہے۔ |
 | [`education.cccp.codex`](https://github.com/cccp-education/codex-gradle) | ایس کی ڈوکٹر→پی ڈی ایف، سلائیڈز، دستاویز پائپ لائن (ریڈ + ریگ)۔ |
 | [`education.cccp.slider`](https://github.com/cccp-education/slider-gradle) | ایس کی ڈوک سورس سے ریویل.جی ایس پریزنٹیشن جنریشن، ایک مخصوص برانچ میں پش کے ساتھ۔ |
@@ -117,13 +127,17 @@ cheroliv (dev) ──commits──▶ github.com/cccp-education (repos) ──pu
 ### آرکیسٹریٹر — ڈیپلوئمنٹ (N3)
 
 | پلگ ان | رول |
-|---|---|
+|
+---|
+---|
 | [`education.cccp.runner`](https://github.com/cccp-education/runner-gradle) | ڈی ای آر ایس آرکیسٹریشن، پرموشن سی ایل آئی، ڈیپلوی گی پیجز۔ برہان کنجرمر، زیرو بزنس لاجک۔ |
 
 ### کنٹرولر — ایگل اینڈ گورننس (N4)
 
 | پلگ ان | رول |
-|---|---|
+|
+---|
+---|
 | [`education.cccp.agile`](https://github.com/cccp-education/agile-gradle) | اے آئی assisted ایگل آرکیسٹریشن: 7 ورکشاپس (ویژن→آرکی ٹیکچر)، بیک لاگ، سپرنٹس، ویلوسٹی، مائل اسٹونز۔ |
 | [`education.cccp.ticket`](https://github.com/cccp-education/ticket-gradle) | گیتہاب ٹکٹ تخلیق اینڈ ٹریکنگ — بیک لاگ → ایشو، کیمبن بورڈ، کمیٹ↔ٹکٹ لنکنگ۔ |
 | [`education.cccp.review`](https://github.com/cccp-education/review-gradle) | اے آئی-assisted کوڈ ریویو: پی آر تحلیل، کوالٹی اسکور، کوالٹی گیٹس، سیکریٹ ڈیٹیکشن۔ |
@@ -132,19 +146,22 @@ cheroliv (dev) ──commits──▶ github.com/cccp-education (repos) ──pu
 ### مخصوص ٹولنگ (N2)
 
 | پلگ ان | رول |
-|---|---|
+|
+---|
+---|
 | [`com.cheroliv.jhipster.persistence`](https://github.com/cccp-education/jhipster-gradle-plugins) | جی ہسٹر پرسس اینس آرکیسٹریشن (کلین/جنریٹ/سنک) `__codebase__/` میں کوٹلن کوڈ ضائع کیے بغیر۔ |
 | [`com.cheroliv.jhipster.assistant`](https://github.com/cccp-education/jhipster-gradle-plugins) | جی ہسٹر اے آئی اسسٹنٹ ریگ ایل ایل ایم کے ساتھ۔ |
 
 ### ویسٹیجز (غیر فعال پروجیکٹس)
 
 | پلگ ان | اسٹیٹس |
-|---|---|
+|
+---|
+---|
 | `com.cheroliv.magic-stick` | N2 — ایک ایکس باکس ٹو ایس ایل آئی ایس او بیلڈر (داک سائٹ، نہیں پلگ ان) |
 | `com.cheroliv.newpipe` | N2 — یو ٹیub→ایم پی 3 ایکسٹریکٹر (چھوڑ دیا) |
 | `com.cheroliv.notebook` | N2 — کولاب آbservability (صرف تصور) |
 | `com.cheroliv.office-template` | N? — خالی ٹیمپلیٹ ( حذف کرنے کے لیے) |
-
 ---
 
 ## ماحول اور ورک سٹیشن
@@ -159,13 +176,11 @@ cheroliv (dev) ──commits──▶ github.com/cccp-education (repos) ──pu
 
 اس پروجیکٹ سے生态系统 کے فلسفے کی نمائش کی جاتی ہے: ورک ماحول خود بھی ایک **قابل دوبارہ تخلیق، ورژن، اور دستاویزات** آرٹی فیکٹس ہے۔ پروجیکٹ کی دستاویزات [`education.cccp.bakery`](https://github.com/cccp-education/bakery-gradle) پر جنریٹ اور شائع ہوتی ہے [cccp.education/magic-stick](https://cccp.education/magic-stick/) پر — ثابت کرنے والی کہ
 شائع کرنے کی پائپ لائن پیداوار میں چلتی ہے۔
-
 ---
 
 ## کور اسٹاک
 
 جاوا · کوٹلن · گریڈل (کوٹلن ڈی ایس ایل) · جی یونٹ 5 · کرکبر · سپرنگ بُوٹ · ای سی ڈی ایک · جی بیک · ریویل.جی ایس · پلینٹیول · جی گیٹ · جیکسن · lan چین4ج · koog · ڈوکر · پوسٹگری آ ایل/پی جی ویکٹر · گیتہاب ایکشنز · ایکس باکس/ڈیبین پیکیجنگ۔
-
 ---
 
 ## لنکس
@@ -173,7 +188,6 @@ cheroliv (dev) ──commits──▶ github.com/cccp-education (repos) ──pu
 - ویب سائٹ: [cheroliv.com](https://cheroliv.com)
 - شائع کردہ پلگ انز: [Maven Central — education.cccp](https://central.sonatype.com/namespace/education.cccp)
 - `magic-stick`: [دستاویزات](https://cccp.education/magic-stick/) · [ریپوزٹری](https://github.com/cccp-education/magic-stick)
-
 ---
 
 

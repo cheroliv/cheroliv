@@ -6,7 +6,6 @@
 
 我设计了一套 Gradle Kotlin DSL 插件生态系统，用于项目工具、可执行文档和教育内容生成。
 我的原材料：Kotlin、Gradle、AsciiDoc、LangChain4j、Koog。
-
 ---
 
 ## 定位
@@ -18,7 +17,6 @@
 - **教育科技** — 教育内容、生成的静态站点、可追踪的培训材料。
 
 这一切的连贯性源于一个简单的信念：**一个可信的开发人员/培训师必须自己构建并使用自己的工具**。我从不销售我不能每天使用的东西。
-
 ---
 
 ## 架构身份 — 4 个品牌，3 个账户
@@ -26,7 +24,10 @@
 ### 品牌分离
 
 | 品牌 | 用途 | 信号 |
-|---|---|---|
+|
+---|
+---|
+---|
 | `cheroliv.com` | 个人身份、博客、文章 | 程序背后的人、编辑声音、社会资本 |
 | `talaria.school` | OF — 经资质认证的培训机构 | 制度性形象、课程目录 |
 | `edster.cloud` | SaaS — 专用云基础设施 | 客户工作空间配置 (MVP1) |
@@ -35,7 +36,10 @@
 ### 技术账户分离
 
 | 账户 | 平台 | 用途 |
-|---|---|---|
+|
+---|
+---|
+---|
 | `cheroliv` | GitHub | 提交、PR、历史、社会资本 (不变) |
 | `cccp-education` | GitHub (组织) | 插件仓库托管、产品品牌 |
 | `cccp-education` | Maven Central | 发布句柄 — https://central.sonatype.com/namespace/education.cccp |
@@ -49,7 +53,6 @@ cheroliv (dev) ──commits──▶ github.com/cccp-education (repos) ──pu
 ```
 
 *规则*：业务逻辑是自由的 (Apache 2.0)，只有银行业务交易 (waiter-gradle) 不是。代码本身不携带意识形态 —— 群组 ID 才是。
-
 ---
 
 ## 方法论
@@ -62,7 +65,6 @@ cheroliv (dev) ──commits──▶ github.com/cccp-education (repos) ──pu
 4. **发布** 到 Maven Central，带有版本化的 API 合同。
 
 这不是一种花哨的方法，但它经得起时间的考验。
-
 ---
 
 ## `education.cccp.*` 生态系统 — 25 个行政区
@@ -72,7 +74,9 @@ cheroliv (dev) ──commits──▶ github.com/cccp-education (repos) ──pu
 ### 基础 — 可重用构建块 (N0)
 
 | 插件 | 用途 |
-|---|---|
+|
+---|
+---|
 | [`com.gradleup.nmcp.settings`](https://plugins.gradle.org/plugin/com.gradleup.nmcp.settings) | Maven Central 发布 (nmcp) |
 | [`education.cccp.agent-contracts`](https://github.com/cccp-education/workspace-bom) | 代理协议契约 (共享内核) |
 | [`education.cccp.codebase-contracts`](https://github.com/cccp-education/workspace-bom) | Codebase RAG 契约 (共享内核) |
@@ -84,19 +88,25 @@ cheroliv (dev) ──commits──▶ github.com/cccp-education (repos) ──pu
 ### 扫描器 — 工作区图提取 (N0)
 
 | 插件 | 用途 |
-|---|---|
+|
+---|
+---|
 | [`education.cccp.graphify`](https://github.com/cccp-education/graphify-gradle) | 从工作区提取知识图谱 (节点、边、社区) → `graph.json` |
 
 ### 处理器 — RAG & 数据集 (N1)
 
 | 插件 | 用途 |
-|---|---|
+|
+---|
+---|
 | [`education.cccp.codebase`](https://github.com/cccp-education/codebase-gradle) | 构建内开发助手：项目读取、pgvector RAG、LangChain4j 上下文增强、AsciiDoc 报告生成、数据集构建。 |
 
 ### 消费者 — 内容生成 (N2)
 
 | 插件 | 用途 |
-|---|---|
+|
+---|
+---|
 | [`education.cccp.planner`](https://github.com/cccp-education/planner-gradle) | LLM 提示用于 SPG/SPD (deepseek-v4-pro) — 计划专家将意图分解为 EPICs → 用户故事 → Gradle 任务。 |
 | [`education.cccp.codex`](https://github.com/cccp-education/codex-gradle) | Asciidoctor→PDF、幻灯片、文档管道 (READ + RAG)。 |
 | [`education.cccp.slider`](https://github.com/cccp-education/slider-gradle) | 从 AsciiDoc 源生成 Reveal.js 演示，推送到专用分支。 |
@@ -112,13 +122,17 @@ cheroliv (dev) ──commits──▶ github.com/cccp-education (repos) ──pu
 ### 编排器 — 部署 (N3)
 
 | 插件 | 用途 |
-|---|---|
+|
+---|
+---|
 | [`education.cccp.runner`](https://github.com/cccp-education/runner-gradle) | DAG 编排、配置 CLI、部署 gh-pages。终端消费者、零业务逻辑。 |
 
 ### 控制器 — 敏捷 & 治理 (N4)
 
 | 插件 | 用途 |
-|---|---|
+|
+---|
+---|
 | [`education.cccp.agile`](https://github.com/cccp-education/agile-gradle) | AI 辅助敏捷编排：7 个研讨会 (愿景→架构)、待办事项列表、sprints、速度、里程碑。 |
 | [`education.cccp.ticket`](https://github.com/cccp-education/ticket-gradle) | GitHub 工单创建和跟踪 — 待办事项列表 → 问题、看板板、提交↔工单链接。 |
 | [`education.cccp.review`](https://github.com/cccp-education/review-gradle) | AI 辅助代码审查：PR 分析、质量评分、质量门、秘密检测。 |
@@ -127,19 +141,22 @@ cheroliv (dev) ──commits──▶ github.com/cccp-education (repos) ──pu
 ### 专用工具 (N2)
 
 | 插件 | 用途 |
-|---|---|
+|
+---|
+---|
 | [`com.cheroliv.jhipster.persistence`](https://github.com/cccp-education/jhipster-gradle-plugins) | JHipster 持久性编排 (clean/generate/sync)，不丢失 `__codebase__/` 中的 Kotlin 代码。 |
 | [`com.cheroliv.jhipster.assistant`](https://github.com/cccp-education/jhipster-gradle-plugins) | 带 RAG LLM 的 J Hipster AI 助手。 |
 
 ### 遗迹 (非活动项目)
 
 | 插件 | 状态 |
-|---|---|
+|
+---|
+---|
 | `com.cheroliv.magic-stick` | N2 — Xubuntu ISO 构建器 (文档站点，非插件) |
 | `com.cheroliv.newpipe` | N2 — YouTube→MP3 提取器 (已放弃) |
 | `com.cheroliv.notebook` | N2 — Colab 可观察性 (仅概念) |
 | `com.cheroliv.office-template` | N? — 空模板 (需删除) |
-
 ---
 
 ## 环境与工作站
@@ -153,13 +170,11 @@ cheroliv (dev) ──commits──▶ github.com/cccp-education (repos) ──pu
 - **学生/实习生** — 无需先前安装即可立即上手。
 
 该项目体现了生态系统的理念：工作环境本身就是一个**可重现、版本化、文档化**的 artifacts。项目文档由 [`education.cccp.bakery`](https://github.com/cccp-education/bakery-gradle) 生成并发布在 [cccp.education/magic-stick](https://cccp.education/magic-stick/)上 —— 证明发布管道正在生产运行。
-
 ---
 
 ## 核心堆栈
 
 Java · Kotlin · Gradle (Kotlin DSL) · JUnit 5 · Cucumber · Spring Boot · AsciiDoc · JBake · Reveal.js · PlantUML · JGit · Jackson · LangChain4j · Koog · Docker · PostgreSQL/pgvector · GitHub Actions · Xubuntu/Debian 打包。
-
 ---
 
 ## 链接
@@ -167,7 +182,6 @@ Java · Kotlin · Gradle (Kotlin DSL) · JUnit 5 · Cucumber · Spring Boot · A
 - 网站：[cheroliv.com](https://cheroliv.com)
 - 已发布插件：[Maven Central — education.cccp](https://central.sonatype.com/namespace/education.cccp)
 - `magic-stick`：[文档](https://cccp.education/magic-stick/) · [仓库](https://github.com/cccp-education/magic-stick)
-
 ---
 
 
