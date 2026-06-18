@@ -156,21 +156,6 @@ cheroliv (dev) ──commits──▶ github.com/cccp-education (repos) ──pu
 
 ---
 
-## 我的授课内容
-
-- 中高级 Java (8 至 25) — 从 Stream API 到虚拟线程、记录、模式匹配。
-- 中高级 Kotlin — null 安全、扩展、协程、密封类。
-- Scala 和 JVM 构建替代方案 (Mill、sbt)。
-- Maven 多模块架构。
-- Gradle Kotlin DSL — 从任务编写到可发布插件。
-- 六边形架构和测试 — 端口和适配器、JUnit 5、Cucumber、TestContainers。
-- Spring Boot — REST API、JWT 安全、集成测试。
-- 项目工具 — GitHub Actions CI/CD、可执行文档、内容生成。
-
-课程材料使用生态系统的插件生成：幻灯片由 [`education.cccp.slider`](https://github.com/cccp-education/slider-gradle)生成的 Reveal.js，课程网站由 [`education.cccp.bakery`](https://github.com/cccp-education/bakery-gradle)，U 盘由 [`magic-stick`](https://github.com/cccp-education/magic-stick)构建。培训和工具相互滋养。
-
----
-
 ## 核心堆栈
 
 Java · Kotlin · Scala · Gradle (Kotlin DSL) · Mill · JUnit 5 · Cucumber · Spring Boot · AsciiDoc · JBake · Reveal.js · PlantUML · JGit · Jackson · LangChain4j · Koog · Docker · PostgreSQL/pgvector · GitHub Actions · Xubuntu/Debian 打包。

@@ -166,25 +166,6 @@ cheroliv (dev) ──commits──▶ github.com/cccp-education (repos) ──pu
 
 ---
 
-## Что я обучаю
-
-- Промежуточный и продвинутый Java (8 до 25) — от API Stream до виртуальных потоков, записей, сопоставления с образцом.
-- Промежуточный и продвинутый Kotlin — безопасность null, extensions, корутины,sealed classes.
-- Scala и JVM сборка альтернатив (Mill, sbt).
-- Архитектуры Maven multi-module.
-- Gradle Kotlin DSL — от написания задач до публикуемых плагинов.
-- Гексагональная архитектура и тесты — порты и адаптеры, JUnit 5, Cucumber, TestContainers.
-- Spring Boot — REST API, безопасность JWT, интеграционные тесты.
-- Инструменты проекта — GitHub Actions CI/CD, исполняемая документация, генерация контента.
-
-Материалы курса создаются с использованием плагинов экосистемы:
-Слайды являются Reveal.js, генерированными [`education.cccp.slider`](https://github.com/cccp-education/slider-gradle),
-сайты курсов [`education.cccp.bakery`](https://github.com/cccp-education/bakery-gradle),
-и загружаемый привод [`magic-stick`](https://github.com/cccp-education/magic-stick).
-Обучение и инструменты взаимно питают друг друга.
-
----
-
 ## Основной стек
 
 Java · Kotlin · Scala · Gradle (Kotlin DSL) · Mill · JUnit 5 · Cucumber · Spring Boot · AsciiDoc · JBake · Reveal.js · PlantUML · JGit · Jackson · LangChain4j · Koog · Docker · PostgreSQL/pgvector · GitHub Actions · Xubuntu/Debian упаковка.

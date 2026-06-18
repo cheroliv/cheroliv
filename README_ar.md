@@ -166,22 +166,7 @@ the publication pipeline runs in production.
 
 ---
 
-## What I Teach
 
-- Java من intermediate إلى advanced (8 إلى 25) — من Stream API إلى Virtual Threads، Records، Pattern Matching.
-- Kotlin من intermediate إلى advanced — null safety، extensions، coroutines، sealed classes.
-- Scala و بدائل بناء JVM (Mill، sbt).
-- Maven multi-module architectures.
-- Gradle Kotlin DSL — من كتابة المهام إلى الإضافات القابلة للنشر.
-- Hexagonal Architecture و testing — ports & adapters، JUnit 5، Cucumber، TestContainers.
-- Spring Boot — REST APIs، JWT security، integration testing.
-- Project tooling — GitHub Actions CI/CD، document قابل للتنفيذ، إنشاء المحتوى.
-
-يتم إنتاج مواد الدورة باستخدام إضافات النظام البيئي:
-الشرائح هي Reveal.js تم توليدها بواسطة [`education.cccp.slider`](https://github.com/cccp-education/slider-gradle)،
- websites الدورة بواسطة [`education.cccp.bakery`](https://github.com/cccp-education/bakery-gradle)،
-و محرك الأقراص القابل للتحميل بواسطة [`magic-stick`](https://github.com/cccp-education/magic-stick).
-يغذّي التدريب والأدوات بعضها البعض بشكل متبادل.
 
 ---
 

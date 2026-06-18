@@ -160,25 +160,6 @@ cheroliv (dev) ──commits──▶ github.com/cccp-education (repos) ──pu
 
 ---
 
-## जो मैं सिखाता हूँ
-
-- औसत उन्नत जावा (8 से 25) — स्ट्रीम एपीआई से लेकर वर्चुअल थ्रेड, रिकॉर्ड, पैटर्न मैचिंग तक।
-- औसत उन्नत कोटलिन — नल सेफ्टी, एक्सटेंशन, कोरोटाइन, सील्ड क्लास।
-- स्काला और जवएम बिल्ड वैकल्पिक (मिल, सबीटी)।
-- मावेन मल्टी-मॉड्यूल आर्किटेक्चर।
-- ग्रेडल कोटलिन डीएसएल — कार्य लेखन से लेकर प्रकाशन योग्य प्लगइन तक।
-- हेक्सागोनल आर्किटेक्चर और परीक्षण — पोट और एडाप्टर, जेयूनिट 5, ककुबर, टेस्टकोंटेनर।
-- स्प्रिंग बूट — रीस्ट एपीआई, जेडडीएच गतिशीलता, एकीकरण परीक्षण।
-- प्रोजेक्ट टूलिंग — गिटहब एक्शंस सीआई/सीडी, एक्जीक्यूटेबल डॉक्यूमेंटेशन, सामग्री जेनरेशन।
-
-कोर्स मटेरियल का उत्पादन इकोसिस्टम के प्लगइन के साथ किया जाता है: स्लाइड
-[`education.cccp.slider`](https://github.com/cccp-education/slider-gradle) द्वारा उत्पन्न रिवील.जेएस, कोर्स साइट
-[`education.cccp.bakery`](https://github.com/cccp-education/bakery-gradle), और
-बूटेबल ड्राइव [`magic-stick`](https://github.com/cccp-education/magic-stick) द्वारा। प्रशिक्षण और टूल एक-दूसरे को पोषित
-करते हैं।
-
----
-
 ## कोर स्टैक
 
 Java · Kotlin · Scala · Gradle (Kotlin DSL) · Mill · JUnit 5 · Cucumber · Spring Boot · AsciiDoc · JBake · Reveal.js · PlantUML · JGit · Jackson · LangChain4j · Koog · Docker · PostgreSQL/pgvector · GitHub Actions · Xubuntu/Debian packaging।

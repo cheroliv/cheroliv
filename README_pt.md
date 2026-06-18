@@ -167,22 +167,7 @@ o pipeline de publicação é executado em produção.
 
 ---
 
-## O Que Eu Ensino
 
-- Java intermediário a avançado (8 a 25) — da API Stream até Virtual Threads, Records, Pattern Matching.
-- Kotlin intermediário a avançado — null safety, extensions, coroutines, sealed classes.
-- Scala e alternativas de build JVM (Mill, sbt).
-- Arquiteturas Maven multi-módulo.
-- Gradle Kotlin DSL — da escrita de tarefas a plugins publicáveis.
-- Arquitetura Hexagonal e testes — ports & adapters, JUnit 5, Cucumber, TestContainers.
-- Spring Boot — REST APIs, JWT security, testes de integração.
-- Ferramentas de projeto — GitHub Actions CI/CD, documentação executável, geração de conteúdo.
-
-Materiais do curso são produzidos usando os plugins do ecossistema:
-slides são Reveal.js gerados por [`education.cccp.slider`](https://github.com/cccp-education/slider-gradle),
-sites de curso por [`education.cccp.bakery`](https://github.com/cccp-education/bakery-gradle),
-e a unidade inicializável por [`magic-stick`](https://github.com/cccp-education/magic-stick).
-Treinamento e ferramentas se alimentam mutuamente.
 
 ---
 
