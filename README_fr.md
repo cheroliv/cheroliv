@@ -187,4 +187,4 @@ Java · Kotlin · Gradle (Kotlin DSL) · JUnit 5 · Cucumber · Spring Boot · A
 
 ---
 
-*Le code personnel nourrit le code partagé.*
+

@@ -176,4 +176,4 @@ cheroliv (dev) ──commits──▶ github.com/cccp-education (repos) ──pu
 
 ---
 
-*ذاتی کوڈ مشترکہ کوڈ کو تقویت دیتا ہے۔*
+
