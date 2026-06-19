@@ -49,16 +49,7 @@
 | `cccp-education` | GitHub (org) | Hébergement des dépôts de plugins، brand produit |
 | `cccp-education` | Maven Central | Handle de publication — https://central.sonatype.com/namespace/education.cccp |
 
-### 3 طبقات
 
-```
-cheroliv (dev) ──commits──▶ github.com/cccp-education (repos) ──publish──▶ cccp-education (Gradle Portal)
-                                معرف المجموعة: education.cccp
-                                الرخصة: Apache 2.0
-```
-
-*قاعدة*: المنطق التجاري حر (Apache 2.0)، فقط المعاملة المصرفية (waiter-gradle) ليست كذلك.
-الكود لا يحمل أيديولوجيا — groupId يفعل.
 
 
 ---

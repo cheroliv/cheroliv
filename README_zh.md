@@ -44,15 +44,7 @@
 | `cccp-education` | GitHub (组织) | 插件仓库托管、产品品牌 |
 | `cccp-education` | Maven Central | 发布句柄 — https://central.sonatype.com/namespace/education.cccp |
 
-### 3 层架构
 
-```
-cheroliv (dev) ──commits──▶ github.com/cccp-education (repos) ──publish──▶ cccp-education (Gradle Portal)
-                              群组 ID: education.cccp
-                              许可证: Apache 2.0
-```
-
-*规则*：业务逻辑是自由的 (Apache 2.0)，只有银行业务交易 (waiter-gradle) 不是。代码本身不携带意识形态 —— 群组 ID 才是。
 ---
 
 ## 方法论

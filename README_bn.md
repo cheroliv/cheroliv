@@ -45,15 +45,7 @@
 | `cccp-education` | GitHub (সংগঠন) | প্লাগইন রিপোজিটরি হোস্টিং, পণ্য ব্র্যান্ড |
 | `cccр-eduсаtіоn` | Maven Central | প্রকাশনা হ্যান্ডেল — https://central.sonatype.com/namespace/education.cccp |
 
-### 3-প্রস্তর আর্কিটেকচার
 
-```
-cheroliv (dev) ──commits──▶ github.com/cccp-education (repos) ──publish──▶ cccp-education (Gradle Portal)
-                              গ্রুপ ID: education.cccp
-                              লাইসেন্স: অ্যাপাচি 2.0
-```
-
-*নিয়ম*: ব্যবসা স্বাধীন (অ্যাপাচি 2.0), শুধুমাত্র ব্যাংকিং লেনদেন (waiter-gradle) নয়।
 কোডে কোনো আদর্শ নেই — গ্রুপ আইডি থাকে, তাই।
 ---
 

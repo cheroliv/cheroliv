@@ -47,16 +47,7 @@
 | `cccp-education` | GitHub (организация) | Хостинг репозиториев плагинов, продукт бренда |
 | `cccp-education` | Maven Central | Контроль публикации — https://central.sonatype.com/namespace/education.cccp |
 
-### Архитектура 3 слоев
 
-```
-cheroliv (dev) ──commits──▶ github.com/cccp-education (repos) ──publish──▶ cccp-education (Gradle Portal)
-                              GroupId: education.cccp
-                              Лицензия: Apache 2.0
-```
-
-*Правило*: бизнес свободный (Apache 2.0), только банковская транзакция (waiter-gradle) не является.
-Код не несет идеологии — groupId, да.
 ---
 
 ## Методология

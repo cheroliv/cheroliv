@@ -44,15 +44,7 @@
 | `cccp-education` | GitHub (संगठन) | प्लगइन रिपॉजिटरी होस्टिंग, उत्पाद ब्रांड |
 | `cccp-education` | Maven Central | प्रकाशन हैंडल — https://central.sonatype.com/namespace/education.cccp |
 
-### 3-परत आर्किटेक्चर
 
-```
-cheroliv (dev) ──commits──▶ github.com/cccp-education (repos) ──publish──▶ cccp-education (Gradle Portal)
-                              Group ID: education.cccp
-                              लाइसेंस: एपाचे 2.0
-```
-
-*नियम* : व्यव‌ाय स्वतंत्र है (एपाचे 2.0), केवल बैंकिंग लेनदेन (waiter-gradle) ही नहीं है।
 कोड में कोई विचारधारा नहीं होती — ग्रुप आईडी, ऐसा होता है।
 ---
 
