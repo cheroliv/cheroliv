@@ -24,10 +24,7 @@
 ### ब्रांड्स का पृथक्करण
 
 | डोमेन | भूमिका | सिग्नल |
-|
----|
----|
----|
+|---|---|---|
 | `cheroliv.com` | व्यक्तिगत पहचान, ब्लॉग, लेख | कोड के पीछे इंसान, संपादकीय आवाज़, सामाजिक पूंजी |
 | `talaria.school` | OF — योग्यता भित्ति वाला प्रशिक्षण संस्थान | संस्थागत विज्ञापन और प्रशिक्षण कैटलॉग |
 | `edster.cloud` | SaaS — समर्पित क्लाउड इंफ्रास्ट्रक्चर | ग्राहक वर्कस्पेस प्रोविजनिंग (MVP1) |
@@ -36,10 +33,7 @@
 ### तकनीकी खातों का पृथक्करण
 
 | खाता | प्लेटफार्म | भूमिका |
-|
----|
----|
----|
+|---|---|---|
 | `cheroliv` | GitHub | कमिट्स, पीआर, इतिहास, सामाजिक पूंजी (अपरिवर्तित) |
 | `cccp-education` | GitHub (संगठन) | प्लगइन रिपॉजिटरी होस्टिंग, उत्पाद ब्रांड |
 | `cccp-education` | Maven Central | प्रकाशन हैंडल — https://central.sonatype.com/namespace/education.cccp |
@@ -70,9 +64,7 @@
 ### फाउंडेशन — रियूज़ेबल बिल्डिंग ब्लॉक (N0)
 
 | प्लगइन | भूमिका |
-|
----|
----|
+|---|---|
 | [`com.gradleup.nmcp.settings`](https://plugins.gradle.org/plugin/com.gradleup.nmcp.settings) | Maven Central प्रकाशन (nmcp) |
 | [`education.cccp.agent-contracts`](https://github.com/cccp-education/workspace-bom) | एजेंट प्रोटोकॉल कॉन्ट्रैक्ट (शेयर्ड कर्नल) |
 | [`education.cccp.codebase-contracts`](https://github.com/cccp-education/workspace-bom) | कोडबेस रैग कॉन्ट्रैक्ट (शेयर्ड कर्नल) |
@@ -84,25 +76,19 @@
 ### स्कैनर — वर्कस्पेस ग्राफ एक्सट्रैक्शन (N0)
 
 | प्लगइन | भूमिका |
-|
----|
----|
+|---|---|
 | [`education.cccp.graphify`](https://github.com/cccp-education/graphify-gradle) | कार्यक्षेत्र से ज्ञान ग्राफ़ (नोड्स, एज़, समुदाय) → `graph.json` का एक्सट्रैक्शन |
 
 ### प्रोसेसर — रैग & डेटासेट (N1)
 
 | प्लगइन | भूमिका |
-|
----|
----|
+|---|---|
 | [`education.cccp.codebase`](https://github.com/cccp-education/codebase-gradle) | बिल्ड-इन डेवलपमेंट असिस्टेंट: प्रोजेक्ट पढ़ाई, pgvector रैग, लैंगकैन4ज कॉन्टेक्स्ट एनरिचमेंट, एस्कीडोक रिपोर्ट जेनरेशन, डेटासेट क्रिएशन। |
 
 ### कंज़ूमर — कंटेंट जेनरेशन (N2)
 
 | प्लगइन | भूमिका |
-|
----|
----|
+|---|---|
 | [`education.cccp.planner`](https://github.com/cccp-education/planner-gradle) | एलएलएम प्रॉम्प्टिंग एसपीजी/एसपीडी के लिए (deepseek-v4-pro) — प्लानिंग एक्सपर्ट इरादे को एपीआईसी → यूजर स्टोरीज → ग्रेडल टास्क में विघटित करता है। |
 | [`education.cccp.codex`](https://github.com/cccp-education/codex-gradle) | एस्कीडोक्टर→पीडीएफ, स्लाइड, डॉक्यूमेंट पाइपलाइन (रीड + रैग)। |
 | [`education.cccp.slider`](https://github.com/cccp-education/slider-gradle) | एस्कीडोक सोर्स से रिवील.जेएस प्रेजेंटेशन जनरेशन, एक अलग शाखा में पुश के साथ। |
@@ -118,17 +104,13 @@
 ### ऑर्केस्ट्रेटर — डिप्लॉयमेंट (N3)
 
 | प्लगइन | भूमिका |
-|
----|
----|
+|---|---|
 | [`education.cccp.runner`](https://github.com/cccp-education/runner-gradle) | डैग ऑर्केस्ट्रेशन, प्रोविजनिंग सीएलआई, डिप्लॉय घी-पेज। अंतिम उपभोक्ता, शून्य व्यावसायिक तर्क। |
 
 ### कंट्रोलर — एजाइल & गवर्नेंस (N4)
 
 | प्लगइन | भूमिका |
-|
----|
----|
+|---|---|
 | [`education.cccp.agile`](https://github.com/cccp-education/agile-gradle) | एआई असिस्टेड एजाइल ऑर्केस्ट्रेशन: 7 वर्कशॉप (विजन→आर्किटेक्चर), बैकलॉग, स्प्रिंट, वेलोसिटी, माइलस्टोन। |
 | [`education.cccp.ticket`](https://github.com/cccp-education/ticket-gradle) | गिटहब टिकट बनाना और ट्रैकिंग — बैकलॉग → इशू, कानबन बोर्ड, कमिट↔टिकट लिंकिंग। |
 | [`education.cccp.review`](https://github.com/cccp-education/review-gradle) | एआई असिस्टेड कोड समीक्षा: पीआर विश्लेषण, गुणवत्ता स्कोर, गुणवत्ता गेट, रहस्य का पता लगाना। |
@@ -137,18 +119,14 @@
 ### विशिष्ट टूलिंग (N2)
 
 | प्लगइन | भूमिका |
-|
----|
----|
+|---|---|
 | [`com.cheroliv.jhipster.persistence`](https://github.com/cccp-education/jhipster-gradle-plugins) | जेएचपीस्टर परसिस्टेंस ऑर्केस्ट्रेशन (clean/generate/sync) `__codebase__/` में कोटलिन कोड खोए बिना। |
 | [`com.cheroliv.jhipster.assistant`](https://github.com/cccp-education/jhipster-gradle-plugins) | आरजीएलएलएम के साथ जेएचपीस्टर एआई असिस्टेंट। |
 
 ### वेस्टीज (अक्षम प्रोजेक्ट) |
 
 | प्लगइन | स्थिति |
-|
----|
----|
+|---|---|
 | `com.cheroliv.magic-stick` | N2 — जेक्सबक्टू आईएसओ बिल्डर (doc साइट, प्लगइन नहीं) |
 | `com.cheroliv.newpipe` | N2 — YouTube→MP3 एक्सट्रैक्टर (त्यागा गया) |
 | `com.cheroliv.notebook` | N2 — कोलब ऑब्जर्वेबिलिटी (केवल अवधारणा) |

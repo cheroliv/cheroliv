@@ -29,10 +29,7 @@
 ### Brands separation
 
 | Domain | Role | Signal |
-|
----|
----|
----|
+|---|---|---|
 | `cheroliv.com` | الهوية الشخصية، المدونة، المقالات | L'humain derrière le code، la voix éditoriale، le capital social |
 | `talaria.school` | OF — Organisme Formateur Qualiopi | La vitrine institutionnelle et le catalogue des formations |
 | `edster.cloud` | SaaS — Infrastructure cloud dédiée | Le provisioning des espaces de travail clients (MVP1) |
@@ -41,10 +38,7 @@
 ### Technical accounts separation
 
 | Account | Platform | Role |
-|
----|
----|
----|
+|---|---|---|
 | `cheroliv` | GitHub | Commits، PRs، historique، capital social (inchangé) |
 | `cccp-education` | GitHub (org) | Hébergement des dépôts de plugins، brand produit |
 | `cccp-education` | Maven Central | Handle de publication — https://central.sonatype.com/namespace/education.cccp |
@@ -76,9 +70,7 @@
 ### Foundation — reusable building blocks (N0)
 
 | Plugin | Role |
-|
----|
----|
+|---|---|
 | [`com.gradleup.nmcp.settings`](https://plugins.gradle.org/plugin/com.gradleup.nmcp.settings) | Maven Central publishing (nmcp) |
 | [`education.cccp.agent-contracts`](https://github.com/cccp-education/workspace-bom) | Agent protocol contracts (shared kernel) |
 | [`education.cccp.codebase-contracts`](https://github.com/cccp-education/workspace-bom) | Codebase RAG contracts (shared kernel) |
@@ -90,25 +82,19 @@
 ### Scanner — workspace graph extraction (N0)
 
 | Plugin | Role |
-|
----|
----|
+|---|---|
 | [`education.cccp.graphify`](https://github.com/cccp-education/graphify-gradle) | Knowledge graph extraction from workspace (nodes، edges، communities) → `graph.json` |
 
 ### Processor — RAG & datasets (N1)
 
 | Plugin | Role |
-|
----|
----|
+|---|---|
 | [`education.cccp.codebase`](https://github.com/cccp-education/codebase-gradle) | In-build development assistant: project reading، pgvector RAG، LangChain4j context enrichment، AsciiDoc report generation، dataset creation. |
 
 ### Consumer — content generation (N2)
 
 | Plugin | Role |
-|
----|
----|
+|---|---|
 | [`education.cccp.planner`](https://github.com/cccp-education/planner-gradle) | LLM prompting for SPG/SPD (deepseek-v4-pro) — planning expert decomposes intention → EPICs → User Stories → Gradle tasks. |
 | [`education.cccp.codex`](https://github.com/cccp-education/codex-gradle) | Asciidoctor→PDF، slides، document pipeline (READ + RAG). |
 | [`education.cccp.slider`](https://github.com/cccp-education/slider-gradle) | Reveal.js presentation generation from AsciiDoc، with push to dedicated branch. |
@@ -124,17 +110,13 @@
 ### Orchestrator — deployment (N3)
 
 | Plugin | Role |
-|
----|
----|
+|---|---|
 | [`education.cccp.runner`](https://github.com/cccp-education/runner-gradle) | DAG orchestration، provisioning CLI، deploy gh-pages. Consommateur terminal، zéro logique métier. |
 
 ### Controller — agile & governance (N4)
 
 | Plugin | Role |
-|
----|
----|
+|---|---|
 | [`education.cccp.agile`](https://github.com/cccp-education/agile-gradle) | Agile piloting with AI assistant: 7 workshops (Vision→Architecture)، backlog، sprints، velocity، milestones. |
 | [`education.cccp.ticket`](https://github.com/cccp-education/ticket-gradle) | GitHub ticket creation & tracking — backlog → Issues، Kanban board، commit↔ticket linking. |
 | [`education.cccp.review`](https://github.com/cccp-education/review-gradle) | AI-assisted code review: PR analysis، quality score، quality gates، secret detection. |
@@ -143,18 +125,14 @@
 ### Specialized tooling (N2)
 
 | Plugin | Role |
-|
----|
----|
+|---|---|
 | [`com.cheroliv.jhipster.persistence`](https://github.com/cccp-education/jhipster-gradle-plugins) | JHipster persistence orchestration (clean/generate/sync) without losing Kotlin code in `__codebase__/`. |
 | [`com.cheroliv.jhipster.assistant`](https://github.com/cccp-education/jhipster-gradle-plugins) | JHipster AI assistant with RAG LLM. |
 
 ### Vestiges (inactive projects)
 
 | Plugin | Status |
-|
----|
----|
+|---|---|
 | `com.cheroliv.magic-stick` | N2 — Xubuntu ISO builder (doc site، not plugin) |
 | `com.cheroliv.newpipe` | N2 — YouTube→MP3 extractor (abandoned) |
 | `com.cheroliv.notebook` | N2 — Colab observability (concept only) |

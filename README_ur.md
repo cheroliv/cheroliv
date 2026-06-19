@@ -25,10 +25,7 @@
 ### برانڈز کی الگ التزامی
 
 | domain | رول | سائنل |
-|
----|
----|
----|
+|---|---|---|
 | `cheroliv.com` | ذاتی شناخت، بلاگ،مضامین | کوڈ کے پیچھے آدمی، ایڈیٹوریل آواز، سماجی پولیس |
 | `talarіаl.sсhооl` | آف — معتبر تربیتی ادارہ | ادارتی فونٹ اور کیٹلاگ |
 | `edster.cloud` | ساس — وقف شدہ کلاؤڈ انفراسٹرکچر | کلائنٹ ورک اسپیس پرموشن (mvp1) |
@@ -37,10 +34,7 @@
 ### تکنیکی اکاؤنٹس کی الگ التزامی
 
 | account | پلیٹ فارم | رول |
-|
----|
----|
----|
+|---|---|---|
 | `cheroliv` | گیتہاب | کمیٹس، پی آر، تاریخ، سماجی پولیس (غیر مٹیا) |
 | `cccp-education` | گیتہاب (ארגن) | پلگ ان ریپوزیٹری ہوسٹنگ، پروڈکٹ برانڈ |
 | `cccp-education` | Maven Central | شائع کرنے کا ہینڈل — https://central.sonatype.com/namespace/education.cccp |
@@ -79,9 +73,7 @@ cheroliv (dev) ──commits──▶ github.com/cccp-education (repos) ──pu
 ### فاؤنڈیشن — دوبارہ استعمال کے قابل بننے کے اجزاء (N0)
 
 | پلگ ان | رول |
-|
----|
----|
+|---|---|
 | [`com.gradleup.nmcp.settings`](https://plugins.gradle.org/plugin/com.gradleup.nmcp.settings) | میوان سینٹرل شاعرت (nmcp) |
 | [`education.cccp.agent-contracts`](https://github.com/cccp-education/workspace-bom) | اジェنٹ پروٹوکول کنٹریکٹس (شیئرڈ کرنل) |
 | [`education.cccp.codebase-contracts`](https://github.com/cccp-education/workspace-bom) | کوڈ بیس ریگ کنٹریکٹس (شیئرڈ کرنل) |
@@ -93,25 +85,19 @@ cheroliv (dev) ──commits──▶ github.com/cccp-education (repos) ──pu
 ### اسکینر — ورک اسپیس گراف ایکسٹریکشن (N0)
 
 | پلگ ان | رول |
-|
----|
----|
+|---|---|
 | [`education.cccp.graphify`](https://github.com/cccp-education/graphify-gradle) | ورک اسپیس سے جیان کا گراف (نود، اج، کمیونٹیز) → `graph.json` کا ایکسٹریکشن |
 
 ### پروسیسر — ریگ اینڈ ڈیٹا سیٹ (N1)
 
 | پلگ ان | رول |
-|
----|
----|
+|---|---|
 | [`education.cccp.codebase`](https://github.com/cccp-education/codebase-gradle) | بِلڈ-ان ڈویلپمنٹ اسسٹنٹ: پراجیکٹ ریڈنگ، پی جی ویکٹر ریگ، lan چین4ج کنٹیکسٹ اینرچمنٹ، ایس کی ڈوک رپورٹ جنریشن، ڈیٹا سیٹ کریشن۔ |
 
 ### کنجرمر — مواد جنریشن (N2)
 
 | پلگ ان | رول |
-|
----|
----|
+|---|---|
 | [`education.cccp.planner`](https://github.com/cccp-education/planner-gradle) | ایل ایل ایم پرومپٹنگ ایس پی جی/ایس پی ڈی کے لیے ( deepseek-v4-pro) — پلاننگ ماہر نیتی کو ایپکس → یوزر اسٹوریز → گریڈل ٹاسک میں تقسیم کرتا ہے۔ |
 | [`education.cccp.codex`](https://github.com/cccp-education/codex-gradle) | ایس کی ڈوکٹر→پی ڈی ایف، سلائیڈز، دستاویز پائپ لائن (ریڈ + ریگ)۔ |
 | [`education.cccp.slider`](https://github.com/cccp-education/slider-gradle) | ایس کی ڈوک سورس سے ریویل.جی ایس پریزنٹیشن جنریشن، ایک مخصوص برانچ میں پش کے ساتھ۔ |
@@ -127,17 +113,13 @@ cheroliv (dev) ──commits──▶ github.com/cccp-education (repos) ──pu
 ### آرکیسٹریٹر — ڈیپلوئمنٹ (N3)
 
 | پلگ ان | رول |
-|
----|
----|
+|---|---|
 | [`education.cccp.runner`](https://github.com/cccp-education/runner-gradle) | ڈی ای آر ایس آرکیسٹریشن، پرموشن سی ایل آئی، ڈیپلوی گی پیجز۔ برہان کنجرمر، زیرو بزنس لاجک۔ |
 
 ### کنٹرولر — ایگل اینڈ گورننس (N4)
 
 | پلگ ان | رول |
-|
----|
----|
+|---|---|
 | [`education.cccp.agile`](https://github.com/cccp-education/agile-gradle) | اے آئی assisted ایگل آرکیسٹریشن: 7 ورکشاپس (ویژن→آرکی ٹیکچر)، بیک لاگ، سپرنٹس، ویلوسٹی، مائل اسٹونز۔ |
 | [`education.cccp.ticket`](https://github.com/cccp-education/ticket-gradle) | گیتہاب ٹکٹ تخلیق اینڈ ٹریکنگ — بیک لاگ → ایشو، کیمبن بورڈ، کمیٹ↔ٹکٹ لنکنگ۔ |
 | [`education.cccp.review`](https://github.com/cccp-education/review-gradle) | اے آئی-assisted کوڈ ریویو: پی آر تحلیل، کوالٹی اسکور، کوالٹی گیٹس، سیکریٹ ڈیٹیکشن۔ |
@@ -146,18 +128,14 @@ cheroliv (dev) ──commits──▶ github.com/cccp-education (repos) ──pu
 ### مخصوص ٹولنگ (N2)
 
 | پلگ ان | رول |
-|
----|
----|
+|---|---|
 | [`com.cheroliv.jhipster.persistence`](https://github.com/cccp-education/jhipster-gradle-plugins) | جی ہسٹر پرسس اینس آرکیسٹریشن (کلین/جنریٹ/سنک) `__codebase__/` میں کوٹلن کوڈ ضائع کیے بغیر۔ |
 | [`com.cheroliv.jhipster.assistant`](https://github.com/cccp-education/jhipster-gradle-plugins) | جی ہسٹر اے آئی اسسٹنٹ ریگ ایل ایل ایم کے ساتھ۔ |
 
 ### ویسٹیجز (غیر فعال پروجیکٹس)
 
 | پلگ ان | اسٹیٹس |
-|
----|
----|
+|---|---|
 | `com.cheroliv.magic-stick` | N2 — ایک ایکس باکس ٹو ایس ایل آئی ایس او بیلڈر (داک سائٹ، نہیں پلگ ان) |
 | `com.cheroliv.newpipe` | N2 — یو ٹیub→ایم پی 3 ایکسٹریکٹر (چھوڑ دیا) |
 | `com.cheroliv.notebook` | N2 — کولاب آbservability (صرف تصور) |
