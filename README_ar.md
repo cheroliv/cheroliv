@@ -7,7 +7,6 @@
 أصمّم نظامًا بيئيًا من إضافات Gradle Kotlin DSL لأدوات المشاريع، والوثائق القابلة للتنفيذ، وإ Producing المحتوى التعليمي.
 موادي الخام: Kotlin، Gradle، AsciiDoc، LangChain4j، Koog.
 
-
 ---
 
 ## Positioning
@@ -20,31 +19,6 @@
 
 تكامل كل هذا ينبع من إيمان بسيط: **مدوف/مدرب موثوق** يبني ويستخدم أدواته الخاصة.
 أنا لا أبيع ما لا أستخدمه يوميًا.
-
-
----
-
-## Architecture Identity — 4 Domains، 3 Accounts
-
-### Brands separation
-
-| Domain | Role | Signal |
-|---|---|---|
-| `cheroliv.com` | الهوية الشخصية، المدونة، المقالات | L'humain derrière le code، la voix éditoriale، le capital social |
-| `talaria.school` | OF — Organisme Formateur Qualiopi | La vitrine institutionnelle et le catalogue des formations |
-| `edster.cloud` | SaaS — Infrastructure cloud dédiée | Le provisioning des espaces de travail clients (MVP1) |
-| `cccp.education` | Domain (SaaS/Web) | *Common Content Creator Proletarian* — identité numérique و vitrine OSS |
-
-### Technical accounts separation
-
-| Account | Platform | Role |
-|---|---|---|
-| `cheroliv` | GitHub | Commits، PRs، historique، capital social (inchangé) |
-| `cccp-education` | GitHub (org) | Hébergement des dépôts de plugins، brand produit |
-| `cccp-education` | Maven Central | Handle de publication — https://central.sonatype.com/namespace/education.cccp |
-
-
-
 
 ---
 
@@ -59,7 +33,6 @@
 4. **Publication** إلى Maven Central مع عقد API مُحدد بإصدار.
 
 إنه ليس منهجًا مبهرًا، ولكن منهج يخضع لاختبار الزمن.
-
 
 ---
 
@@ -138,7 +111,6 @@
 | `com.cheroliv.notebook` | N2 — Colab observability (concept only) |
 | `com.cheroliv.office-template` | N? — empty template (to delete) |
 
-
 ---
 
 ## Environment & Workstation
@@ -158,16 +130,13 @@ Project's documentation is generated and published by [`education.cccp.bakery`](
 [cccp.education/magic-stick](https://cccp.education/magic-stick/) — proof that
 the publication pipeline runs in production.
 
-
 ---
-
 
 ---
 
 ## Core Stack
 
 Java · Kotlin · Gradle (Kotlin DSL) · JUnit 5 · Cucumber · Spring Boot · AsciiDoc · JBake · Reveal.js · PlantUML · JGit · Jackson · LangChain4j · Koog · Docker · PostgreSQL/pgvector · GitHub Actions · Xubuntu/Debian packaging.
-
 
 ---
 
@@ -177,7 +146,5 @@ Java · Kotlin · Gradle (Kotlin DSL) · JUnit 5 · Cucumber · Spring Boot · A
 - Published Plugins: [Maven Central — education.cccp](https://central.sonatype.com/namespace/education.cccp)
 - `magic-stick`: [documentation](https://cccp.education/magic-stick/) · [repository](https://github.com/cccp-education/magic-stick)
 
-
 ---
-
 

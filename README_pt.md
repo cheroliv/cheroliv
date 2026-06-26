@@ -24,38 +24,6 @@ no dia a dia.
 
 ---
 
-## Identidade de Arquitetura — 4 Domínios, 3 Contas
-
-### Separação de marcas
-
-| Domínio | Função | Sinal |
-|---|---|---|
-| `cheroliv.com` | Identidade pessoal, blog, artigos | O ser humano por trás do código, a voz editorial, o capital social |
-| `talaria.school` | OF — Organismo de Formação Qualificado | A vitrine institucional e o catálogo de formações |
-| `edster.cloud` | SaaS — Infraestrutura cloud dedicada | O provisionamento de espaço de trabalho do cliente (MVP1) |
-| `cccp.education` | Domínio (SaaS/Web) | *Common Content Creator Proletarian* — identidade digital e vitrine OSS |
-
-### Separação de contas técnicas
-
-| Conta | Plataforma | Função |
-|---|---|---|
-| `cheroliv` | GitHub | Commits, PRs, histórico, capital social (inalterado) |
-| `cccp-education` | GitHub (organização) | hospedagem de repositórios de plugins, marca do produto |
-| `cccp-education` | Maven Central | Handle de publicação — https://central.sonatype.com/namespace/education.cccp |
-
-### Arquitetura de 3 camadas
-
-```
-cheroliv (dev) ──commits──▶ github.com/cccp-education (repos) ──publish──▶ cccp-education (Gradle Portal)
-                              GroupId: education.cccp
-                              Licença: Apache 2.0
-```
-
-*Regra*: o negócio é livre (Apache 2.0), somente a transação bancária (waiter-gradle) não é.
-O código não carrega ideologia — o groupId, sim.
-
----
-
 ## Metodologia
 
 O ciclo que sigo para cada plugin:
@@ -180,5 +148,4 @@ Java · Kotlin · Gradle (Kotlin DSL) · JUnit 5 · Cucumber · Spring Boot · A
 - `magic-stick`: [documentation](https://cccp.education/magic-stick/) · [repository](https://github.com/cccp-education/magic-stick)
 
 ---
-
 

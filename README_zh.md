@@ -19,28 +19,6 @@
 这一切的连贯性源于一个简单的信念：**一个可信的开发人员/培训师必须自己构建并使用自己的工具**。我从不销售我不能每天使用的东西。
 ---
 
-## 架构身份 — 4 个品牌，3 个账户
-
-### 品牌分离
-
-| 品牌 | 用途 | 信号 |
-|---|---|---|
-| `cheroliv.com` | 个人身份、博客、文章 | 程序背后的人、编辑声音、社会资本 |
-| `talaria.school` | OF — 经资质认证的培训机构 | 制度性形象、课程目录 |
-| `edster.cloud` | SaaS — 专用云基础设施 | 客户工作空间配置 (MVP1) |
-| `cccp.education` | 域名 (SaaS/Web) | *Common Content Creator Proletarian* — 数字身份和 OSS 门户 |
-
-### 技术账户分离
-
-| 账户 | 平台 | 用途 |
-|---|---|---|
-| `cheroliv` | GitHub | 提交、PR、历史、社会资本 (不变) |
-| `cccp-education` | GitHub (组织) | 插件仓库托管、产品品牌 |
-| `cccp-education` | Maven Central | 发布句柄 — https://central.sonatype.com/namespace/education.cccp |
-
-
----
-
 ## 方法论
 
 我为每个插件采用的生命周期：
@@ -153,5 +131,4 @@ Java · Kotlin · Gradle (Kotlin DSL) · JUnit 5 · Cucumber · Spring Boot · A
 - 已发布插件：[Maven Central — education.cccp](https://central.sonatype.com/namespace/education.cccp)
 - `magic-stick`：[文档](https://cccp.education/magic-stick/) · [仓库](https://github.com/cccp-education/magic-stick)
 ---
-
 

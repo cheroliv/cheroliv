@@ -24,27 +24,6 @@ on a daily basis.
 
 ---
 
-## Architecture Identity — 4 Domains, 3 Accounts
-
-### Brands separation
-
-| Domain | Role | Signal |
-|---|---|---|
-| `cheroliv.com` | Personal identity, blog, articles | L'humain derrière le code, la voix éditoriale, le capital social |
-| `talaria.school` | OF — Organisme Formateur Qualiopi | Institutional showcase and course catalog |
-| `edster.cloud` | SaaS — Dedicated cloud infrastructure | Client workspace provisioning (MVP1) |
-| `cccp.education` | Domain (SaaS/Web) | *Common Content Creator Proletarian* — identité numérique et vitrine OSS |
-
-### Technical accounts separation
-
-| Account | Platform | Role |
-|---|---|---|
-| `cheroliv` | GitHub | Commits, PRs, historique, capital social (inchangé) |
-| `cccp-education` | GitHub (org) | Hébergement des dépôts de plugins, brand produit |
-| `cccp-education` | Maven Central | Handle de publication — https://central.sonatype.com/namespace/education.cccp |
-
----
-
 ## Methodology
 
 The lifecycle I follow for each plugin:
@@ -169,5 +148,4 @@ Java · Kotlin · Gradle (Kotlin DSL) · JUnit 5 · Cucumber · Spring Boot · A
 - `magic-stick`: [documentation](https://cccp.education/magic-stick/) · [repository](https://github.com/cccp-education/magic-stick)
 
 ---
-
 

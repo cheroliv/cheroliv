@@ -20,37 +20,6 @@
 اپنے اپنے ٹولز بناتا ہے اور ان کا استعمال کرتا ہے**۔ میں جو فروخت نہیں کرتا جو میں نے روزمرہ استعمال نہیں کرتا۔
 ---
 
-## آرکی ٹیکچر اdentity — 4_domains، 3_accounts
-
-### برانڈز کی الگ التزامی
-
-| domain | رول | سائنل |
-|---|---|---|
-| `cheroliv.com` | ذاتی شناخت، بلاگ،مضامین | کوڈ کے پیچھے آدمی، ایڈیٹوریل آواز، سماجی پولیس |
-| `talarіаl.sсhооl` | آف — معتبر تربیتی ادارہ | ادارتی فونٹ اور کیٹلاگ |
-| `edster.cloud` | ساس — وقف شدہ کلاؤڈ انفراسٹرکچر | کلائنٹ ورک اسپیس پرموشن (mvp1) |
-| `cccp.education` | domain (sass/ویب) | *common content creator prolifarian* — ڈیجیٹل شناخت اور أو او ایس فونٹ |
-
-### تکنیکی اکاؤنٹس کی الگ التزامی
-
-| account | پلیٹ فارم | رول |
-|---|---|---|
-| `cheroliv` | گیتہاب | کمیٹس، پی آر، تاریخ، سماجی پولیس (غیر مٹیا) |
-| `cccp-education` | گیتہاب (ארגن) | پلگ ان ریپوزیٹری ہوسٹنگ، پروڈکٹ برانڈ |
-| `cccp-education` | Maven Central | شائع کرنے کا ہینڈل — https://central.sonatype.com/namespace/education.cccp |
-
-### 3 لیئر آرکیٹیکچر
-
-```
-cheroliv (dev) ──commits──▶ github.com/cccp-education (repos) ──publish──▶ cccp-education (gradle portal)
-                                GroupId: education.cccp
-                                لائسنس: ایپچی 2.0
-```
-
-*-rule*: کاروبار آزاد ہے (ایپچی 2.0)، صرف بینکنگ ٹرانزیکشن (ویٹر-گریڈل) نہیں ہے۔
-کوڈ کوئی مکتب فکر نہیں لاتا — گروپ آئی ڈی ہے، ہے۔
----
-
 ## میتھڈولوجی
 
 ہر پلگ ان کے لیے میرے فالو کرنے والی لائف سائیکل:
@@ -105,7 +74,7 @@ cheroliv (dev) ──commits──▶ github.com/cccp-education (repos) ──pu
 | [`education.cccp.readme`](https://github.com/cccp-education/readme-gradle) | ایمبیڈیڈ پلا نٹیول ڈائیاگرامس کے ساتھ بہ زبان ریڈمی جنریشن اور گیتہاب پیجز پبلیکیشن جیگٹ کے ذریعے۔ |
 | [`education.cccp.bakery`](https://github.com/cccp-education/bakery-gradle) | جی بیک اسٹیٹک سائٹ ایگریگیشن دیگر پلگ انز (ڈائیاگرامس، سلائیڈز، پوسٹس) کے ذریعے پیدا کردہ آرٹی فیکٹس۔ |
 | [`education.cccp.capsule`](https://github.com/cccp-education/capsule-gradle) | ویڈیو کیپسول کیپچر (ریول.جی ایس + پلے رائٹ + ٹی ٹی ایس)۔ |
-| [`education.cccp.training`](https://github.com/cccp-education/training-gradle) | ٹریننگ پراجیکٹ آرکیسٹریشن — ایجنٹ کنٹیکسٹ فائلوں (`AGENTS.md`) کے ساتھ سنکронائزڈ بیک لاگ، کورس میٹریل پائپ لائن (ایس پی جی→ایس پی ڈی→سلائیڈز→پی ڈی ایف→فارم→ڈیش بورڈ)۔ |
+| [`education.cccp.training`](https://github.com/cccp-education/training-gradle) | ٹریننگ پراجیکٹ آرکیسٹریشن — ایجنٹ کنٹیکسٹ فائلوں (`AGENTS.md`) کے ساتھ سنکرونائزڈ بیک لاگ، کورس میٹریل پائپ لائن (ایس پی جی→ایس پی ڈی→سلائیڈز→پی ڈی ایف→فارم→ڈیش بورڈ)۔ |
 | [`education.cccp.hyperframes`](https://github.com/cccp-education/hyperframes-gradle) | ای سی ڈی ایک→ایم پی 4 ہائپر فریم (ہی جین، ایپچی 2.0) کے ذریعے، نوڈ جی ایس برج۔ |
 | [`education.cccp.api-key-pool`](https://github.com/cccp-education/api-key-pool-gradle) | ایل ایل ایم ایپی کی پول نقل کے ساتھ (راؤنڈ روبن، لیسٹ-یوزڈ، وزڈ)، کوٹا ٹریکنگ، آڈٹ لاگنگ۔ |
 | [`education.cccp.document`](https://github.com/cccp-education/document-gradle) | ای سی ڈی ایکٹر جی کے ذریعے ایس کی ڈیکا ملٹی فارمیٹ (ایم ایل/پی ڈی ایف/اے پی یو بی/ڈیک بک/مانپیج) پر ہے فرکٹی + اے آئی--assisted جنریشن (لکھیں + شائع)۔ |
@@ -167,5 +136,4 @@ cheroliv (dev) ──commits──▶ github.com/cccp-education (repos) ──pu
 - شائع کردہ پلگ انز: [Maven Central — education.cccp](https://central.sonatype.com/namespace/education.cccp)
 - `magic-stick`: [دستاویزات](https://cccp.education/magic-stick/) · [ریپوزٹری](https://github.com/cccp-education/magic-stick)
 ---
-
 

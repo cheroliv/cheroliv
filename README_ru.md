@@ -22,28 +22,6 @@
 в повседневной жизни.
 ---
 
-## Архитектурная идентичность — 4 домена, 3 аккаунта
-
-### Разделение брендов
-
-| Домен | Роль | Сигнал |
-|---|---|---|
-| `cheroliv.com` | Личная идентичность, блог, статьи | Человек за кодом, редакционный голос, социальный капитал |
-| `talaria.school` | OF — Организация Обучения Квалипио | Институциональный фронт и каталог обучения |
-| `edster.cloud` | SaaS — Выделенная облачная инфраструктура | Провижнинг клиентских рабочих пространств (MVP1) |
-| `cccp.education` | Домен (SaaS/Веб) | *Common Content Creator Proletarian* — цифровая идентичность и фронт OSS |
-
-### Разделение технических аккаунтов
-
-| Аккаунт | Платформа | Роль |
-|---|---|---|
-| `cheroliv` | GitHub | Коммиты, PRs, история, социальный капитал (без изменений) |
-| `cccp-education` | GitHub (организация) | Хостинг репозиториев плагинов, продукт бренда |
-| `cccp-education` | Maven Central | Контроль публикации — https://central.sonatype.com/namespace/education.cccp |
-
-
----
-
 ## Методология
 
 Жизненный цикл, который я следую для каждого плагина:
@@ -162,5 +140,4 @@ Java · Kotlin · Gradle (Kotlin DSL) · JUnit 5 · Cucumber · Spring Boot · A
 - Опубликованные плагины: [Maven Central — education.cccp](https://central.sonatype.com/namespace/education.cccp)
 - `magic-stick`: [документация](https://cccp.education/magic-stick/) · [репозиторий](https://github.com/cccp-education/magic-stick)
 ---
-
 
