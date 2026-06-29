@@ -31,26 +31,24 @@
 这不是一种花哨的方法，但它经得起时间的考验。
 ---
 
-## `education.cccp.*` 生态系统 — 25 个行政区
+## `education.cccp.*` 生态系统 — 29 个行政区
 
-插件围绕三个角色分布在 4 层 (DAG N0→N4)。
+插件分布在 6 层 (DAG N0→N4 + N-IDE)。
 
 ### 基础 — 可重用构建块 (N0)
 
 | 插件 | 用途 |
 |---|---|
+| [`api-key-pool`](https://github.com/cccp-education/api-key-pool-gradle) | LLM API 密钥池，具有轮换 (轮询、最少使用、加权)、配额跟踪、审计日志记录。 |
+| [`graphify`](https://github.com/cccp-education/graphify-gradle) | 从工作区提取知识图谱 (节点、边、社区) → `graph.json` |
 | [`agent-contracts`](https://github.com/cccp-education/workspace-bom) | 代理协议契约 (共享内核) |
 | [`codebase-contracts`](https://github.com/cccp-education/workspace-bom) | Codebase RAG 契约 (共享内核) |
 | [`vibecoding-contracts`](https://github.com/cccp-education/workspace-bom) | Vibecoding 契约 (共享内核) |
 | [`llm-pool-contracts`](https://github.com/cccp-education/workspace-bom) | LLM API 池契约 (共享内核) |
 | [`pipeline-contracts`](https://github.com/cccp-education/workspace-bom) | Pipeline 契约 (共享内核) |
 | [`i18n-contracts`](https://github.com/cccp-education/workspace-bom) | 国际化契约 (共享内核) |
-
-### 扫描器 — 工作区图提取 (N0)
-
-| 插件 | 用途 |
-|---|---|
-| [`graphify`](https://github.com/cccp-education/graphify-gradle) | 从工作区提取知识图谱 (节点、边、社区) → `graph.json` |
+| [`conventions`](https://github.com/cccp-education/conventions-gradle) | 4 个预编译脚本插件 — 构建约定 (Cucumber、发布、签名、功能测试) |
+| [`container-provision`](https://github.com/cccp-education/container-provision-gradle) | 为 LLM 操作提供 Docker/Colab 运行时 (Playwright、端口池、GPU passthrough) |
 
 ### 处理器 — RAG & 数据集 (N1)
 
@@ -71,14 +69,22 @@
 | [`capsule`](https://github.com/cccp-education/capsule-gradle) | 视频胶囊捕获 (reveal.js + Playwright + TTS)。 |
 | [`training`](https://github.com/cccp-education/training-gradle) | 培训项目编排 — 与代理上下文文件 (`AGENTS.md`) 同步的待办事项列表、课程材料管道 (SPG→SPD→幻灯片→PDFs→表格→仪表板)。 |
 | [`hyperframes`](https://github.com/cccp-education/hyperframes-gradle) | 通过 HyperFrames (HeyGen、Apache 2.0) 进行 AsciiDoc→MP4，Node.js 桥接。 |
-| [`api-key-pool`](https://github.com/cccp-education/api-key-pool-gradle) | LLM API 密钥池，具有轮换 (轮询、最少使用、加权)、配额跟踪、审计日志记录。 |
 | [`document`](https://github.com/cccp-education/document-gradle) | 通过 AsciidoctorJ 的 AsciiDoc 多格式操作 (HTML/PDF/EPUB/DocBook/ManPage) + AI 辅助生成 (WRITE + PUBLISH)。 |
+
+### 专用工具 (N2)
+
+| 插件 | 用途 |
+|---|---|
+| [`jhipster.persistence`](https://github.com/cccp-education/jhipster-gradle-plugins) | JHipster 持久性编排 (clean/generate/sync)，不丢失 `__codebase__/` 中的 Kotlin 代码。 |
+| [`jhipster.assistant`](https://github.com/cccp-education/jhipster-gradle-plugins) | 带 RAG LLM 的 J Hipster AI 助手。 |
 
 ### 编排器 — 部署 (N3)
 
 | 插件 | 用途 |
 |---|---|
 | [`runner`](https://github.com/cccp-education/runner-gradle) | DAG 编排、配置 CLI、部署 gh-pages。终端消费者、零业务逻辑。 |
+| [`dashboard`](https://github.com/cccp-education/dashboard-gradle) | 工作区愿景/跟踪的静态站点 — 聚合各行政区的 INDEX.adoc 和 BACKLOG.adoc。零 LLM/RAG。 |
+| [`dashboard-flow`](https://github.com/cccp-education/dashboard-flow-gradle) | 从 `graph.json` (graphify) 进行交互式 React Flow 知识图谱可视化。 |
 
 ### 控制器 — 敏捷 & 治理 (N4)
 
@@ -89,12 +95,11 @@
 | [`review`](https://github.com/cccp-education/review-gradle) | AI 辅助代码审查：PR 分析、质量评分、质量门、秘密检测。 |
 | [`flow`](https://github.com/cccp-education/flow-gradle) | 编排 merge/close/CI： Gates OK 时 merge、自动关闭工单、CI 触发器。 |
 
-### 专用工具 (N2)
+### 驾驶舱 — IDE 集成 (N-IDE)
 
 | 插件 | 用途 |
 |---|---|
-| [`jhipster.persistence`](https://github.com/cccp-education/jhipster-gradle-plugins) | JHipster 持久性编排 (clean/generate/sync)，不丢失 `__codebase__/` 中的 Kotlin 代码。 |
-| [`jhipster.assistant`](https://github.com/cccp-education/jhipster-gradle-plugins) | 带 RAG LLM 的 J Hipster AI 助手。 |
+| [`workspace-agent`](https://github.com/cccp-education/workspace-agent) | IntelliJ 平台插件 — 5 个仪表板 (令牌消耗、KG、会话、RAG、链) + 上下文菜单中的 AI 操作。 |
 
 ### 遗迹 (非活动项目)
 

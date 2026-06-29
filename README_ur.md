@@ -35,26 +35,24 @@
 یہ ایک شاندار طریقہ نہیں ہے، لیکن یہ ایک ہے جو وقت کے ٹیسٹ کو برقرار رکھتا ہے۔
 ---
 
-## `education.cccp.*` اکوسسٹم — 25 بوروہس
+## `education.cccp.*` اکوسسٹم — 29 بوروہس
 
-پلگ انز N0→N4 (دی ای گریڈ ان 4) میں چار پرتیں کے ارد گرد تین کرداروں کے گرد بنے ہوئے ہیں۔
+پلگ انز 6 پرتیں (DAG N0→N4 + N-IDE) میں بنے ہوئے ہیں۔
 
 ### فاؤنڈیشن — دوبارہ استعمال کے قابل بننے کے اجزاء (N0)
 
 | پلگ ان | رول |
 |---|---|
+| [`api-key-pool`](https://github.com/cccp-education/api-key-pool-gradle) | ایل ایل ایم ایپی کی پول نقل کے ساتھ (راؤنڈ روبن، لیسٹ-یوزڈ، وزڈ)، کوٹا ٹریکنگ، آڈٹ لاگنگ۔ |
+| [`graphify`](https://github.com/cccp-education/graphify-gradle) | ورک اسپیس سے جیان کا گراف (نود، اج، کمیونٹیز) → `graph.json` کا ایکسٹریکشن |
 | [`agent-contracts`](https://github.com/cccp-education/workspace-bom) | اジェنٹ پروٹوکول کنٹریکٹس (شیئرڈ کرنل) |
 | [`codebase-contracts`](https://github.com/cccp-education/workspace-bom) | کوڈ بیس ریگ کنٹریکٹس (شیئرڈ کرنل) |
 | [`vibecoding-contracts`](https://github.com/cccp-education/workspace-bom) | وائیبیکوڈنگ کنٹریکٹس (شیئرڈ کرنل) |
 | [`llm-pool-contracts`](https://github.com/cccp-education/workspace-bom) | ایل ایل ایم اے پی آئی پول کنٹریکٹس (شیئرڈ کرنل) |
 | [`pipeline-contracts`](https://github.com/cccp-education/workspace-bom) | پائپ لائن کنٹریکٹس (شیئرڈ کرنل) |
 | [`i18n-contracts`](https://github.com/cccp-education/workspace-bom) | انٹرنیشنلائزیشن کنٹریکٹس (شیئرڈ کرنل) |
-
-### اسکینر — ورک اسپیس گراف ایکسٹریکشن (N0)
-
-| پلگ ان | رول |
-|---|---|
-| [`graphify`](https://github.com/cccp-education/graphify-gradle) | ورک اسپیس سے جیان کا گراف (نود، اج، کمیونٹیز) → `graph.json` کا ایکسٹریکشن |
+| [`conventions`](https://github.com/cccp-education/conventions-gradle) | 4 پری کمپائلڈ اسکرپٹ پلگ ان — بلڈ کنونشن (Cucumber, اشاعت, دستخط, فنکشنل ٹیسٹ) |
+| [`container-provision`](https://github.com/cccp-education/container-provision-gradle) | LLM آپریشنز کے لیے Docker/Colab رن ٹائم پروویژننگ (Playwright, پورٹ پول, GPU passthrough) |
 
 ### پروسیسر — ریگ اینڈ ڈیٹا سیٹ (N1)
 
@@ -75,14 +73,22 @@
 | [`capsule`](https://github.com/cccp-education/capsule-gradle) | ویڈیو کیپسول کیپچر (ریول.جی ایس + پلے رائٹ + ٹی ٹی ایس)۔ |
 | [`training`](https://github.com/cccp-education/training-gradle) | ٹریننگ پراجیکٹ آرکیسٹریشن — ایجنٹ کنٹیکسٹ فائلوں (`AGENTS.md`) کے ساتھ سنکرونائزڈ بیک لاگ، کورس میٹریل پائپ لائن (ایس پی جی→ایس پی ڈی→سلائیڈز→پی ڈی ایف→فارم→ڈیش بورڈ)۔ |
 | [`hyperframes`](https://github.com/cccp-education/hyperframes-gradle) | ای سی ڈی ایک→ایم پی 4 ہائپر فریم (ہی جین، ایپچی 2.0) کے ذریعے، نوڈ جی ایس برج۔ |
-| [`api-key-pool`](https://github.com/cccp-education/api-key-pool-gradle) | ایل ایل ایم ایپی کی پول نقل کے ساتھ (راؤنڈ روبن، لیسٹ-یوزڈ، وزڈ)، کوٹا ٹریکنگ، آڈٹ لاگنگ۔ |
 | [`document`](https://github.com/cccp-education/document-gradle) | ای سی ڈی ایکٹر جی کے ذریعے ایس کی ڈیکا ملٹی فارمیٹ (ایم ایل/پی ڈی ایف/اے پی یو بی/ڈیک بک/مانپیج) پر ہے فرکٹی + اے آئی--assisted جنریشن (لکھیں + شائع)۔ |
+
+### مخصوص ٹولنگ (N2)
+
+| پلگ ان | رول |
+|---|---|
+| [`jhipster.persistence`](https://github.com/cccp-education/jhipster-gradle-plugins) | جی ہسٹر پرسس اینس آرکیسٹریشن (کلین/جنریٹ/سنک) `__codebase__/` میں کوٹلن کوڈ ضائع کیے بغیر۔ |
+| [`jhipster.assistant`](https://github.com/cccp-education/jhipster-gradle-plugins) | جی ہسٹر اے آئی اسسٹنٹ ریگ ایل ایل ایم کے ساتھ۔ |
 
 ### آرکیسٹریٹر — ڈیپلوئمنٹ (N3)
 
 | پلگ ان | رول |
 |---|---|
 | [`runner`](https://github.com/cccp-education/runner-gradle) | ڈی ای آر ایس آرکیسٹریشن، پرموشن سی ایل آئی، ڈیپلوی گی پیجز۔ برہان کنجرمر، زیرو بزنس لاجک۔ |
+| [`dashboard`](https://github.com/cccp-education/dashboard-gradle) | ورک اسپیس ویژن/ٹریکنگ کے لیے اسٹیٹک سائٹ — boroughs کے INDEX.adoc اور BACKLOG.adoc کو جمع کرتی ہے۔ زیرو LLM/RAG. |
+| [`dashboard-flow`](https://github.com/cccp-education/dashboard-flow-gradle) | `graph.json` (graphify) سے انٹرایکٹو React Flow نالج گراف ویژولائزیشن۔ |
 
 ### کنٹرولر — ایگل اینڈ گورننس (N4)
 
@@ -93,12 +99,11 @@
 | [`review`](https://github.com/cccp-education/review-gradle) | اے آئی-assisted کوڈ ریویو: پی آر تحلیل، کوالٹی اسکور، کوالٹی گیٹس، سیکریٹ ڈیٹیکشن۔ |
 | [`flow`](https://github.com/cccp-education/flow-gradle) | آرکیسٹریشن مرج/کلوس/سی آئی: مرج کبھی گیٹس بہتر، خود کار طور پر بند ٹکٹ، سی آئی ٹریگر۔ |
 
-### مخصوص ٹولنگ (N2)
+### کاک پٹ — آئی ڈی ای انٹیگریشن (N-IDE)
 
 | پلگ ان | رول |
 |---|---|
-| [`jhipster.persistence`](https://github.com/cccp-education/jhipster-gradle-plugins) | جی ہسٹر پرسس اینس آرکیسٹریشن (کلین/جنریٹ/سنک) `__codebase__/` میں کوٹلن کوڈ ضائع کیے بغیر۔ |
-| [`jhipster.assistant`](https://github.com/cccp-education/jhipster-gradle-plugins) | جی ہسٹر اے آئی اسسٹنٹ ریگ ایل ایل ایم کے ساتھ۔ |
+| [`workspace-agent`](https://github.com/cccp-education/workspace-agent) | IntelliJ پلیٹ فارم پلگ ان — 5 ڈیش بورڈز (ٹوکن کھپت, KG, سیشن, RAG, چینز) + سیاق و سباق مینو میں AI ایکشنز۔ |
 
 ### ویسٹیجز (غیر فعال پروجیکٹس)
 

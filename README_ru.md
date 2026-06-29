@@ -37,26 +37,24 @@
 Это не fancy метод, но тот, который выдерживает испытание временем.
 ---
 
-## Экосистема `education.cccp.*` — 25 boroughs
+## Экосистема `education.cccp.*` — 29 boroughs
 
-Плагины структурированы вокруг трех ролей в 4 слоях (DAG N0→N4).
+Плагины структурированы вокруг 6 слоев (DAG N0→N4 + N-IDE).
 
 ### Фундамент — повторно используемые строительные блоки (N0)
 
 | Плагин | Роль |
 |---|---|
+| [`api-key-pool`](https://github.com/cccp-education/api-key-pool-gradle) | Пул API ключей LLM с ротацией (round-robin, least-used, weighted), отслеживание квот, аудит логгирования. |
+| [`graphify`](https://github.com/cccp-education/graphify-gradle) | Извлечение графа знаний из рабочего пространства (узлы, ребра, сообщества) → `graph.json` |
 | [`agent-contracts`](https://github.com/cccp-education/workspace-bom) | Договоры протокола агента (общее ядро) |
 | [`codebase-contracts`](https://github.com/cccp-education/workspace-bom) | Договоры RAG кодовой базы (общее ядро) |
 | [`vibecoding-contracts`](https://github.com/cccp-education/workspace-bom) | Договоры Vibecoding (общее ядро) |
 | [`llm-pool-contracts`](https://github.com/cccp-education/workspace-bom) | Договоры пула API LLM (общее ядро) |
 | [`pipeline-contracts`](https://github.com/cccp-education/workspace-bom) | Договоры пайплайна (общее ядро) |
 | [`i18n-contracts`](https://github.com/cccp-education/workspace-bom) | Договоры интернационализации (общее ядро) |
-
-### Сканер — извлечение графа рабочего пространства (N0)
-
-| Плагин | Роль |
-|---|---|
-| [`graphify`](https://github.com/cccp-education/graphify-gradle) | Извлечение графа знаний из рабочего пространства (узлы, ребра, сообщества) → `graph.json` |
+| [`conventions`](https://github.com/cccp-education/conventions-gradle) | 4 предварительно скомпилированных скриптовых плагина — соглашения о сборке (Cucumber, публикация, подпись, функциональный тест) |
+| [`container-provision`](https://github.com/cccp-education/container-provision-gradle) | Предоставление среды выполнения Docker/Colab для LLM (Playwright, пул портов, GPU passthrough) |
 
 ### Процессор — RAG и наборы данных (N1)
 
@@ -77,14 +75,22 @@
 | [`capsule`](https://github.com/cccp-education/capsule-gradle) | Захват видео-капсулы (reveal.js + Playwright + TTS). |
 | [`training`](https://github.com/cccp-education/training-gradle) | Оркестрация проекта обучения — бэклог синхронизирован с файлами контекста агента (`AGENTS.md`), пайплайн учебного материала (SPG→SPD→Слайды→PDFs→Формы→Dashboard). |
 | [`hyperframes`](https://github.com/cccp-education/hyperframes-gradle) | AsciiDoc→MP4 через HyperFrames (HeyGen, Apache 2.0), Node.js bridge. |
-| [`api-key-pool`](https://github.com/cccp-education/api-key-pool-gradle) | Пул API ключей LLM с ротацией (round-robin, least-used, weighted), отслеживание квот, аудит логгирования. |
 | [`document`](https://github.com/cccp-education/document-gradle) | Манипуляция AsciiDoc многим форматом (HTML/PDF/EPUB/DocBook/ManPage) через AsciidoctorJ + генерация с помощью ИИ (WRITE + PUBLISH). |
+
+### Специализированная инструментария (N2)
+
+| Плагин | Роль |
+|---|---|
+| [`jhipster.persistence`](https://github.com/cccp-education/jhipster-gradle-plugins) | Оркестрация JHipster persistence (clean/generate/sync) без потери Kotlin кода в `__codebase__/`. |
+| [`jhipster.assistant`](https://github.com/cccp-education/jhipster-gradle-plugins) | JHipster ИИ-ассистент с RAG LLM. |
 
 ### Оркестратор — развертывание (N3)
 
 | Плагин | Роль |
 |---|---|
 | [`runner`](https://github.com/cccp-education/runner-gradle) | Оркестрация DAG, provisioning CLI, деплой gh-pages. Терминальный потребитель, нулевая бизнес-логика. |
+| [`dashboard`](https://github.com/cccp-education/dashboard-gradle) | Статический сайт для отслеживания видения/прогресса workspace — агрегирует INDEX.adoc и BACKLOG.adoc boroughs. Без LLM/RAG. |
+| [`dashboard-flow`](https://github.com/cccp-education/dashboard-flow-gradle) | Интерактивная визуализация React Flow графа знаний `graph.json` (graphify). |
 
 ### Контроллер — гибкое управление и управление (N4)
 
@@ -95,12 +101,11 @@
 | [`review`](https://github.com/cccp-education/review-gradle) | Code review с помощью ИИ: анализ PR, оценка качества, quality gates, обнаружение секретов. |
 | [`flow`](https://github.com/cccp-education/flow-gradle) | Оркестрация merge/close/CI: merge когда gates OK, авто-закрытие тикетов, триггер CI. |
 
-### Специализированная инструментария (N2)
+### Cockpit — интеграция с IDE (N-IDE)
 
 | Плагин | Роль |
 |---|---|
-| [`jhipster.persistence`](https://github.com/cccp-education/jhipster-gradle-plugins) | Оркестрация JHipster persistence (clean/generate/sync) без потери Kotlin кода в `__codebase__/`. |
-| [`jhipster.assistant`](https://github.com/cccp-education/jhipster-gradle-plugins) | JHipster ИИ-ассистент с RAG LLM. |
+| [`workspace-agent`](https://github.com/cccp-education/workspace-agent) | Плагин IntelliJ Platform — 5 панелей (потребление токенов, KG, сессии, RAG, chains) + действия ИИ в контекстном меню. |
 
 ### Вестиги (неактивные проекты)
 

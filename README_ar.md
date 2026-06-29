@@ -36,26 +36,24 @@
 
 ---
 
-## The `education.cccp.*` Ecosystem — 25 boroughs
+## The `education.cccp.*` Ecosystem — 29 boroughs
 
-الإضافة هي هيكلة حول ثلاثة أدوار عبر 4 طبقات (DAG N0→N4).
+الإضافة هي هيكلة حول 6 طبقات (DAG N0→N4 + N-IDE).
 
 ### Foundation — reusable building blocks (N0)
 
 | Plugin | Role |
 |---|---|
+| [`api-key-pool`](https://github.com/cccp-education/api-key-pool-gradle) | LLM API key pool with rotation (round-robin، least-used، weighted)، quota tracking، audit logging. |
+| [`graphify`](https://github.com/cccp-education/graphify-gradle) | Knowledge graph extraction from workspace (nodes، edges، communities) → `graph.json` |
 | [`agent-contracts`](https://github.com/cccp-education/workspace-bom) | Agent protocol contracts (shared kernel) |
 | [`codebase-contracts`](https://github.com/cccp-education/workspace-bom) | Codebase RAG contracts (shared kernel) |
 | [`vibecoding-contracts`](https://github.com/cccp-education/workspace-bom) | Vibecoding contracts (shared kernel) |
 | [`llm-pool-contracts`](https://github.com/cccp-education/workspace-bom) | LLM API pool contracts (shared kernel) |
 | [`pipeline-contracts`](https://github.com/cccp-education/workspace-bom) | Pipeline contracts (shared kernel) |
 | [`i18n-contracts`](https://github.com/cccp-education/workspace-bom) | Internationalization contracts (shared kernel) |
-
-### Scanner — workspace graph extraction (N0)
-
-| Plugin | Role |
-|---|---|
-| [`graphify`](https://github.com/cccp-education/graphify-gradle) | Knowledge graph extraction from workspace (nodes، edges، communities) → `graph.json` |
+| [`conventions`](https://github.com/cccp-education/conventions-gradle) | 4 precompiled script plugins — build conventions (Cucumber, publishing, signing, functional test) |
+| [`container-provision`](https://github.com/cccp-education/container-provision-gradle) | Docker/Colab runtime provisioning for LLM ops (Playwright, port pool, GPU passthrough) |
 
 ### Processor — RAG & datasets (N1)
 
@@ -76,14 +74,22 @@
 | [`capsule`](https://github.com/cccp-education/capsule-gradle) | Video capsule capture (reveal.js + Playwright + TTS). |
 | [`training`](https://github.com/cccp-education/training-gradle) | Training project orchestration — backlog synchronized with agent context files (`AGENTS.md`)، course material pipeline (SPG→SPD→Slides→PDFs→Forms→Dashboard). |
 | [`hyperframes`](https://github.com/cccp-education/hyperframes-gradle) | AsciiDoc→MP4 via HyperFrames (HeyGen، Apache 2.0)، Node.js bridge. |
-| [`api-key-pool`](https://github.com/cccp-education/api-key-pool-gradle) | LLM API key pool with rotation (round-robin، least-used، weighted)، quota tracking، audit logging. |
 | [`document`](https://github.com/cccp-education/document-gradle) | AsciiDoc manipulation multi-format (HTML/PDF/EPUB/DocBook/ManPage) via AsciidoctorJ + AI-assisted generation (WRITE + PUBLISH). |
+
+### Specialized tooling (N2)
+
+| Plugin | Role |
+|---|---|
+| [`jhipster.persistence`](https://github.com/cccp-education/jhipster-gradle-plugins) | JHipster persistence orchestration (clean/generate/sync) without losing Kotlin code in `__codebase__/`. |
+| [`jhipster.assistant`](https://github.com/cccp-education/jhipster-gradle-plugins) | JHipster AI assistant with RAG LLM. |
 
 ### Orchestrator — deployment (N3)
 
 | Plugin | Role |
 |---|---|
-| [`runner`](https://github.com/cccp-education/runner-gradle) | DAG orchestration، provisioning CLI، deploy gh-pages. Consommateur terminal، zéro logique métier. |
+| [`runner`](https://github.com/cccp-education/runner-gradle) | DAG orchestration، provisioning CLI، deploy gh-pages. Terminal consumer, zero business logic. |
+| [`dashboard`](https://github.com/cccp-education/dashboard-gradle) | Static site for workspace vision/tracking — aggregates INDEX.adoc and BACKLOG.adoc across boroughs. Zero LLM/RAG. |
+| [`dashboard-flow`](https://github.com/cccp-education/dashboard-flow-gradle) | Interactive React Flow knowledge graph visualization from `graph.json` (graphify). |
 
 ### Controller — agile & governance (N4)
 
@@ -94,12 +100,11 @@
 | [`review`](https://github.com/cccp-education/review-gradle) | AI-assisted code review: PR analysis، quality score، quality gates، secret detection. |
 | [`flow`](https://github.com/cccp-education/flow-gradle) | Orchestration merge/close/CI: merge when gates OK، auto-close tickets، CI trigger. |
 
-### Specialized tooling (N2)
+### Cockpit — IDE integration (N-IDE)
 
 | Plugin | Role |
 |---|---|
-| [`jhipster.persistence`](https://github.com/cccp-education/jhipster-gradle-plugins) | JHipster persistence orchestration (clean/generate/sync) without losing Kotlin code in `__codebase__/`. |
-| [`jhipster.assistant`](https://github.com/cccp-education/jhipster-gradle-plugins) | JHipster AI assistant with RAG LLM. |
+| [`workspace-agent`](https://github.com/cccp-education/workspace-agent) | IntelliJ Platform plugin — 5 dashboards (token consumption, KG, sessions, RAG, chains) + AI contextual menu actions. |
 
 ### Vestiges (inactive projects)
 

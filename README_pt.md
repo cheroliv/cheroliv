@@ -40,26 +40,24 @@ Não é um método elegante, mas é um que suporta o teste do tempo.
 
 ---
 
-## O Ecossistema `education.cccp.*` — 25 boroughs
+## O Ecossistema `education.cccp.*` — 29 boroughs
 
-Os plugins são estruturados em torno de três papéis em 4 camadas (DAG N0→N4).
+Os plugins são estruturados em torno de 6 camadas (DAG N0→N4 + N-IDE).
 
 ### Fundação — blocos de construção reutilizáveis (N0)
 
 | Plugin | Função |
 |---|---|
+| [`api-key-pool`](https://github.com/cccp-education/api-key-pool-gradle) | Pool de chaves de API LLM com rotação (round-robin, menos usado, ponderado), rastreamento de cotas, log de auditoria. |
+| [`graphify`](https://github.com/cccp-education/graphify-gradle) | Extração de gráfico de conhecimento do espaço de trabalho (nós, arestas, comunidades) → `graph.json` |
 | [`agent-contracts`](https://github.com/cccp-education/workspace-bom) | Contratos de protocolo de agente (núcleo compartilhado) |
 | [`codebase-contracts`](https://github.com/cccp-education/workspace-bom) | Contratos RAG da base de código (núcleo compartilhado) |
 | [`vibecoding-contracts`](https://github.com/cccp-education/workspace-bom) | Contratos de vibecoding (núcleo compartilhado) |
 | [`llm-pool-contracts`](https://github.com/cccp-education/workspace-bom) | Contratos de pool de API LLM (núcleo compartilhado) |
 | [`pipeline-contracts`](https://github.com/cccp-education/workspace-bom) | Contratos de pipeline (núcleo compartilhado) |
 | [`i18n-contracts`](https://github.com/cccp-education/workspace-bom) | Contratos de internacionalização (núcleo compartilhado) |
-
-### Scanner — extração de gráfico de espaço de trabalho (N0)
-
-| Plugin | Função |
-|---|---|
-| [`graphify`](https://github.com/cccp-education/graphify-gradle) | Extração de gráfico de conhecimento do espaço de trabalho (nós, arestas, comunidades) → `graph.json` |
+| [`conventions`](https://github.com/cccp-education/conventions-gradle) | 4 plugins de script pré-compilados — convenções de build (Cucumber, publicação, assinatura, teste funcional) |
+| [`container-provision`](https://github.com/cccp-education/container-provision-gradle) | Provisionamento de runtime Docker/Colab para LLM (Playwright, pool de portas, GPU passthrough) |
 
 ### Processador — RAG e conjuntos de dados (N1)
 
@@ -80,14 +78,22 @@ Os plugins são estruturados em torno de três papéis em 4 camadas (DAG N0→N4
 | [`capsule`](https://github.com/cccp-education/capsule-gradle) | Captura de cápsula de vídeo (reveal.js + Playwright + TTS). |
 | [`training`](https://github.com/cccp-education/training-gradle) | Orquestração de projeto de treinamento — backlog sincronizado com arquivos de contexto de agente (`AGENTS.md`), pipeline de material do curso (SPG→SPD→Slides→PDFs→Forms→Dashboard). |
 | [`hyperframes`](https://github.com/cccp-education/hyperframes-gradle) | AsciiDoc→MP4 via HyperFrames (HeyGen, Apache 2.0), bridge Node.js. |
-| [`api-key-pool`](https://github.com/cccp-education/api-key-pool-gradle) | Pool de chaves de API LLM com rotação (round-robin, menos usado, ponderado), rastreamento de cotas, log de auditoria. |
 | [`document`](https://github.com/cccp-education/document-gradle) | Manipulação AsciiDoc multi-formato (HTML/PDF/EPUB/DocBook/ManPage) via AsciidoctorJ + geração assistida por IA (WRITE + PUBLISH). |
+
+### Ferramentas especializadas (N2)
+
+| Plugin | Função |
+|---|---|
+| [`jhipster.persistence`](https://github.com/cccp-education/jhipster-gradle-plugins) | Orquestração de persistência JHipster (clean/generate/sync) sem perder o código Kotlin em `__codebase__/`. |
+| [`jhipster.assistant`](https://github.com/cccp-education/jhipster-gradle-plugins) | Assistente JHipster IA com RAG LLM. |
 
 ### Orquestrador — implantação (N3)
 
 | Plugin | Função |
 |---|---|
 | [`runner`](https://github.com/cccp-education/runner-gradle) | Orquestração DAG, provisionamento CLI, implantação gh-pages. Consumidor terminal, zero lógica de negócio. |
+| [`dashboard`](https://github.com/cccp-education/dashboard-gradle) | Site estático para visão/acompanhamento do workspace — agrega INDEX.adoc e BACKLOG.adoc dos boroughs. Zero LLM/RAG. |
+| [`dashboard-flow`](https://github.com/cccp-education/dashboard-flow-gradle) | Visualização interativa React Flow do grafo de conhecimento `graph.json` (graphify). |
 
 ### Controlador — ágil e governança (N4)
 
@@ -98,12 +104,11 @@ Os plugins são estruturados em torno de três papéis em 4 camadas (DAG N0→N4
 | [`review`](https://github.com/cccp-education/review-gradle) | Revisão de código assistida por IA: análise PR, pontuação de qualidade, quality gates, detecção de segredos. |
 | [`flow`](https://github.com/cccp-education/flow-gradle) | Orquestração merge/close/CI: merge quando as gates OK, auto-fechar tickets, trigger CI. |
 
-### Ferramentas especializadas (N2)
+### Cockpit — integração IDE (N-IDE)
 
 | Plugin | Função |
 |---|---|
-| [`jhipster.persistence`](https://github.com/cccp-education/jhipster-gradle-plugins) | Orquestração de persistência JHipster (clean/generate/sync) sem perder o código Kotlin em `__codebase__/`. |
-| [`jhipster.assistant`](https://github.com/cccp-education/jhipster-gradle-plugins) | Assistente JHipster IA com RAG LLM. |
+| [`workspace-agent`](https://github.com/cccp-education/workspace-agent) | Plugin IntelliJ Platform — 5 painéis (consumo tokens, KG, sessões, RAG, chains) + ações IA no menu contextual. |
 
 ### Vestígios (projetos inativos)
 
