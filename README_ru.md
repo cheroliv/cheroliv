@@ -45,71 +45,71 @@
 
 | Плагин | Роль |
 |---|---|
-| [`education.cccp.agent-contracts`](https://github.com/cccp-education/workspace-bom) | Договоры протокола агента (общее ядро) |
-| [`education.cccp.codebase-contracts`](https://github.com/cccp-education/workspace-bom) | Договоры RAG кодовой базы (общее ядро) |
-| [`education.cccp.vibecoding-contracts`](https://github.com/cccp-education/workspace-bom) | Договоры Vibecoding (общее ядро) |
-| [`education.cccp.llm-pool-contracts`](https://github.com/cccp-education/workspace-bom) | Договоры пула API LLM (общее ядро) |
-| [`education.cccp.pipeline-contracts`](https://github.com/cccp-education/workspace-bom) | Договоры пайплайна (общее ядро) |
-| [`education.cccp.i18n-contracts`](https://github.com/cccp-education/workspace-bom) | Договоры интернационализации (общее ядро) |
+| [`agent-contracts`](https://github.com/cccp-education/workspace-bom) | Договоры протокола агента (общее ядро) |
+| [`codebase-contracts`](https://github.com/cccp-education/workspace-bom) | Договоры RAG кодовой базы (общее ядро) |
+| [`vibecoding-contracts`](https://github.com/cccp-education/workspace-bom) | Договоры Vibecoding (общее ядро) |
+| [`llm-pool-contracts`](https://github.com/cccp-education/workspace-bom) | Договоры пула API LLM (общее ядро) |
+| [`pipeline-contracts`](https://github.com/cccp-education/workspace-bom) | Договоры пайплайна (общее ядро) |
+| [`i18n-contracts`](https://github.com/cccp-education/workspace-bom) | Договоры интернационализации (общее ядро) |
 
 ### Сканер — извлечение графа рабочего пространства (N0)
 
 | Плагин | Роль |
 |---|---|
-| [`education.cccp.graphify`](https://github.com/cccp-education/graphify-gradle) | Извлечение графа знаний из рабочего пространства (узлы, ребра, сообщества) → `graph.json` |
+| [`graphify`](https://github.com/cccp-education/graphify-gradle) | Извлечение графа знаний из рабочего пространства (узлы, ребра, сообщества) → `graph.json` |
 
 ### Процессор — RAG и наборы данных (N1)
 
 | Плагин | Роль |
 |---|---|
-| [`education.cccp.codebase`](https://github.com/cccp-education/codebase-gradle) | Встроенный ассистент разработки: чтение проекта, pgvector RAG, обогащение контекста LangChain4j, генерация отчетов AsciiDoc, создание набора данных. |
+| [`codebase`](https://github.com/cccp-education/codebase-gradle) | Встроенный ассистент разработки: чтение проекта, pgvector RAG, обогащение контекста LangChain4j, генерация отчетов AsciiDoc, создание набора данных. |
 
 ### Потребитель — генерация контента (N2)
 
 | Плагин | Роль |
 |---|---|
-| [`education.cccp.planner`](https://github.com/cccp-education/planner-gradle) | LLM prompting для SPG/SPD (deepseek-v4-pro) — эксперт планирования декомпозирует намерение → EPICs → User Stories → задачи Gradle. |
-| [`education.cccp.codex`](https://github.com/cccp-education/codex-gradle) | Asciidoctor→PDF, слайды, пайплайн документа (READ + RAG). |
-| [`education.cccp.slider`](https://github.com/cccp-education/slider-gradle) | Генерация презентаций Reveal.js из источников AsciiDoc, с push в выделенную ветку. |
-| [`education.cccp.plantuml`](https://github.com/cccp-education/plantuml-gradle) | Валидация синтаксиса PlantUML и рендеринг (PNG/SVG) через LLM (LangChain4j, 7 провайдеров, RAG pgvector, KG, пул API ключей). |
-| [`education.cccp.readme`](https://github.com/cccp-education/readme-gradle) | Многоязычная генерация README с встроенными диаграммами PlantUML и публикацией GitHub Pages через JGit. |
-| [`education.cccp.bakery`](https://github.com/cccp-education/bakery-gradle) | Статический сайт JBake агрегирующий артефакты от других плагинов (диаграммы, слайды, посты). |
-| [`education.cccp.capsule`](https://github.com/cccp-education/capsule-gradle) | Захват видео-капсулы (reveal.js + Playwright + TTS). |
-| [`education.cccp.training`](https://github.com/cccp-education/training-gradle) | Оркестрация проекта обучения — бэклог синхронизирован с файлами контекста агента (`AGENTS.md`), пайплайн учебного материала (SPG→SPD→Слайды→PDFs→Формы→Dashboard). |
-| [`education.cccp.hyperframes`](https://github.com/cccp-education/hyperframes-gradle) | AsciiDoc→MP4 через HyperFrames (HeyGen, Apache 2.0), Node.js bridge. |
-| [`education.cccp.api-key-pool`](https://github.com/cccp-education/api-key-pool-gradle) | Пул API ключей LLM с ротацией (round-robin, least-used, weighted), отслеживание квот, аудит логгирования. |
-| [`education.cccp.document`](https://github.com/cccp-education/document-gradle) | Манипуляция AsciiDoc многим форматом (HTML/PDF/EPUB/DocBook/ManPage) через AsciidoctorJ + генерация с помощью ИИ (WRITE + PUBLISH). |
+| [`planner`](https://github.com/cccp-education/planner-gradle) | LLM prompting для SPG/SPD (deepseek-v4-pro) — эксперт планирования декомпозирует намерение → EPICs → User Stories → задачи Gradle. |
+| [`codex`](https://github.com/cccp-education/codex-gradle) | Asciidoctor→PDF, слайды, пайплайн документа (READ + RAG). |
+| [`slider`](https://github.com/cccp-education/slider-gradle) | Генерация презентаций Reveal.js из источников AsciiDoc, с push в выделенную ветку. |
+| [`plantuml`](https://github.com/cccp-education/plantuml-gradle) | Валидация синтаксиса PlantUML и рендеринг (PNG/SVG) через LLM (LangChain4j, 7 провайдеров, RAG pgvector, KG, пул API ключей). |
+| [`readme`](https://github.com/cccp-education/readme-gradle) | Многоязычная генерация README с встроенными диаграммами PlantUML и публикацией GitHub Pages через JGit. |
+| [`bakery`](https://github.com/cccp-education/bakery-gradle) | Статический сайт JBake агрегирующий артефакты от других плагинов (диаграммы, слайды, посты). |
+| [`capsule`](https://github.com/cccp-education/capsule-gradle) | Захват видео-капсулы (reveal.js + Playwright + TTS). |
+| [`training`](https://github.com/cccp-education/training-gradle) | Оркестрация проекта обучения — бэклог синхронизирован с файлами контекста агента (`AGENTS.md`), пайплайн учебного материала (SPG→SPD→Слайды→PDFs→Формы→Dashboard). |
+| [`hyperframes`](https://github.com/cccp-education/hyperframes-gradle) | AsciiDoc→MP4 через HyperFrames (HeyGen, Apache 2.0), Node.js bridge. |
+| [`api-key-pool`](https://github.com/cccp-education/api-key-pool-gradle) | Пул API ключей LLM с ротацией (round-robin, least-used, weighted), отслеживание квот, аудит логгирования. |
+| [`document`](https://github.com/cccp-education/document-gradle) | Манипуляция AsciiDoc многим форматом (HTML/PDF/EPUB/DocBook/ManPage) через AsciidoctorJ + генерация с помощью ИИ (WRITE + PUBLISH). |
 
 ### Оркестратор — развертывание (N3)
 
 | Плагин | Роль |
 |---|---|
-| [`education.cccp.runner`](https://github.com/cccp-education/runner-gradle) | Оркестрация DAG, provisioning CLI, деплой gh-pages. Терминальный потребитель, нулевая бизнес-логика. |
+| [`runner`](https://github.com/cccp-education/runner-gradle) | Оркестрация DAG, provisioning CLI, деплой gh-pages. Терминальный потребитель, нулевая бизнес-логика. |
 
 ### Контроллер — гибкое управление и управление (N4)
 
 | Плагин | Роль |
 |---|---|
-| [`education.cccp.agile`](https://github.com/cccp-education/agile-gradle) | Оркестрация Agile с помощью ИИ-ассистента: 7 воркшопов (Видение→Архитектура), бэклог, спринты, скорость, вехи. |
-| [`education.cccp.ticket`](https://github.com/cccp-education/ticket-gradle) | Создание и отслеживание GitHub тикетов — бэклог → Issues, доска Kanban, ссылка commit↔ticket. |
-| [`education.cccp.review`](https://github.com/cccp-education/review-gradle) | Code review с помощью ИИ: анализ PR, оценка качества, quality gates, обнаружение секретов. |
-| [`education.cccp.flow`](https://github.com/cccp-education/flow-gradle) | Оркестрация merge/close/CI: merge когда gates OK, авто-закрытие тикетов, триггер CI. |
+| [`agile`](https://github.com/cccp-education/agile-gradle) | Оркестрация Agile с помощью ИИ-ассистента: 7 воркшопов (Видение→Архитектура), бэклог, спринты, скорость, вехи. |
+| [`ticket`](https://github.com/cccp-education/ticket-gradle) | Создание и отслеживание GitHub тикетов — бэклог → Issues, доска Kanban, ссылка commit↔ticket. |
+| [`review`](https://github.com/cccp-education/review-gradle) | Code review с помощью ИИ: анализ PR, оценка качества, quality gates, обнаружение секретов. |
+| [`flow`](https://github.com/cccp-education/flow-gradle) | Оркестрация merge/close/CI: merge когда gates OK, авто-закрытие тикетов, триггер CI. |
 
 ### Специализированная инструментария (N2)
 
 | Плагин | Роль |
 |---|---|
-| [`com.cheroliv.jhipster.persistence`](https://github.com/cccp-education/jhipster-gradle-plugins) | Оркестрация JHipster persistence (clean/generate/sync) без потери Kotlin кода в `__codebase__/`. |
-| [`com.cheroliv.jhipster.assistant`](https://github.com/cccp-education/jhipster-gradle-plugins) | JHipster ИИ-ассистент с RAG LLM. |
+| [`jhipster.persistence`](https://github.com/cccp-education/jhipster-gradle-plugins) | Оркестрация JHipster persistence (clean/generate/sync) без потери Kotlin кода в `__codebase__/`. |
+| [`jhipster.assistant`](https://github.com/cccp-education/jhipster-gradle-plugins) | JHipster ИИ-ассистент с RAG LLM. |
 
 ### Вестиги (неактивные проекты)
 
 | Плагин | Статус |
 |---|---|
-| `com.cheroliv.magic-stick` | N2 — Строитель ISO Xubuntu (документация сайта, не плагин) |
-| `com.cheroliv.newpipe` | N2 — Извлекатель YouTube→MP3 (заброшен) |
-| `com.cheroliv.notebook` | N2 — Наблюдаемость Colab (только концепция) |
-| `com.cheroliv.office-template` | N? — пустой шаблон (для удаления) |
+| `magic-stick` | N2 — Строитель ISO Xubuntu (документация сайта, не плагин) |
+| `newpipe` | N2 — Извлекатель YouTube→MP3 (заброшен) |
+| `notebook` | N2 — Наблюдаемость Colab (только концепция) |
+| `office-template` | N? — пустой шаблон (для удаления) |
 ---
 
 ## Окружение и рабочее место
@@ -123,7 +123,7 @@
 - **Учащийся/Стажер** — немедленное Онбординг без предварительной установки.
 
 Проект иллюстрирует философию экосистемы: само рабочее окружение
-является **воспроизводимым, версионированным и документированным артефактом**. Документация проекта генерируется и публикуется [`education.cccp.bakery`](https://github.com/cccp-education/bakery-gradle) на
+является **воспроизводимым, версионированным и документированным артефактом**. Документация проекта генерируется и публикуется [`bakery`](https://github.com/cccp-education/bakery-gradle) на
 [cccp.education/magic-stick](https://cccp.education/magic-stick/) — доказательство того, что
 пайплайн публикации запущен в производство.
 ---
