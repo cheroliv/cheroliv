@@ -42,7 +42,6 @@
 
 | प्लगइन | भूमिका |
 |---|---|
-| [`com.gradleup.nmcp.settings`](https://plugins.gradle.org/plugin/com.gradleup.nmcp.settings) | Maven Central प्रकाशन (nmcp) |
 | [`education.cccp.agent-contracts`](https://github.com/cccp-education/workspace-bom) | एजेंट प्रोटोकॉल कॉन्ट्रैक्ट (शेयर्ड कर्नल) |
 | [`education.cccp.codebase-contracts`](https://github.com/cccp-education/workspace-bom) | कोडबेस रैग कॉन्ट्रैक्ट (शेयर्ड कर्नल) |
 | [`education.cccp.vibecoding-contracts`](https://github.com/cccp-education/workspace-bom) | वाइबेकोडिंग कॉन्ट्रैक्ट (शेयर्ड कर्नल) |

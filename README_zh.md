@@ -39,7 +39,6 @@
 
 | 插件 | 用途 |
 |---|---|
-| [`com.gradleup.nmcp.settings`](https://plugins.gradle.org/plugin/com.gradleup.nmcp.settings) | Maven Central 发布 (nmcp) |
 | [`education.cccp.agent-contracts`](https://github.com/cccp-education/workspace-bom) | 代理协议契约 (共享内核) |
 | [`education.cccp.codebase-contracts`](https://github.com/cccp-education/workspace-bom) | Codebase RAG 契约 (共享内核) |
 | [`education.cccp.vibecoding-contracts`](https://github.com/cccp-education/workspace-bom) | Vibecoding 契约 (共享内核) |

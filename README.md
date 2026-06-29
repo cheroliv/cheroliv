@@ -48,7 +48,6 @@ The plugins are structured around three roles across 4 layers (DAG N0→N4).
 
 | Plugin | Role |
 |---|---|
-| [`com.gradleup.nmcp.settings`](https://plugins.gradle.org/plugin/com.gradleup.nmcp.settings) | Maven Central publishing (nmcp) |
 | [`education.cccp.agent-contracts`](https://github.com/cccp-education/workspace-bom) | Agent protocol contracts (shared kernel) |
 | [`education.cccp.codebase-contracts`](https://github.com/cccp-education/workspace-bom) | Codebase RAG contracts (shared kernel) |
 | [`education.cccp.vibecoding-contracts`](https://github.com/cccp-education/workspace-bom) | Vibecoding contracts (shared kernel) |

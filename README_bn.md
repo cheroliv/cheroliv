@@ -43,7 +43,6 @@
 
 | প্লাগইন | ভূমিকা |
 |---|---|
-| [`com.gradleup.nmcp.settings`](https://plugins.gradle.org/plugin/com.gradleup.nmcp.settings) | Maven Central প্রকাশনা (nmcp) |
 | [`education.cccp.agent-contracts`](https://github.com/cccp-education/workspace-bom) | এজেন্ট প্রোটোকল চুক্তি (শেয়ার্ড কার্নেল) |
 | [`education.cccp.codebase-contracts`](https://github.com/cccp-education/workspace-bom) | কোডবেস র্যাগ চুক্তি (শেয়ার্ড কার্নেল) |
 | [`education.cccp.vibecoding-contracts`](https://github.com/cccp-education/workspace-bom) | ভাইবেকোডিং চুক্তি (শেয়ার্ড কার্নেল) |

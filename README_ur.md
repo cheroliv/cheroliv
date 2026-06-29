@@ -43,7 +43,6 @@
 
 | پلگ ان | رول |
 |---|---|
-| [`com.gradleup.nmcp.settings`](https://plugins.gradle.org/plugin/com.gradleup.nmcp.settings) | میوان سینٹرل شاعرت (nmcp) |
 | [`education.cccp.agent-contracts`](https://github.com/cccp-education/workspace-bom) | اジェنٹ پروٹوکول کنٹریکٹس (شیئرڈ کرنل) |
 | [`education.cccp.codebase-contracts`](https://github.com/cccp-education/workspace-bom) | کوڈ بیس ریگ کنٹریکٹس (شیئرڈ کرنل) |
 | [`education.cccp.vibecoding-contracts`](https://github.com/cccp-education/workspace-bom) | وائیبیکوڈنگ کنٹریکٹس (شیئرڈ کرنل) |

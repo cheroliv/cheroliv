@@ -45,7 +45,6 @@
 
 | Плагин | Роль |
 |---|---|
-| [`com.gradleup.nmcp.settings`](https://plugins.gradle.org/plugin/com.gradleup.nmcp.settings) | Публикация Maven Central (nmcp) |
 | [`education.cccp.agent-contracts`](https://github.com/cccp-education/workspace-bom) | Договоры протокола агента (общее ядро) |
 | [`education.cccp.codebase-contracts`](https://github.com/cccp-education/workspace-bom) | Договоры RAG кодовой базы (общее ядро) |
 | [`education.cccp.vibecoding-contracts`](https://github.com/cccp-education/workspace-bom) | Договоры Vibecoding (общее ядро) |

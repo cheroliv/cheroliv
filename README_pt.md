@@ -48,7 +48,6 @@ Os plugins são estruturados em torno de três papéis em 4 camadas (DAG N0→N4
 
 | Plugin | Função |
 |---|---|
-| [`com.gradleup.nmcp.settings`](https://plugins.gradle.org/plugin/com.gradleup.nmcp.settings) | Publicação Maven Central (nmcp) |
 | [`education.cccp.agent-contracts`](https://github.com/cccp-education/workspace-bom) | Contratos de protocolo de agente (núcleo compartilhado) |
 | [`education.cccp.codebase-contracts`](https://github.com/cccp-education/workspace-bom) | Contratos RAG da base de código (núcleo compartilhado) |
 | [`education.cccp.vibecoding-contracts`](https://github.com/cccp-education/workspace-bom) | Contratos de vibecoding (núcleo compartilhado) |
