@@ -42,84 +42,8 @@ Ce n'est pas une méthode chic, c'est une méthode qui tient debout sur la duré
 
 ## Écosystème `education.cccp.*` — 29 boroughs
 
-Les plugins s'articulent autour de 6 couches (DAG N0→N4 + N-IDE).
+[`cccp.education`](https://cccp-education/)
 
-### Fondation — briques réutilisables (N0)
-
-| Plugin | Rôle |
-|---|---|
-| [`api-key-pool`](https://github.com/cccp-education/api-key-pool-gradle) | Pool de clés API LLM avec rotation (round-robin, least-used, weighted), suivi de quotas, journalisation audit. |
-| [`graphify`](https://github.com/cccp-education/graphify-gradle) | Extraction de graphe de connaissance du workspace (nœuds, arêtes, communautés) → `graph.json` |
-| [`agent-contracts`](https://github.com/cccp-education/workspace-bom) | Contrats de protocole agent (shared kernel) |
-| [`codebase-contracts`](https://github.com/cccp-education/workspace-bom) | Contrats RAG codebase (shared kernel) |
-| [`vibecoding-contracts`](https://github.com/cccp-education/workspace-bom) | Contrats vibecoding (shared kernel) |
-| [`llm-pool-contracts`](https://github.com/cccp-education/workspace-bom) | Contrats pool API LLM (shared kernel) |
-| [`pipeline-contracts`](https://github.com/cccp-education/workspace-bom) | Contrats pipeline (shared kernel) |
-| [`i18n-contracts`](https://github.com/cccp-education/workspace-bom) | Contrats internationalisation (shared kernel) |
-| [`conventions`](https://github.com/cccp-education/conventions-gradle) | 4 plugins de build précompilés — conventions (Cucumber, publication, signature, test fonctionnel) |
-| [`container-provision`](https://github.com/cccp-education/container-provision-gradle) | Provisionnement runtime Docker/Colab pour LLM (Playwright, pool de ports, GPU passthrough) |
-
-### Processeur — RAG & datasets (N1)
-
-| Plugin | Rôle |
-|---|---|
-| [`codebase`](https://github.com/cccp-education/codebase-gradle) | Assistant de développement embarqué dans le build : lecture du projet, RAG pgvector, enrichissement de contexte LangChain4j, génération de rapports AsciiDoc, constitution de datasets. |
-
-### Consommateur — génération de contenu (N2)
-
-| Plugin | Rôle |
-|---|---|
-| [`planner`](https://github.com/cccp-education/planner-gradle) | Prompting LLM pour SPG/SPD (deepseek-v4-pro) — expert de planification décompose l'intention → EPICs → User Stories → tâches Gradle. |
-| [`codex`](https://github.com/cccp-education/codex-gradle) | Asciidoctor→PDF, slides, pipeline documentaire (READ + RAG). |
-| [`slider`](https://github.com/cccp-education/slider-gradle) | Génération de présentations Reveal.js depuis des sources AsciiDoc, avec push vers branche dédiée. |
-| [`plantuml`](https://github.com/cccp-education/plantuml-gradle) | Validation syntaxique et rendu PlantUML (PNG/SVG) via LLM (LangChain4j, 7 providers, RAG pgvector, KG, pool API keys). |
-| [`readme`](https://github.com/cccp-education/readme-gradle) | Génération de README multilingues avec diagrammes PlantUML embarqués et publication GitHub Pages via JGit. |
-| [`bakery`](https://github.com/cccp-education/bakery-gradle) | Site statique JBake agrégant les artefacts produits par les autres plugins (diagrammes, slides, posts). |
-| [`capsule`](https://github.com/cccp-education/capsule-gradle) | Capture de capsules vidéo (reveal.js + Playwright + TTS). |
-| [`training`](https://github.com/cccp-education/training-gradle) | Orchestration de projet de formation — backlog synchronisé avec les fichiers de contexte agent (`AGENTS.md`), pipeline de production des supports de cours (SPG→SPD→Slides→PDFs→Forms→Dashboard). |
-| [`hyperframes`](https://github.com/cccp-education/hyperframes-gradle) | AsciiDoc→MP4 via HyperFrames (HeyGen, Apache 2.0), bridge Node.js. |
-| [`document`](https://github.com/cccp-education/document-gradle) | Manipulation AsciiDoc multi-format (HTML/PDF/EPUB/DocBook/ManPage) via AsciidoctorJ + génération assistée par IA (WRITE + PUBLISH). |
-
-### Outils spécialisés (N2)
-
-| Plugin | Rôle |
-|---|---|
-| [`jhipster.persistence`](https://github.com/cccp-education/jhipster-gradle-plugins) | Orchestration JHipster persistence (clean/generate/sync) sans perdre le code Kotlin dans `__codebase__/`. |
-| [`jhipster.assistant`](https://github.com/cccp-education/jhipster-gradle-plugins) | Assistant JHipster RAG LLM. |
-
-### Orchestrateur — déploiement (N3)
-
-| Plugin | Rôle |
-|---|---|
-| [`runner`](https://github.com/cccp-education/runner-gradle) | Orchestration DAG, CLI provisioning, déploiement gh-pages. Consommateur terminal, zéro logique métier. |
-| [`dashboard`](https://github.com/cccp-education/dashboard-gradle) | Site statique de visualisation vision/avancement du workspace — agrège les INDEX.adoc et BACKLOG.adoc des boroughs. Zéro LLM/RAG. |
-| [`dashboard-flow`](https://github.com/cccp-education/dashboard-flow-gradle) | Visualisation interactive React Flow du graphe de connaissance `graph.json` (graphify). |
-
-### Contrôleur — agile & gouvernance (N4)
-
-| Plugin | Rôle |
-|---|---|
-| [`agile`](https://github.com/cccp-education/agile-gradle) | Pilotage agile assisté par IA : 7 ateliers (Vision→Architecture), backlog, sprints, vélocité, jalons. |
-| [`ticket`](https://github.com/cccp-education/ticket-gradle) | Création & suivi de tickets GitHub — backlog → Issues, Kanban board, lien commit↔ticket. |
-| [`review`](https://github.com/cccp-education/review-gradle) | Code review assistée par IA : analyse PR, score qualité, quality gates, détection secrets. |
-| [`flow`](https://github.com/cccp-education/flow-gradle) | Orchestration merge/close/CI : merge quand gates OK, auto-close tickets, trigger CI. |
-
-### Cockpit — intégration IDE (N-IDE)
-
-| Plugin | Rôle |
-|---|---|
-| [`workspace-agent`](https://github.com/cccp-education/workspace-agent) | Plugin IntelliJ Platform — 5 tableaux de bord (consommation tokens, KG, sessions, RAG, chaînes) + actions IA en menu contextuel. |
-
-### Vestiges (projets inactifs)
-
-| Plugin | Statut |
-|---|---|
-| `magic-stick` | N2 — Constructeur ISO Xubuntu (site doc, pas plugin) |
-| `newpipe` | N2 — Extracteur YouTube→MP3 (abandonné) |
-| `notebook` | N2 — Observabilité Colab (concept uniquement) |
-| `office-template` | N? — template vide (à supprimer) |
-
----
 
 ## Environnement & poste de travail
 

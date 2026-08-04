@@ -37,83 +37,8 @@
 
 ## `education.cccp.*` ইকোসিস্টেম — ২৯ বোরোহস
 
-প্লাগইনগুলি ৬ স্তর (DAG N0→N4 + N-IDE) এর মধ্যে গঠিত।
+[`cccp.education`](https://cccp-education/)
 
-### ফাউন্ডেশন — পুনরায় ব্যবহারযোগ্য বিল্ডিং ব্লক (N0)
-
-| প্লাগইন | ভূমিকা |
-|---|---|
-| [`api-key-pool`](https://github.com/cccp-education/api-key-pool-gradle) | এলএলএম এপিআই কী পুল রোটেশন সহ (রাউন্ড-রোবিন, লিস্ট-ইউজড, ওয়েটেড), কোয়োটা ট্র্যাকিং, অডিট লগিং। |
-| [`graphify`](https://github.com/cccp-education/graphify-gradle) | ওয়ার্কস্পেস থেকে জ্ঞান গ্রাফ (নোডস, এজস, সম্প্রদায়) → `graph.json` এর এক্সট্র্যাকশন |
-| [`agent-contracts`](https://github.com/cccp-education/workspace-bom) | এজেন্ট প্রোটোকল চুক্তি (শেয়ার্ড কার্নেল) |
-| [`codebase-contracts`](https://github.com/cccp-education/workspace-bom) | কোডবেস র্যাগ চুক্তি (শেয়ার্ড কার্নেল) |
-| [`vibecoding-contracts`](https://github.com/cccp-education/workspace-bom) | ভাইবেকোডিং চুক্তি (শেয়ার্ড কার্নেল) |
-| [`llm-pool-contracts`](https://github.com/cccp-education/workspace-bom) | এলএলএম এপিআই পুল চুক্তি (শেয়ার্ড কার্নেল) |
-| [`pipeline-contracts`](https://github.com/cccp-education/workspace-bom) | পাইপলাইন চুক্তি (শেয়ার্ড কার্নেল) |
-| [`i18n-contracts`](https://github.com/cccp-education/workspace-bom) | আন্তর্জাতীয়করণ চুক্তি (শেয়ার্ড কার্নেল) |
-| [`conventions`](https://github.com/cccp-education/conventions-gradle) | ৪ প্রি-কম্পাইলড স্ক্রিপ্ট প্লাগইন — বিল্ড কনভেনশন (Cucumber, প্রকাশনা, স্বাক্ষর, ফাংশনাল টেস্ট) |
-| [`container-provision`](https://github.com/cccp-education/container-provision-gradle) | LLM অপারেশনের জন্য Docker/Colab রানটাইম প্রভিশনিং (Playwright, পোর্ট পুল, GPU passthrough) |
-
-### প্রসেসর — র্যাগ & ডেটাসেট (N1)
-
-| প্লাগইন | ভূমিকা |
-|---|---|
-| [`codebase`](https://github.com/cccp-education/codebase-gradle) | বিল্ড-ইন ডেভেলপমেন্ট সহায়ক: প্রজেক্ট রিডিং, pgvector র্যাগ, ল্যাংচেন4জ কন্টেক্সট এনরিচমেন্ট, এস্কিডোক রিপোর্ট জেনারেশন, ডেটাসেট তৈরি। |
-
-### কনজুমার — কন্টেন্ট জেনারেশন (N2)
-
-| প্লাগইন | ভূমিকা |
-|---|---|
-| [`planner`](https://github.com/cccp-education/planner-gradle) | এলএলএম প্রম্প্টিং এসপিজি/এসপিডি এর জন্য (deepseek-v4-pro) — প্লানিং এক্সপার্ট ইচ্ছাকে এপিআইসি → ইউজার স্টোরিজ → গ্রেডল টাস্কে বিভক্ত করে। |
-| [`codex`](https://github.com/cccp-education/codex-gradle) | এস্কিডোর্টার→পিডিএফ, স্লাইড, ডকুমেন্ট পাইপলাইন (রিড + র্যাগ)। |
-| [`slider`](https://github.com/cccp-education/slider-gradle) | এস্কিডোক উৎস থেকে রিভিল.js প্রেজেন্টেশন জেনারেশন, একটি সমর্পিত শাখায় পুশ করে। |
-| [`plantuml`](https://github.com/cccp-education/plantuml-gradle) | এলএলএম (ল্যাংচেন4জ, ৭ প্রভাইডার, র্যাগ pgvector, কেজি, পুল এপিআই কী) এর মাধ্যমে প্ল্যান্টইউএমএল সিনট্যাক্স যাচাই এবং রেন্ডারিং (পিএনজি/এসভিজি)। |
-| [`readme`](https://github.com/cccp-education/readme-gradle) | এম্বেডেড প্ল্যান্টইউএমএল ডায়াগ্রাম এবং গিটহাব পেজেস প্রকাশনা জেগিটের মাধ্যমে বহুভাষা README জেনারেশন। |
-| [`bakery`](https://github.com/cccp-education/bakery-gradle) | জেবেক স্ট্যাটিক সাইট এগ্রিগেটিং অন্যান্য প্লাগইন (ডায়াগ্রাম, স্লাইড, পোস্ট) দ্বারা উৎপন্ন আর্টিফ্যাক্ট। |
-| [`capsule`](https://github.com/cccp-education/capsule-gradle) | ভিডিও ক্যাপসুল ক্যাপচার (রিভিল.জেএস + প্লেরাইট + টিটিএস)। |
-| [`training`](https://github.com/cccp-education/training-gradle) | ট্রেনিং প্রজেক্ট অর্কেস্ট্রেশন — এজেন্ট কন্টেক্সট ফাইল (`AGENTS.md`) এর সাথে সিঙ্ক্রোনাইজ ব্যাকলগ, কোর্স ম্যাটেরিয়াল পাইপলাইন (এসপিজি→এসপিডি→স্লাইড→পিডিএফ→ফর্ম→ড্যাশবোর্ড)। |
-| [`hyperframes`](https://github.com/cccp-education/hyperframes-gradle) | এস্কিডোক→এমপি৪ হাইপারফ্রেম (হেয়েজেন, অ্যাপাচি ২.০) এর মাধ্যমে, নোডজেএস ব্রিজ। |
-| [`document`](https://github.com/cccp-education/document-gradle) | এস্কিডোর্টারজের মাধ্যমে এস্কিডোক মাল্টি-ফরম্যাট (এইচটিএমএল/পিডিএফ/ইপিউবি/ডোকবুক/ম্যানপেজ) ম্যানিপুলেশন + এআই-সহায়ক জেনারেশন (লিখুন + পাবলিশ)। |
-
-### স্পেশালাইজড টুলিং (N2)
-
-| প্লাগইন | ভূমিকা |
-|---|---|
-| [`jhipster.persistence`](https://github.com/cccp-education/jhipster-gradle-plugins) | জেএইচপিরসিস্টেন্স অর্কেস্ট্রেশন (clean/generate/sync) `__codebase__/` এ কোটলিন কোড হারানো ছাড়াই। |
-| [`jhipster.assistant`](https://github.com/cccp-education/jhipster-gradle-plugins) | আরজিএলএলএম সহিত জেএইচপিস্টার এআই সহায়ক। |
-
-### অর্কেস্ট্রেটর — ডিপ্লয়মেন্ট (N3)
-
-| প্লাগইন | ভূমিকা |
-|---|---|
-| [`runner`](https://github.com/cccp-education/runner-gradle) | ড্যাগ অর্কেস্ট্রেশন, প্রভিশনিংসি এলআই, ডিপ্লয় ঘিপেজ। টার্মিনাল কনজুমার, জিরো ব্যবসায়িক যুক্তি। |
-| [`dashboard`](https://github.com/cccp-education/dashboard-gradle) | ওয়ার্কস্পেস ভিশন/ট্র্যাকিংয়ের জন্য স্ট্যাটিক সাইট — boroughs জুড়ে INDEX.adoc এবং BACKLOG.adoc একত্রিত করে। জিরো LLM/RAG. |
-| [`dashboard-flow`](https://github.com/cccp-education/dashboard-flow-gradle) | `graph.json` (graphify) থেকে ইন্টারঅ্যাকটিভ React Flow নলেজ গ্রাফ ভিজুয়ালাইজেশন। |
-
-### কন্ট্রোলার — এজাইল & গভর্নেন্স (N4)
-
-| প্লাগইন | ভূমিকা |
-|---|---|
-| [`agile`](https://github.com/cccp-education/agile-gradle) | এআই সহায়ক এজাইল অর্কেস্ট্রেশন: ৭ ওয়ার্কশপ (ভিজন→আর্কিটেকচার), ব্যাকলগ, স্প্রিন্ট, ভেলোসিটি, মাইলস্টোন। |
-| [`ticket`](https://github.com/cccp-education/ticket-gradle) | গিটহাব টিকেট তৈরি এবং ট্র্যাকিং — ব্যাকলগ → ইস্যু, কানবান বোর্ড, কমিট↔টিকেট লিংকিং। |
-| [`review`](https://github.com/cccp-education/review-gradle) | এআই সহায়ক কোড রিভিউ: পিআর বিশ্লেষণ, গুণমান স্কোর, গুণমান গেট, রহস্য সনাক্তকরণ। |
-| [`flow`](https://github.com/cccp-education/flow-gradle) | অর্কেস্ট্রেশন merge/close/CI: গেট ঠিক হলে merge, স্বয়ংক্রিয় বন্ধ টিকেট, সিআই ট্রিগার। |
-
-### ককপিট — আইডিই ইন্টিগ্রেশন (N-IDE)
-
-| প্লাগইন | ভূমিকা |
-|---|---|
-| [`workspace-agent`](https://github.com/cccp-education/workspace-agent) | IntelliJ প্ল্যাটফর্ম প্লাগইন — ৫ ড্যাশবোর্ড (টোকেন খরচ, KG, সেশন, RAG, চেইন) + প্রাসঙ্গিক মেনুতে AI অ্যাকশন। |
-
-### ভেস্টিজ (নিষ্ক্রিয় প্রজেক্ট)
-
-| প্লাগইন | স্ট্যাটাস |
-|---|---|
-| `magic-stick` | N2 — জেক্সবাক্টু আইএসও বিল্ডার (ডক সাইট, প্লাগিন নয়) |
-| `newpipe` | N2 — YouTube→MP3 এক্সট্র্যাক্টর (ত্যাগ করা) |
-| `notebook` | N2 — কোলাব অবসার্বরেবিলিটি (কেবল ধারণা) |
-| `office-template` | N? — খালি টেম্পলেট (মুছে ফেলার জন্য) |
----
 
 ## পরিবেশ এবং কর্মস্থল
 
