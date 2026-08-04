@@ -36,7 +36,7 @@
 ---
 
 ## `education.cccp.*` اکوسسٹم — 29 بوروہس
-[`cccp.education`](https://cccp-education/)
+[`cccp.education`](https://cccp.education/)
 
 
 ## کور اسٹاک

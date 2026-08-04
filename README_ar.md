@@ -38,7 +38,7 @@
 
 ## The `education.cccp.*` Ecosystem — 29 boroughs
 
-[`cccp.education`](https://cccp-education/)
+[`cccp.education`](https://cccp.education/)
 
 
 ## Environment & Workstation

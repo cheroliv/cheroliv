@@ -36,7 +36,7 @@
 
 ## `education.cccp.*` इकोसिस्टम — 29 बॉरोह्स
 
-[`cccp.education`](https://cccp-education/)
+[`cccp.education`](https://cccp.education/)
 
 
 ## वातावरण और कार्यस्थल

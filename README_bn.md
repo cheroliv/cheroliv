@@ -37,7 +37,7 @@
 
 ## `education.cccp.*` ইকোসিস্টেম — ২৯ বোরোহস
 
-[`cccp.education`](https://cccp-education/)
+[`cccp.education`](https://cccp.education/)
 
 
 ## পরিবেশ এবং কর্মস্থল

@@ -42,7 +42,7 @@ Não é um método elegante, mas é um que suporta o teste do tempo.
 
 ## O Ecossistema `education.cccp.*` — 29 boroughs
 
-[`cccp.education`](https://cccp-education/)
+[`cccp.education`](https://cccp.education/)
 
 
 ---

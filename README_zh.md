@@ -33,7 +33,7 @@
 
 ## `education.cccp.*` 生态系统 — 29 个行政区
 
-[`cccp.education`](https://cccp-education/)
+[`cccp.education`](https://cccp.education/)
 
 
 ## 环境与工作站

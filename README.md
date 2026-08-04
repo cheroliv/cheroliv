@@ -42,7 +42,7 @@ It's not a fancy method, but it's one that stands the test of time.
 
 ## The `education.cccp.*` Ecosystem 
 
-[`cccp.education`](https://cccp-education/)
+[`cccp.education`](https://cccp.education/)
 
 
 ## Environment & Workstation

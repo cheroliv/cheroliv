@@ -42,7 +42,7 @@ Ce n'est pas une méthode chic, c'est une méthode qui tient debout sur la duré
 
 ## Écosystème `education.cccp.*` — 29 boroughs
 
-[`cccp.education`](https://cccp-education/)
+[`cccp.education`](https://cccp.education/)
 
 
 ## Environnement & poste de travail
