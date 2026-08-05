@@ -5,7 +5,6 @@
 **软件工匠 · 培训师 · Gradle 工具作者**
 
 我设计了一套 Gradle Kotlin DSL 插件生态系统，用于项目工具、可执行文档和教育内容生成。
-我的原材料：Kotlin、Gradle、AsciiDoc、LangChain4j、Koog。
 ---
 
 ## 定位

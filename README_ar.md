@@ -5,7 +5,6 @@
 **Software Artisan · Trainer · Gradle Tooling Author**
 
 أصمّم نظامًا بيئيًا من إضافات Gradle Kotlin DSL لأدوات المشاريع، والوثائق القابلة للتنفيذ، وإ Producing المحتوى التعليمي.
-موادي الخام: Kotlin، Gradle، AsciiDoc، LangChain4j، Koog.
 
 ---
 

@@ -6,7 +6,6 @@
 
 I design an ecosystem of Gradle Kotlin DSL plugins for project tooling,
 executable documentation, and educational content production.
-My raw materials: Kotlin, Gradle, AsciiDoc, LangChain4j, Koog.
 
 ---
 

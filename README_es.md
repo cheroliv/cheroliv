@@ -6,7 +6,6 @@
 
 Diseño un ecosistema de plugins Gradle Kotlin DSL para herramientas de proyecto,
 documentación ejecutable y producción de contenido educativo.
-Mis materiales en bruto: Kotlin, Gradle, AsciiDoc, LangChain4j, Koog.
 
 ---
 

@@ -6,7 +6,6 @@
 
 Je conçois un écosystème de plugins Gradle Kotlin DSL pour l'outillage de projet,
 la documentation exécutable et la production de contenu pédagogique.
-Ma matière première : Kotlin, Gradle, AsciiDoc, LangChain4j, Koog.
 
 ---
 
