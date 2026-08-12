@@ -14,7 +14,7 @@ documentación ejecutable y producción de contenido educativo.
 Trabajo en la intersección de tres dominios:
 
 - **Software Craftsmanship** — TDD, BDD Cucumber, Arquitectura Hexagonal, Kotlin Idiomático.
-- **Developer Tooling** — plugins Gradle reutilizables, publicados bajo el espacio de nombres `education.cccp` en el [Maven Central](https://plugins.gradle.org/search?term=education.cccp).
+- **Developer Tooling** — plugins Gradle reutilizables, publicados bajo el espacio de nombres `education.cccp` en el [github.com/cccp-education](https://github.com/cccp-education).
 - **EdTech** — contenido educativo, sitios estáticos generados, materiales de formación rastreables.
 
 La coherencia de todo esto surge de una simple convicción: **un desarrollador/trainer

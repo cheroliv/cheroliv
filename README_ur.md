@@ -12,7 +12,7 @@
 میں تین_domains کے تقاطع پر کام کرتا ہوں:
 
 - **software craftsmanship** — ٹی ڈی ڈی، بی ڈی ڈی کرکبر، ہیکسیگونل آرکی ٹیکچر، ایدوماتک کوٹلن۔
-- **developer tooling** — دوبارہ استعمال کے قابل گریڈل پلگ انز، پر [Maven Central](https://plugins.gradle.org/search?term=education.cccp) پر `education.cccp` نیمسپیس کے تحت شائع ہوں۔
+- **developer tooling** — دوبارہ استعمال کے قابل گریڈل پلگ انز، پر [github.com/cccp-education](https://github.com/cccp-education) پر `education.cccp` نیمسپیس کے تحت شائع ہوں۔
 - **edtech** — تعلیمی مواد، جنریٹڈ اسٹیٹک سائٹس، ٹریسیبل ٹریننگ میٹریالز۔
 
 اس کی سب کچھ کی ہم آہنگی ایک سادہ عقیدے سے نکلتی ہے: **ایک قابل اعتماد ڈویلپر/ٹرینر

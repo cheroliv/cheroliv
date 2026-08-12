@@ -12,7 +12,7 @@
 我工作于三个领域的交叉点：
 
 - **软件工艺** — TDD、BDD Cucumber、六边形架构、地道 Kotlin。
-- **开发者工具** — 可重用的 Gradle 插件，在 [Maven Central](https://plugins.gradle.org/search?term=education.cccp) 下以 `education.cccp` 命名空间发布。
+- **开发者工具** — 可重用的 Gradle 插件，在 [github.com/cccp-education](https://github.com/cccp-education) 下以 `education.cccp` 命名空间发布。
 - **教育科技** — 教育内容、生成的静态站点、可追踪的培训材料。
 
 这一切的连贯性源于一个简单的信念：**一个可信的开发人员/培训师必须自己构建并使用自己的工具**。我从不销售我不能每天使用的东西。

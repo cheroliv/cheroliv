@@ -14,7 +14,7 @@ la documentation exécutable et la production de contenu pédagogique.
 Je travaille à l'intersection de trois domaines :
 
 - **Craft logiciel** — TDD, BDD Cucumber, architecture hexagonale, Kotlin idiomatique.
-- **Outillage développeur** — plugins Gradle réutilisables, publiés sous le namespace `education.cccp` sur le [Maven Central](https://plugins.gradle.org/search?term=education.cccp).
+- **Outillage développeur** — plugins Gradle réutilisables, publiés sous le namespace `education.cccp` sur le [github.com/cccp-education](https://github.com/cccp-education).
 - **Edtech** — contenus pédagogiques, sites statiques générés, supports de formation traçables.
 
 La cohérence de l'ensemble tient à une conviction simple : **un développeur/formateur crédible
