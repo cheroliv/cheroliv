@@ -4,9 +4,6 @@
 
 **Software Artisan · Trainer · Gradle Tooling Author**
 
-I design an ecosystem of Gradle Kotlin DSL plugins for project tooling,
-executable documentation, and educational content production.
-
 ---
 
 ## Positioning
@@ -16,10 +13,6 @@ I work at the intersection of three domains:
 - **Software Craftsmanship** — TDD, BDD Cucumber, Hexagonal Architecture, Idiomatic Kotlin.
 - **Developer Tooling** — reusable Gradle plugins, published under the `education.cccp` namespace on the [github.com/cccp-education](https://github.com/cccp-education).
 - **EdTech** — educational content, generated static sites, traceable training materials.
-
-The coherence of it all stems from a simple conviction: **a credible developer/trainer
-builds and uses their own tools**. I don't sell what I don't use
-on a daily basis.
 
 ---
 
@@ -34,8 +27,6 @@ The lifecycle I follow for each plugin:
 3. **BDD with Cucumber** as soon as the domain allows, to document
    intent at the user level.
 4. **Publication** to the Maven Central with a versioned API contract.
-
-It's not a fancy method, but it's one that stands the test of time.
 
 ---
 
@@ -57,8 +48,7 @@ A Gradle Kotlin DSL build script that orchestrates the creation of a bootable Xu
 The project illustrates the ecosystem's philosophy: the work environment itself
 is a **reproducible, versioned, and documented artifact**. The
 project's documentation is generated and published by [`bakery`](https://github.com/cccp-education/bakery-gradle) at
-[cccp.education/magic-stick](https://cccp.education/magic-stick/) — proof that
-the publication pipeline runs in production.
+[cccp.education/magic-stick](https://cccp.education/magic-stick/).
 
 ---
 

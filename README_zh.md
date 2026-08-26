@@ -4,7 +4,6 @@
 
 **软件工匠 · 培训师 · Gradle 工具作者**
 
-我设计了一套 Gradle Kotlin DSL 插件生态系统，用于项目工具、可执行文档和教育内容生成。
 ---
 
 ## 定位
@@ -15,7 +14,6 @@
 - **开发者工具** — 可重用的 Gradle 插件，在 [github.com/cccp-education](https://github.com/cccp-education) 下以 `education.cccp` 命名空间发布。
 - **教育科技** — 教育内容、生成的静态站点、可追踪的培训材料。
 
-这一切的连贯性源于一个简单的信念：**一个可信的开发人员/培训师必须自己构建并使用自己的工具**。我从不销售我不能每天使用的东西。
 ---
 
 ## 方法论
@@ -27,7 +25,6 @@
 3. **BDD Cucumber** 一旦领域允许，从用户级别记录意图。
 4. **发布** 到 Maven Central，带有版本化的 API 合同。
 
-这不是一种花哨的方法，但它经得起时间的考验。
 ---
 
 ## `education.cccp.*` 生态系统 — 29 个行政区
@@ -45,7 +42,7 @@
 - **FTTH 电信技术员** — 准备好的现场工具。
 - **学生/实习生** — 无需先前安装即可立即上手。
 
-该项目体现了生态系统的理念：工作环境本身就是一个**可重现、版本化、文档化**的 artifacts。项目文档由 [`bakery`](https://github.com/cccp-education/bakery-gradle) 生成并发布在 [cccp.education/magic-stick](https://cccp.education/magic-stick/)上 —— 证明发布管道正在生产运行。
+该项目体现了生态系统的理念：工作环境本身就是一个**可重现、版本化、文档化**的 artifacts。项目文档由 [`bakery`](https://github.com/cccp-education/bakery-gradle) 生成并发布在 [cccp.education/magic-stick](https://cccp.education/magic-stick/)上。
 ---
 
 ## 核心堆栈

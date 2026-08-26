@@ -4,8 +4,6 @@
 
 **Software Artisan · Trainer · Gradle Tooling Author**
 
-أصمّم نظامًا بيئيًا من إضافات Gradle Kotlin DSL لأدوات المشاريع، والوثائق القابلة للتنفيذ، وإ Producing المحتوى التعليمي.
-
 ---
 
 ## Positioning
@@ -15,9 +13,6 @@
 - **Software Craftsmanship** — TDD، BDD Cucumber، الهيكلية الهرمية (Hexagonal Architecture)، Kotlin المألوف.
 - **Developer Tooling** — إضافات Gradle قابلة لإعادة الاستخدام، منشورة في namespace `education.cccp` على [github.com/cccp-education](https://github.com/cccp-education).
 - **EdTech** — المحتوى التعليمي، المواقع الثابتة التي يتم توليدها، مواد التدريب القابلة للتتبع.
-
-تكامل كل هذا ينبع من إيمان بسيط: **مدوف/مدرب موثوق** يبني ويستخدم أدواته الخاصة.
-أنا لا أبيع ما لا أستخدمه يوميًا.
 
 ---
 
@@ -30,8 +25,6 @@
 3. **BDD مع Cucumber** بمجردما يكون المجال يسمح بذلك، للتوثيق
    intention at the user level.
 4. **Publication** إلى Maven Central مع عقد API مُحدد بإصدار.
-
-إنه ليس منهجًا مبهرًا، ولكن منهج يخضع لاختبار الزمن.
 
 ---
 
@@ -54,10 +47,7 @@
 هي **reproducible، versioned، و documented artifact**.
 The
 Project's documentation is generated and published by [`bakery`](https://github.com/cccp-education/bakery-gradle) at
-[cccp.education/magic-stick](https://cccp.education/magic-stick/) — proof that
-the publication pipeline runs in production.
-
----
+[cccp.education/magic-stick](https://cccp.education/magic-stick/).
 
 ---
 

@@ -4,9 +4,6 @@
 
 **Artesão de software · Instrutor · Autor de ferramentas Gradle**
 
-Eu projeto um ecossistema de plugins Gradle Kotlin DSL para ferramentas de projeto,
-documentação executável e produção de conteúdo educacional.
-
 ---
 
 ## Posicionamento
@@ -16,10 +13,6 @@ Eu trabalho na interseção de três domínios:
 - **Artesanato de software** — TDD, BDD Cucumber, Arquitetura Hexagonal, Kotlin idiomática.
 - **Ferramentas de desenvolvedor** — plugins Gradle reutilizáveis, publicados sob o namespace `education.cccp` no [github.com/cccp-education](https://github.com/cccp-education).
 - **EduTech** — conteúdo educacional, sites estáticos gerados, materiais de treinamento rastreáveis.
-
-A coerência de tudo isso decorre de uma convicção simples: **um desenvolvedor/instrutor credível
-constrói e usa suas próprias ferramentas**. Eu não vendo o que eu não uso
-no dia a dia.
 
 ---
 
@@ -34,8 +27,6 @@ O ciclo que sigo para cada plugin:
 3. **BDD com Cucumber** assim que o domínio permitir, para documentar
    a intenção no nível do usuário.
 4. **Publicação** no Maven Central com um contrato de API versionado.
-
-Não é um método elegante, mas é um que suporta o teste do tempo.
 
 ---
 

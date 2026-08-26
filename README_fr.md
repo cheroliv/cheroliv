@@ -4,9 +4,6 @@
 
 **Software Artisan · Formateur · Auteur d'outils Gradle**
 
-Je conçois un écosystème de plugins Gradle Kotlin DSL pour l'outillage de projet,
-la documentation exécutable et la production de contenu pédagogique.
-
 ---
 
 ## Positionnement
@@ -16,10 +13,6 @@ Je travaille à l'intersection de trois domaines :
 - **Craft logiciel** — TDD, BDD Cucumber, architecture hexagonale, Kotlin idiomatique.
 - **Outillage développeur** — plugins Gradle réutilisables, publiés sous le namespace `education.cccp` sur le [github.com/cccp-education](https://github.com/cccp-education).
 - **Edtech** — contenus pédagogiques, sites statiques générés, supports de formation traçables.
-
-La cohérence de l'ensemble tient à une conviction simple : **un développeur/formateur crédible
-construit et utilise ses propres outils**. Je ne vends pas ce que je n'utilise pas
-au quotidien.
 
 ---
 
@@ -34,8 +27,6 @@ Le cycle que je suis sur chaque plugin :
 3. **BDD Cucumber** dès que le domaine métier le permet, pour documenter
    l'intention à hauteur d'usager.
 4. **Publication** sur le Maven Central avec un contrat d'API versionné.
-
-Ce n'est pas une méthode chic, c'est une méthode qui tient debout sur la durée.
 
 ---
 
@@ -59,8 +50,7 @@ nécessaire selon trois profils d'usage :
 Le projet illustre la philosophie de l'écosystème : l'environnement de travail
 est lui-même un **artefact reproductible, versionné, documenté**. La
 documentation du projet est générée et publiée par [`bakery`](https://github.com/cccp-education/bakery-gradle) sur
-[cccp.education/magic-stick](https://cccp.education/magic-stick/) — preuve que
-le pipeline de publication tourne en production.
+[cccp.education/magic-stick](https://cccp.education/magic-stick/).
 
 ---
 
