@@ -16,20 +16,6 @@
 
 ---
 
-## میتھڈولوجی
-
-ہر پلگ ان کے لیے میرے فالو کرنے والی لائف سائیکل:
-
-1. **business logic prototyping** root `build.gradle.kts` میں، معنیٰ لاگ کے ساتھ
-   حقیقی شرائط کے تحت رویہ کی تصدیق کے لیے۔
-2. **plugin migration** ایک بار جب domain logic مستقر ہو جاتی ہے — کود کو ایک مخصوص ماڈیول میں منتقل کرنا
-   ایک پروفیسڈ کوڈ، یو ٹی 5 کے ساتھ ٹی ڈی ڈی کے ساتھ۔
-3. **bdd with cucumber** جب بھی domain اجازت دے، صارف کے لیے دستاویز
-   نیتی کو مستقل سطح پر۔
-4. **publication** Maven Central پر ایک ورژن ایپی آئی کے ساتھ۔
-
----
-
 ## `education.cccp.*` اکوسسٹم — 29 بوروہس
 [`cccp.education`](https://cccp.education/)
 

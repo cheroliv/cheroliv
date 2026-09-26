@@ -16,17 +16,6 @@
 
 ---
 
-## 方法论
-
-我为每个插件采用的生命周期：
-
-1. **业务逻辑原型** 在根目录 `build.gradle.kts` 中，使用相关日志验证实际条件下的行为。
-2. **插件迁移** 在业务逻辑稳定后 —— 将经过验证的代码传输到专用模块，使用 TDD 与 JUnit 5。
-3. **BDD Cucumber** 一旦领域允许，从用户级别记录意图。
-4. **发布** 到 Maven Central，带有版本化的 API 合同。
-
----
-
 ## `education.cccp.*` 生态系统 — 29 个行政区
 
 [`cccp.education`](https://cccp.education/)

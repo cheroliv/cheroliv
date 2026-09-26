@@ -16,20 +16,6 @@ I work at the intersection of three domains:
 
 ---
 
-## Methodology
-
-The lifecycle I follow for each plugin:
-
-1. **Business logic prototyping** within the root `build.gradle.kts`, with relevant logs
-   to validate behavior under real conditions.
-2. **Plugin migration** once the domain logic is stable — transplanting the
-   proven code to a dedicated module, using TDD with JUnit 5.
-3. **BDD with Cucumber** as soon as the domain allows, to document
-   intent at the user level.
-4. **Publication** to the Maven Central with a versioned API contract.
-
----
-
 ## The `education.cccp.*` Ecosystem 
 
 [`cccp.education`](https://cccp.education/)

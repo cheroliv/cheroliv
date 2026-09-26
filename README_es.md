@@ -16,20 +16,6 @@ Trabajo en la intersección de tres dominios:
 
 ---
 
-## Methodology
-
-El ciclo de vida que sigo para cada plugin:
-
-1. **Prototipado de lógica de negocio** dentro del `build.gradle.kts` raíz, con logs relevantes
-   para validar el comportamiento en condiciones reales.
-2. **Migración de plugin** una vez que la lógica de dominio es estable — transplantar el
-   código probado a un módulo dedicado, usando TDD con JUnit 5.
-3. **BDD con Cucumber** tan pronto como el dominio lo permita, para documentar
-   la intención a nivel de usuario.
-4. **Publicación** en el Maven Central con un contrato de API versionado.
-
----
-
 ## El Ecosistema `education.cccp.*` — 29 boroughs
 
 [`cccp.education`](https://cccp.education/)

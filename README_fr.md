@@ -16,20 +16,6 @@ Je travaille à l'intersection de trois domaines :
 
 ---
 
-## Méthode
-
-Le cycle que je suis sur chaque plugin :
-
-1. **Tâtonnement métier** dans le `build.gradle.kts` racine, avec logs pertinents
-   pour valider le comportement en conditions réelles.
-2. **Migration vers plugin** quand le métier est stabilisé — transplantation du
-   code éprouvé vers un module dédié, sous TDD avec JUnit 5.
-3. **BDD Cucumber** dès que le domaine métier le permet, pour documenter
-   l'intention à hauteur d'usager.
-4. **Publication** sur le Maven Central avec un contrat d'API versionné.
-
----
-
 ## Écosystème `education.cccp.*` — 29 boroughs
 
 [`cccp.education`](https://cccp.education/)

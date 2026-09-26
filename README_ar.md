@@ -16,18 +16,6 @@
 
 ---
 
-## Methodology
-
-1. **Business logic prototyping** داخل `build.gradle.kts` الجذر، مع تسجيلات ذات صلة
-   للتحقق من السلوك في ظروف حقيقية.
-2. **Plugin migration** بمجرد استقرار منطق المجال — نقل
-   الكود الذي تم التحقق منه إلى وحدة مخصصة، باستخدام TDD مع JUnit 5.
-3. **BDD مع Cucumber** بمجردما يكون المجال يسمح بذلك، للتوثيق
-   intention at the user level.
-4. **Publication** إلى Maven Central مع عقد API مُحدد بإصدار.
-
----
-
 ## The `education.cccp.*` Ecosystem — 29 boroughs
 
 [`cccp.education`](https://cccp.education/)
